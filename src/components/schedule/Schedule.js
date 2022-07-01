@@ -8,8 +8,8 @@ export default function Schedule() {
     const getScheduleContent = async ()=> {
         try{
             const response = await client.getEntries({content_type:'schedule'})
-            console.log(response.items[0].fields)
-            console.log(response.items[0].fields.text.content)
+            console.log("schedule content 1", response.items[0].fields)
+            console.log("schedule content 2", response.items[0].fields.text.content)
             const scheduleItems = response.items[0].fields.text.content;
             setScheduleContent([scheduleItems])
   
@@ -19,13 +19,19 @@ export default function Schedule() {
         }
     }
 
-    <button>BOOK / CONTACT</button>
+    
 
     useEffect(()=>{
         getScheduleContent()
     },[])
 
   return (
-    <div>Schedule</div>
+    <div
+        className='scheduleDiv'
+    >
+       
+        <div>schedule</div>
+        <button>BOOK / CONTACT</button>
+    </div>
   )
 }

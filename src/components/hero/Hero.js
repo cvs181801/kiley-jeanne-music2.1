@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { client } from '../../client';
 
+
 export default function Hero() {
     const [isHeroLoading, setIsHeroLoading] = useState(false);
     const [heroContent, setHeroContent] = useState({});
@@ -29,8 +30,24 @@ export default function Hero() {
         getHeroContent()
     },[])
 
+    useEffect(()=>{
+        console.log(heroContent)
+    },[heroContent])
+
   return (
-    <div>Hero</div>
+    
+    <div
+        className="contanerDiv"
+    >
+        
+        <div
+            className="topDiv"
+        >
+            <p>Welcome ♡</p>
+            <h1>{heroContent.title}</h1>
+            <p>{heroContent.tagline}</p>
+        </div>
+    </div>
   )
 }
 
