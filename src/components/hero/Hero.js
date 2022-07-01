@@ -9,7 +9,7 @@ export default function Hero() {
     const getHeroContent = async ()=> {
         try{
             const response = await client.getEntries({content_type:'hero'})
-            console.log(response.items[0].fields)
+   
             const title = response.items[0].fields.title;
             const image = response.items[0].fields.image.fields.file.url;
             const alt = response.items[0].fields.image.fields.description;
@@ -20,11 +20,11 @@ export default function Hero() {
                 alt: alt,
                 tagline: tagline
             })
-            console.log(title, image, tagline)
+    
   
         }
         catch(error){
-            console.log(error)
+            console.log(error) //need better err handling
         }
     }
 
@@ -32,9 +32,6 @@ export default function Hero() {
         getHeroContent()
     },[])
 
-    useEffect(()=>{
-        console.log("heroContent", heroContent)
-    },[heroContent])
 
   return (
     

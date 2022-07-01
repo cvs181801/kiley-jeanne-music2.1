@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { client } from '../../client';
+import './schedule.css'
 
 export default function Schedule() {
     const [isScheduleLoading, setIsScheduleLoading] = useState(false);
@@ -8,10 +9,14 @@ export default function Schedule() {
     const getScheduleContent = async ()=> {
         try{
             const response = await client.getEntries({content_type:'schedule'})
-            console.log("schedule content 1", response.items[0].fields)
-            console.log("schedule content 2", response.items[0].fields.text.content)
             const scheduleItems = response.items[0].fields.text.content;
-            setScheduleContent([scheduleItems])
+            const ID = response.items[0].fields.id;
+            console.log(response.items[0])
+            const massagedScheduleItems = [];
+            scheduleItems.forEach((item, index)=> {
+                massagedScheduleItems.push({id: ID++, text: scheduleItems[index].content[0].value})
+            })
+            setScheduleContent(massagedScheduleItems)
   
         }
         catch(error){
@@ -19,18 +24,28 @@ export default function Schedule() {
         }
     }
 
-    
-
     useEffect(()=>{
         getScheduleContent()
     },[])
+
+    useEffect(()=>{
+        console.log(" scheduleContent :", scheduleContent)
+    },[scheduleContent])
+
+
 
   return (
     <div
         className='scheduleDiv'
     >
        
-        <div>schedule</div>
+        {/* <div
+            className="containerDiv"
+        >
+            {scheduleContent.map(gig=> 
+            <p >{gig}</p>)}
+        </div>   */}
+
         <button>BOOK / CONTACT</button>
     </div>
   )
