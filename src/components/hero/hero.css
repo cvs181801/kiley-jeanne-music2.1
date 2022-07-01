@@ -26,23 +26,30 @@ h1 {
     margin: 0 auto;
     background: linear-gradient(180deg, #A4FCF1 0%, rgba(164, 252, 241, 0) 67.19%);
     border-top: 1px solid #A4FCF1;
-   
+
 }
 
 .imgDiv {
     width: 100vw;
-    height: 50em;
+    height: 17em;
     background-color: rgba(1, 98, 5, 0.83);
+    /*background-color: rgba(0, 49, 2, 0.83);
+    background-color: rgba(82, 245, 88, 0.83);
+    background-color: rgba(128, 239, 132, 0.83);*/
     background-blend-mode: screen;
-    background-position: 55% 35%; 
     background-size: cover;
     color: white;
+    background-repeat: no-repeat;
 }
 
 .imgDiv-p {
     position: relative;
-    top: 12em;
-    left: 55em;
+    top: 1.5em;
+    left: 23em;
+    width: 9em;
+    font-size: .5rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
 }
 
 .bottomDiv {
@@ -53,3 +60,43 @@ h1 {
 
 }
 
+@media (min-width: 600px) {
+
+    .imgDiv {
+        width: 100vw;
+        height: 22em;
+        background-blend-mode: screen;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .imgDiv-p {
+        position: relative;
+        top: 6em;
+        left: 43em;
+        width: 9em;
+        font-size: .8rem;
+    }
+    
+
+}
+
+@media (min-width: 1025px) {
+
+    .imgDiv {
+        width: 100vw;
+        height: 50em;
+        background-blend-mode: screen;
+        background-position: 55% 35%; 
+        background-size: cover;
+    }
+
+    .imgDiv-p {
+        position: relative;
+        top: 12em;
+        left: 55em;
+        width: 25em;
+        font-size: 1rem;
+    }
+
+}
