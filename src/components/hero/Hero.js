@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { client } from '../../client';
-
+import './hero.css'
 
 export default function Hero() {
     const [isHeroLoading, setIsHeroLoading] = useState(false);
@@ -31,13 +31,13 @@ export default function Hero() {
     },[])
 
     useEffect(()=>{
-        console.log(heroContent)
+        console.log("heroContent", heroContent)
     },[heroContent])
 
   return (
     
     <div
-        className="contanerDiv"
+        className="containerDiv"
     >
         
         <div
@@ -45,7 +45,24 @@ export default function Hero() {
         >
             <p>Welcome ♡</p>
             <h1>{heroContent.title}</h1>
+            
+        </div>
+        <div
+            className="imgDiv"
+            style={{
+                // width: "100vw",
+                // height: "50em",
+                // backgroundColor: "rgba(1, 98, 5, 0.83)",
+                backgroundImage: `url(${heroContent.image})`,
+                // backgroundBlendMode: "screen",
+                // backgroundPosition: "center top",
+                // color: "white"
+            }}
+        >
             <p>{heroContent.tagline}</p>
+        <div
+            className="bottomDiv"
+        ></div>
         </div>
     </div>
   )

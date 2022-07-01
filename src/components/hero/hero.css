@@ -1,9 +1,41 @@
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.containerDiv {
+    margin: 0 auto;
+    padding: 0;
+
+}
+
 .topDiv {
-    position: absolute;
-    width: 320px;
-    height: 71px;
-    left: 0px;
-    top: 0px;
-    
+    width: 100vw;
+    height: 5em;
+    margin: 0 auto;
     background: linear-gradient(180deg, #A4FCF1 0%, rgba(164, 252, 241, 0) 67.19%);
-    }
+    border-top: 1px solid #A4FCF1;
+   
+}
+
+.imgDiv {
+    width: 100vw;
+    height: 50em;
+    background-color: rgba(1, 98, 5, 0.83);
+    background-blend-mode: screen;
+    background-position: center top;
+    color: white;
+}
+
+.bottomDiv {
+    width: 100vw;
+    height: 3em;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%);
+}
+
