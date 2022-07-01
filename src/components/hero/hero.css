@@ -8,15 +8,21 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
 .containerDiv {
     margin: 0 auto;
     padding: 0;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .topDiv {
     width: 100vw;
-    height: 5em;
+    height: 7em;
     margin: 0 auto;
     background: linear-gradient(180deg, #A4FCF1 0%, rgba(164, 252, 241, 0) 67.19%);
     border-top: 1px solid #A4FCF1;
@@ -28,7 +34,8 @@ body {
     height: 50em;
     background-color: rgba(1, 98, 5, 0.83);
     background-blend-mode: screen;
-    background-position: center top;
+    background-position: 55% 35%; 
+    background-size: cover;
     color: white;
 }
 
@@ -37,5 +44,6 @@ body {
     height: 3em;
     margin: 0 auto;
     background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%);
+
 }
 

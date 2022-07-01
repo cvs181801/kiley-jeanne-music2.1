@@ -12,10 +12,12 @@ export default function Hero() {
             console.log(response.items[0].fields)
             const title = response.items[0].fields.title;
             const image = response.items[0].fields.image.fields.file.url;
+            const alt = response.items[0].fields.image.fields.description;
             const tagline = response.items[0].fields.tagline.content[0].content[0].value;
             setHeroContent({
                 title: title,
                 image: image,
+                alt: alt,
                 tagline: tagline
             })
             console.log(title, image, tagline)
@@ -49,21 +51,22 @@ export default function Hero() {
         </div>
         <div
             className="imgDiv"
-            style={{
-                // width: "100vw",
-                // height: "50em",
-                // backgroundColor: "rgba(1, 98, 5, 0.83)",
-                backgroundImage: `url(${heroContent.image})`,
-                // backgroundBlendMode: "screen",
-                // backgroundPosition: "center top",
-                // color: "white"
-            }}
-        >
-            <p>{heroContent.tagline}</p>
+                style={{
+                    // width: "100vw",
+                    // height: "50em",
+                    // backgroundColor: "rgba(1, 98, 5, 0.83)",
+                    backgroundImage: `url(${heroContent.image})`,
+                    // backgroundBlendMode: "screen",
+                    // backgroundPosition: "center top",
+                    // color: "white"
+                }}
+            >
+                <p>{heroContent.tagline}</p>
+        </div>
+        
         <div
             className="bottomDiv"
         ></div>
-        </div>
     </div>
   )
 }
