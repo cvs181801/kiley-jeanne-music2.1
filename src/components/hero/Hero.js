@@ -61,7 +61,9 @@ export default function Hero() {
                     // color: "white"
                 }}
             >
-                <p>{heroContent.tagline}</p>
+                <p
+                    className="imgDiv-p"
+                >{heroContent.tagline}</p>
         </div>
         
         <div

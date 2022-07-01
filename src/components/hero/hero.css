@@ -39,6 +39,12 @@ h1 {
     color: white;
 }
 
+.imgDiv-p {
+    position: relative;
+    top: 12em;
+    left: 55em;
+}
+
 .bottomDiv {
     width: 100vw;
     height: 3em;
