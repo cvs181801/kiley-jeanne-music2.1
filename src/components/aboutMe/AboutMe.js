@@ -8,7 +8,7 @@ export default function AboutMe() {
     const getAboutMeContent = async ()=> {
         try{
             const response = await client.getEntries({content_type:'aboutMe'})
-            console.log(response.items[0].fields)
+            //console.log(response.items[0].fields)
             const text = response.items[0].fields.text;
             const image = response.items[0].fields.image.fields.file.url;
 
@@ -17,7 +17,7 @@ export default function AboutMe() {
                 image: image
             })
 
-            console.log(text, image)
+            //console.log(text, image)
   
         }
         catch(error){
