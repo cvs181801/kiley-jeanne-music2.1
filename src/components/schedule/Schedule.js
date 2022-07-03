@@ -60,7 +60,9 @@ export default function Schedule() {
             <p key={gig.id}>{gig.text}</p>)}
         </div>   
 
-        <button>BOOK / CONTACT</button>
+        <button
+            className="bookBtn"
+        >BOOK / CONTACT</button>
     </div>
   )
 }

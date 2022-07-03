@@ -36,7 +36,7 @@ export default function AboutMe() {
     >
         <img 
             className="aboutMeImg"
-            src={aboutMeContent}
+            src={aboutMeContent.image}
         />
         <p>{aboutMeContent.text}</p>
     </div>
