@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { client } from '../../client';
+import './aboutMe.css'
 
 export default function AboutMe() {
     const [isAboutMeLoading, setIsAboutMeLoading] = useState(false);
@@ -11,10 +12,11 @@ export default function AboutMe() {
             //console.log(response.items[0].fields)
             const text = response.items[0].fields.text;
             const image = response.items[0].fields.image.fields.file.url;
+            console.log(text, image)
 
             setAboutMeContent({
                 text: text,
-                image: image
+                image: `https:${image}` //why is this showing as object, object? try to request all images / media from contentful at the needed size
             })
 
             //console.log(text, image)
@@ -29,6 +31,14 @@ export default function AboutMe() {
         getAboutMeContent()
     },[])
   return (
-    <div>About Me</div>
+    <div
+        className="containerDiv"
+    >
+        <img 
+            className="aboutMeImg"
+            src={aboutMeContent}
+        />
+        <p>{aboutMeContent.text}</p>
+    </div>
   )
 }

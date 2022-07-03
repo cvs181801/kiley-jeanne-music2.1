@@ -1,0 +1,10 @@
+.containerDiv {
+    margin: 0 auto;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0) 48.96%, rgba(164, 252, 241, 0.01) 57.29%, #A4FCF1 97.4%);
+}
+
+.aboutMeImg {
+    max-width: 100%;
+    height: auto;
+}
