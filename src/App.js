@@ -1,3 +1,4 @@
+import NavBar from './components/navBar/NavBar'
 import Hero from './components/hero/Hero'
 import Schedule from './components/schedule/Schedule';
 import Listen from './components/listen/Listen'
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <NavBar/>
         <Hero/>
         <Schedule/>
         <ContactForm/>
@@ -26,4 +28,4 @@ function App() {
 
 export default App;
 
-//small change small change 
+

@@ -35,14 +35,18 @@ export default function AboutMe() {
         className="containerDiv"
 
     >
-        <p>
-            <div
-                className="aboutMeImg"
-                style={{
-                    backgroundImage: `url(${aboutMeContent.image})`
-                }}
-            ></div>
-        {aboutMeContent.text}</p>
+        <section
+            id="aboutmeSection"
+        >
+            <p>
+                <div
+                    className="aboutMeImg"
+                    style={{
+                        backgroundImage: `url(${aboutMeContent.image})`
+                    }}
+                ></div>
+            {aboutMeContent.text}</p>
+        </section>
     </div>
   )
 }

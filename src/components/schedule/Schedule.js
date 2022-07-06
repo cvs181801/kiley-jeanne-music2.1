@@ -72,17 +72,21 @@ export default function Schedule() {
     <div
         className='scheduleDiv'
     >
-       
-        <div
-            className="containerDiv"
-        >
-            {scheduleContent.map(gig=> 
-            <p key={gig.id}>{gig.text}</p>)} Schedule
-        </div>   
+       <section
+        id="scheduleSection"
+       >
+            <div
+                className="containerDiv"
+            >
+                {scheduleContent.map(gig=> 
+                <p key={gig.id}>{gig.text}</p>)} Schedule
+            </div>   
 
-        <button
-            className="bookBtn"
-        >BOOK / CONTACT</button>
+                <button
+                    className="bookBtn"
+                >BOOK / CONTACT
+                </button>
+        </section>
     </div>
   )
 }
