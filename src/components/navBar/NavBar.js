@@ -17,36 +17,39 @@ export default function NavBar() {
     }
 
   return (
-    <div
-        className="navContainer"
-    >
+    <div>
         <div
-            className="hamburger"
+            className="navContainer"
         >
-            <div className="hamburger-innerdiv"></div>
-            <div className="hamburger-innerdiv"></div>
-            <div className="hamburger-innerdiv"></div>
-        </div>
+            <div
+                className="hamburger"
+            >
+                <div className="hamburger-innerdiv"></div>
+                <div className="hamburger-innerdiv"></div>
+                <div className="hamburger-innerdiv"></div>
+            </div>
 
-        <nav>
-              <ul 
-                className="navUl"
-              >
-                    <li className="navLi"><a className="navLiAnchor" href="#aboutmeSection" >about me</a></li>
-                    <li className="navLi"><a className="navLiAnchor" href="#scheduleSection" >schedule</a></li>
-                    <li className="navLi"><a className="navLiAnchor" href="#listenSection" >listen</a></li>
-                    <li className="navLi"><a className="navLiAnchor" href="#gallerySection" >gallery</a></li>
-                    <li className="navLi"><a className="navLiAnchor" href="#followSection" >follow</a></li>
-              </ul>
-                <button
-                    onClick={handleClick}
+            <nav>
+                <ul 
+                    className="navUl"
                 >
-                    BOOK/CONTACT
-                </button>
-        </nav>
-            
-        <ContactForm state={formClass}/>
-    
+                        <li className="navLi"><a className="navLiAnchor" href="#aboutmeSection" >about me</a></li>
+                        <li className="navLi"><a className="navLiAnchor" href="#scheduleSection" >schedule</a></li>
+                        <li className="navLi"><a className="navLiAnchor" href="#listenSection" >listen</a></li>
+                        <li className="navLi"><a className="navLiAnchor" href="#gallerySection" >gallery</a></li>
+                        <li className="navLi"><a className="navLiAnchor" href="#followSection" >follow</a></li>
+                </ul>
+                    <button
+                        onClick={handleClick}
+                    >
+                        BOOK/ <br/>
+                        CONTACT
+                    </button>
+            </nav>
+                
+            <ContactForm state={formClass}/>
+        
+        </div>
     </div>
   )
 }
