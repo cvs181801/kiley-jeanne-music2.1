@@ -11,25 +11,40 @@ export default function Schedule() {
             const response = await client.getEntries({content_type:'schedule'})
             const scheduleItems = response.items[0].fields.text.content;
             let ID = response.items[0].fields.id;
-            
-            //console.log(response.items[0])
+            let massagedScheduleItems = [];
             const content = response.items[0].fields.text.content; 
+            console.log("content :", content)
+            let itemObj = {};
             //if nodeType ===text, return a string, if nodeType ===hyperlink, return the string with hyperlinked url
-            content.forEach((item, index)=>{
-                //console.log("item.content :", item.content[index])
-                if (item.content[index].nodeType === "text") {
-                    console.log("string only :", item.content[index].value)
-                    //return item.content[index].value
-                } else if (item.content[index].nodeType === "hyperlink") {
-                    console.log("uri :", item.content[index].data.uri, "string :", item.content[index].content[0].value)
-                    //return 
+            for (let i=0; i < content.length; i++) {
+                const innerContent = content[i].content
+                console.log("innercontent :", innerContent)
+                for(let j=0; j < innerContent.length; j++){
+                    if (innerContent[j].nodeType === "text") {
+                        //console.log("string only :", innerContent[j].value)
+                        const stringObj = {text: innerContent[j].value}
+                        console.log(stringObj)
+                        Object.assign(itemObj, stringObj)
+                        //return stringObj
+                    } else if (innerContent[j].nodeType === "hyperlink") {
+                        //console.log("uri :", innerContent[j].data.uri, "string :", innerContent[j].content[0].value)
+                        const hyperlinkObj = {uri: innerContent[j].data.uri, text: innerContent[j].content[0].value} 
+                        //console.log(hyperlinkObj)
+                        Object.assign(itemObj, hyperlinkObj)
+                        //return hyperlinkObj
+                    }
                 }
-            })
-            const massagedScheduleItems = [];
+                    //const newObj = Object.assign(stringObj, hyperlinkObj)
+                    console.log(itemObj)
+            
+            }
+            
+            
+            
             scheduleItems.forEach((item, index)=> {
                 massagedScheduleItems.push({id: ID++, text: scheduleItems[index].content[0].value})
             })
-            console.log(massagedScheduleItems)
+            //console.log(massagedScheduleItems)
             setScheduleContent(massagedScheduleItems)
   
         }
@@ -43,7 +58,7 @@ export default function Schedule() {
     },[])
 
     useEffect(()=>{
-        console.log(" scheduleContent :", scheduleContent)
+        //console.log(" scheduleContent :", scheduleContent)
     },[scheduleContent])
 
 
