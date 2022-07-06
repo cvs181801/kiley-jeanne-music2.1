@@ -25,6 +25,35 @@
     
 }
 
+nav {
+    position: absolute;
+    width: 6.5em;
+    height: 35em;
+    left: 229px;
+    top: 109px;
+    background: #FFFFFF;
+    border: 1px solid #016205;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.navLi {
+    position: relative;
+    left: -35px;
+    background: rgba(1, 98, 5, 0.13);
+    border: 1px solid #016205;
+    border-radius: 7px;
+    width: 5.5em;
+    padding: .2em;
+    margin: 1.5em auto 1.5em auto;
+    text-transform: uppercase;
+}
+
 .navUl {
     list-style-type: none;
 }

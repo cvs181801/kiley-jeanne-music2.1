@@ -31,19 +31,20 @@ export default function NavBar() {
         <nav>
               <ul 
                 className="navUl"
-                //style={{border: `1px solid green`,}}
               >
-                <li className="navLi"><a className="navLiAnchor" href="#aboutmeSection" >about me</a></li>
-                <li className="navLi"><a className="navLiAnchor" href="#scheduleSection" >schedule</a></li>
-                <li className="navLi"><a className="navLiAnchor" href="#listenSection" >listen</a></li>
-                <li className="navLi"><a className="navLiAnchor" href="#gallerySection" >gallery</a></li>
-                <li className="navLi"><a className="navLiAnchor" href="#followSection" >follow</a></li>
+                    <li className="navLi"><a className="navLiAnchor" href="#aboutmeSection" >about me</a></li>
+                    <li className="navLi"><a className="navLiAnchor" href="#scheduleSection" >schedule</a></li>
+                    <li className="navLi"><a className="navLiAnchor" href="#listenSection" >listen</a></li>
+                    <li className="navLi"><a className="navLiAnchor" href="#gallerySection" >gallery</a></li>
+                    <li className="navLi"><a className="navLiAnchor" href="#followSection" >follow</a></li>
               </ul>
+                <button
+                    onClick={handleClick}
+                >
+                    BOOK/CONTACT
+                </button>
         </nav>
-            <button
-                onClick={handleClick}
-            >BOOK/CONTACT
-            </button>
+            
         <ContactForm state={formClass}/>
     
     </div>
