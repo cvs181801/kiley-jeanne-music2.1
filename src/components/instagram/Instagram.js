@@ -1,8 +1,11 @@
 import React from 'react'
+import './instagram.css'
 
 export default function Instagram() {
   return (
-    <div>
+    <div
+      className="containerDiv"
+    >
       <section
         id="gallerySection"
       >

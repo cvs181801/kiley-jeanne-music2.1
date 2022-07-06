@@ -1,10 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import { client } from '../../client';
 import './schedule.css'
+//import '../contactForm/contactForm.css'
+import ContactForm from '../contactForm/ContactForm';
 
 export default function Schedule() {
     const [isScheduleLoading, setIsScheduleLoading] = useState(false);
     const [scheduleContent, setScheduleContent] = useState([]);
+    const [formBool, setFormBool] = useState(false)
+    const [formClass, setFormClass] = useState("none")
 
     const getScheduleContent = async ()=> {
         try{
@@ -66,6 +70,14 @@ export default function Schedule() {
         //console.log(" scheduleContent :", scheduleContent)
     },[scheduleContent])
 
+    const handleClick = ()=> {
+        setFormBool(prevFromBool=> !prevFromBool)
+        if (formBool) {
+            setFormClass("inline-block")
+        } else {
+            setFormClass("none")
+        } 
+    }
 
 
   return (
@@ -84,8 +96,12 @@ export default function Schedule() {
 
                 <button
                     className="bookBtn"
+                    onClick={handleClick}
                 >BOOK / CONTACT
                 </button>
+                
+                <ContactForm state={formClass}/>
+
         </section>
     </div>
   )

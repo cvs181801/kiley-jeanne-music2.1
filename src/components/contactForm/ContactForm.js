@@ -1,14 +1,19 @@
 import React from 'react'
+import './contactForm.css'
 
-export default function ContactForm() {
+export default function ContactForm(props) {
 
   const handleSubmit = (event)=> { 
     event.preventDefault();
 }
   return (
-    <>
+    <div
+        className="modalContainer"
+        style={{display: `${props.state}`}}
+    >
         <h2>Let's Connect!</h2>
         <form
+            className="form"
             name="contact v1"
             method="post"
             onSubmit="submit"
@@ -33,7 +38,7 @@ export default function ContactForm() {
             
             <button type="submit">Say it!</button>
         </form>
-    </>
+    </div>
   )
   
 }
