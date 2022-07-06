@@ -77,7 +77,7 @@ export default function Schedule() {
             className="containerDiv"
         >
             {scheduleContent.map(gig=> 
-            <p key={gig.id}>{gig.text}</p>)}
+            <p key={gig.id}>{gig.text}</p>)} Schedule
         </div>   
 
         <button
