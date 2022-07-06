@@ -1,8 +1,16 @@
+.navContainer {
+    position: absolute;
+  
+    height: 80vh;
+    top: 1em;
+    left: 18em;
+}
+
 
 .hamburger {
-    position: absolute;
-    top: 1em;
-    left: 25em;
+    position: relative;
+    /* top: 1em;
+    left: 25em; */
     height: 4em;
     width: 4em;
     background: #FFFFFF;
@@ -26,17 +34,17 @@
 }
 
 nav {
-    position: absolute;
+    position: relative;
     width: 6.5em;
     height: 35em;
-    left: 229px;
-    top: 109px;
+    /* left: 20em;
+    top: 109px; */
     background: #FFFFFF;
     border: 1px solid #016205;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 1em auto 0 auto;
     justify-content: center;
     text-align: center;
     font-size: .8rem;
