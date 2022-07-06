@@ -3,7 +3,7 @@ import { client } from '../../client';
 import './hero.css'
 
 export default function Hero() {
-    const [isHeroLoading, setIsHeroLoading] = useState(false);
+    const [isHeroLoading, setIsHeroLoading] = useState(false); //create a loading image/graphic for when contents are loading
     const [heroContent, setHeroContent] = useState({});
 
     const getHeroContent = async ()=> {
@@ -49,13 +49,7 @@ export default function Hero() {
         <div
             className="imgDiv"
                 style={{
-                    // width: "100vw",
-                    // height: "50em",
-                    // backgroundColor: "rgba(1, 98, 5, 0.83)",
                     backgroundImage: `url(${heroContent.image})`,
-                    // backgroundBlendMode: "screen",
-                    // backgroundPosition: "center top",
-                    // color: "white"
                 }}
             >
                 <p

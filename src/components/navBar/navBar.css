@@ -42,7 +42,7 @@ nav {
     border-radius: 7px;
     display: flex;
     flex-direction: column;
-    margin: 1em auto 0 auto;
+    margin: 2.5em auto 0 auto;
     justify-content: center;
     text-align: center;
     font-size: .8rem;
@@ -55,6 +55,7 @@ nav {
     border: 1px solid #016205;
     border-radius: 7px;
     width: 6em;
+    height: 3em;
     padding: .2em;
     margin: 1.5em auto 1.5em auto;
     text-transform: uppercase;

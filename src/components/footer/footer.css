@@ -1,0 +1,12 @@
+.footerContainer {
+    width: 100vw;
+    height: 20em;
+   
+    
+    background-color: linear-gradient(to bottom, rgba(248, 251, 248, 0.83), rgba(1, 98, 5, 0.83)); 
+    /*background-color:rgba(212, 253, 212, 0.595);
+     background: linear-gradient(180deg, #FFFFFF 40.63%, rgba(1, 98, 5, 0.44) 99.48%);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+}

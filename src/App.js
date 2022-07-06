@@ -16,8 +16,8 @@ function App() {
         <Hero/>
         <Schedule/>
         <ContactForm/>
-        <Listen/>
         <AboutMe/>
+        <Listen/>
         <Youtube/>
         <Instagram/>
         <Footer/>
