@@ -14,7 +14,8 @@ export default function Schedule() {
             let massagedScheduleItems = [];
             const content = response.items[0].fields.text.content; 
             console.log("content :", content)
-            let itemObj = {};
+            let itemObj;
+            
             //if nodeType ===text, return a string, if nodeType ===hyperlink, return the string with hyperlinked url
             for (let i=0; i < content.length; i++) {
                 const innerContent = content[i].content
@@ -24,28 +25,32 @@ export default function Schedule() {
                         //console.log("string only :", innerContent[j].value)
                         const stringObj = {text: innerContent[j].value}
                         console.log(stringObj)
-                        Object.assign(itemObj, stringObj)
+                        let itemObj = Object.assign({}, stringObj)
                         //return stringObj
+                        //massagedScheduleItems.push(stringObj)
                     } else if (innerContent[j].nodeType === "hyperlink") {
                         //console.log("uri :", innerContent[j].data.uri, "string :", innerContent[j].content[0].value)
                         const hyperlinkObj = {uri: innerContent[j].data.uri, text: innerContent[j].content[0].value} 
                         //console.log(hyperlinkObj)
-                        Object.assign(itemObj, hyperlinkObj)
+                        //Object.assign(itemObj, hyperlinkObj)
                         //return hyperlinkObj
+                        //massagedScheduleItems.push(hyperlinkObj)
+                        let itemObj = Object.assign({}, hyperlinkObj)
                     }
+                    console.log(itemObj)
+
                 }
                     //const newObj = Object.assign(stringObj, hyperlinkObj)
-                    console.log(itemObj)
-            
+                    
+                    
             }
-            
-            
-            
-            scheduleItems.forEach((item, index)=> {
-                massagedScheduleItems.push({id: ID++, text: scheduleItems[index].content[0].value})
-            })
-            //console.log(massagedScheduleItems)
-            setScheduleContent(massagedScheduleItems)
+            console.log(massagedScheduleItems)
+
+            // scheduleItems.forEach((item, index)=> {
+            //     massagedScheduleItems.push({id: ID++, text: scheduleItems[index].content[0].value})
+            // })
+            // //console.log(massagedScheduleItems)
+            // setScheduleContent(massagedScheduleItems)
   
         }
         catch(error){

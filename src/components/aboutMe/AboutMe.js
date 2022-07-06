@@ -16,7 +16,7 @@ export default function AboutMe() {
 
             setAboutMeContent({
                 text: text,
-                image: `https:${image}` //why is this showing as object, object? try to request all images / media from contentful at the needed size
+                image: `https:${image}` //try to request all images / media from contentful at the needed size
             })
 
             //console.log(text, image)
@@ -33,12 +33,16 @@ export default function AboutMe() {
   return (
     <div
         className="containerDiv"
+
     >
-        <img 
-            className="aboutMeImg"
-            src={aboutMeContent.image}
-        />
-        <p>{aboutMeContent.text}</p>
+        <p>
+            <div
+                className="aboutMeImg"
+                style={{
+                    backgroundImage: `url(${aboutMeContent.image})`
+                }}
+            ></div>
+        {aboutMeContent.text}</p>
     </div>
   )
 }
