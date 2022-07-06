@@ -14,47 +14,69 @@ export default function Schedule() {
         try{
             const response = await client.getEntries({content_type:'schedule'})
             const scheduleItems = response.items[0].fields.text.content;
+            console.log('schedule items :', scheduleItems)
             let ID = response.items[0].fields.id;
             let massagedScheduleItems = [];
-            const content = response.items[0].fields.text.content; 
-            console.log("content :", content)
-            let itemObj;
+           
+            //console.log("content :", content)
+            //let itemObj={};
+            //let itemArr = [];
             
-            //if nodeType ===text, return a string, if nodeType ===hyperlink, return the string with hyperlinked url
-            for (let i=0; i < content.length; i++) {
-                const innerContent = content[i].content
-                console.log("innercontent :", innerContent)
-                for(let j=0; j < innerContent.length; j++){
-                    if (innerContent[j].nodeType === "text") {
+            // for (let i=0; i < content.length; i++) {
+            //     const innerContent = content[i].content
+            //     console.log("innercontent :", innerContent)
+            //     for(let j=0; j < innerContent.length; j++){
+            //         if (innerContent[j].nodeType === "text") {
                         //console.log("string only :", innerContent[j].value)
-                        const stringObj = {text: innerContent[j].value}
-                        console.log(stringObj)
-                        let itemObj = Object.assign({}, stringObj)
+                        //const stringObj = {text: innerContent[j].value}
+                        //itemArr.push(innerContent[j].value)
+                        //console.log(stringObj)
+                        //let itemObj = Object.assign({}, stringObj)
+                        //console.log( 'itemObj :', itemObj)
                         //return stringObj
                         //massagedScheduleItems.push(stringObj)
-                    } else if (innerContent[j].nodeType === "hyperlink") {
+                    //} else if (innerContent[j].nodeType === "hyperlink") {
                         //console.log("uri :", innerContent[j].data.uri, "string :", innerContent[j].content[0].value)
-                        const hyperlinkObj = {uri: innerContent[j].data.uri, text: innerContent[j].content[0].value} 
+                        //const hyperlinkObj = {uri: innerContent[j].data.uri, text: innerContent[j].content[0].value} 
                         //console.log(hyperlinkObj)
                         //Object.assign(itemObj, hyperlinkObj)
                         //return hyperlinkObj
                         //massagedScheduleItems.push(hyperlinkObj)
-                        let itemObj = Object.assign({}, hyperlinkObj)
-                    }
-                    console.log(itemObj)
-
-                }
-                    //const newObj = Object.assign(stringObj, hyperlinkObj)
+                        //let itemObj = Object.assign({}, hyperlinkObj)
+                        //console.log( 'itemObj :', itemObj)
+                        //itemArr.push(innerContent[j].data.uri, innerContent[j].content[0].value)
+                    //}
                     
-                    
-            }
-            console.log(massagedScheduleItems)
-
+                    //let itemObj = Object.assign({id: ID++}, )
+                    //console.log(stringObj, hyperlinkObj)
+                    //console.log(itemArr)
+                //}
+                    //const newObj = Object.assign(stringObj, hyperlinkObj)                  
+            //}
+            
+            //*** */
             // scheduleItems.forEach((item, index)=> {
-            //     massagedScheduleItems.push({id: ID++, text: scheduleItems[index].content[0].value})
+            //     const result = item.content[index].reduce((prevValue, currentValue)=> {
+            //         Object.assign(prevValue, currentValue)
+            //     })
+            //     console.log(result)
             // })
-            // //console.log(massagedScheduleItems)
-            // setScheduleContent(massagedScheduleItems)
+
+            //*** */
+
+            //const combinedObj = [scheduleItems.reduce((obj,nextObj) => Object.assign(obj, nextObj), {})]
+            //console.log(combinedObj)
+
+            // const arr = [{ a: 1, b: 2 }, { c: 1, d: 2 }, { e: 14, f: 20 }];
+
+            // const result  = [arr.reduce((r, o) => Object.assign(r, o), {})];
+            // console.log(result)
+            
+            massagedScheduleItems = scheduleItems.map((item, index)=> {
+                return {id: ID++, text: item.content[0].value}
+            })
+            setScheduleContent(massagedScheduleItems)
+            //console.log(massagedScheduleItems)
   
         }
         catch(error){
@@ -79,7 +101,6 @@ export default function Schedule() {
         } 
     }
 
-
   return (
     <div
         className='scheduleDiv'
@@ -91,7 +112,7 @@ export default function Schedule() {
                 className="containerDiv"
             >
                 {scheduleContent.map(gig=> 
-                <p key={gig.id}>{gig.text}</p>)} Schedule
+                <p key={gig.id}>{gig.text}</p>)}
             </div>   
 
                 <button
