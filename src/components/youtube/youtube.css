@@ -1,5 +1,15 @@
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .youtubeiframe {
     height: 20em;
-    width: 30em;
+    width: 100vw;
     padding: .7em;
 }

@@ -1,3 +1,13 @@
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .navContainer {
     position: absolute;
   
@@ -9,8 +19,6 @@
 
 .hamburger {
     position: relative;
-    /* top: 1em;
-    left: 25em; */
     height: 4em;
     width: 4em;
     background: #FFFFFF;
@@ -55,7 +63,7 @@ nav {
     border: 1px solid #016205;
     border-radius: 7px;
     width: 6em;
-    height: 3em;
+    height: 3.7em;
     padding: .2em;
     margin: 1.5em auto 1.5em auto;
     text-transform: uppercase;

@@ -1,3 +1,20 @@
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* .containerDiv {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} */
+
 .bookBtn {
     background: #FFFFFF;
     border: 3px solid #472B01;
@@ -9,4 +26,6 @@
     text-align: center;
     letter-spacing: 0.2em;
     color: #000000;
+    width: 10em;
+    
 }
