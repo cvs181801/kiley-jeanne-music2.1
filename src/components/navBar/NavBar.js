@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import ContactForm from '../contactForm/ContactForm'
+import './navBar.css'
 
 export default function NavBar() {
 
@@ -16,17 +17,27 @@ export default function NavBar() {
     }
 
   return (
-    <div>
+    <div
+        className="navContainer"
+    >
+        <div
+            className="hamburger"
+        >
+            <div className="hamburger-innerdiv"></div>
+            <div className="hamburger-innerdiv"></div>
+            <div className="hamburger-innerdiv"></div>
+        </div>
+
         <nav>
               <ul 
                 className="navUl"
                 //style={{border: `1px solid green`,}}
               >
-                <li className="navLi"><a className="navLiAnchor" href="#aboutmeSection" style={{flexWrap: `wrap`}}>about me</a></li>
-                <li className="navLi"><a className="navLiAnchor" href="#scheduleSection" style={{flexWrap: `wrap`}}>schedule</a></li>
-                <li className="navLi"><a className="navLiAnchor" href="#listenSection" style={{ flexWrap: `wrap`}}>listen</a></li>
-                <li className="navLi"><a className="navLiAnchor" href="#gallerySection" style={{ flexWrap: `wrap`}}>gallery</a></li>
-                <li className="navLi"><a className="navLiAnchor" href="#followSection" style={{ flexWrap: `wrap`}}>follow</a></li>
+                <li className="navLi"><a className="navLiAnchor" href="#aboutmeSection" >about me</a></li>
+                <li className="navLi"><a className="navLiAnchor" href="#scheduleSection" >schedule</a></li>
+                <li className="navLi"><a className="navLiAnchor" href="#listenSection" >listen</a></li>
+                <li className="navLi"><a className="navLiAnchor" href="#gallerySection" >gallery</a></li>
+                <li className="navLi"><a className="navLiAnchor" href="#followSection" >follow</a></li>
               </ul>
         </nav>
             <button
