@@ -18,3 +18,8 @@ body {
     background-repeat: no-repeat;
     background-blend-mode: screen;
 }
+
+.footerContainer p {
+    text-align: end;
+    color: white;
+}
