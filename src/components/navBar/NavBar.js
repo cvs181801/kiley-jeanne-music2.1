@@ -7,6 +7,8 @@ export default function NavBar() {
     const [formBool, setFormBool] = useState(false)
     const [formClass, setFormClass] = useState("none")
     const [parentComponent, setParentComponent] = useState("navBar")
+    const [showNav, setShowNav] = useState(false)
+    const [navBool, setNavBool] = useState(false)
 
     const handleClick = (event)=> {
         event.preventDefault();
@@ -22,6 +24,17 @@ export default function NavBar() {
         }
     }
 
+    const handleHamburgerClick = (event)=> {
+        event.preventDefault();
+        console.log("hamburger clikced")
+        if (showNav) {
+            setNavBool(false)
+            } else {
+            setNavBool(true)
+        }
+        
+    }
+
   return (
     <div>
         <div
@@ -29,13 +42,16 @@ export default function NavBar() {
         >
             <div
                 className="hamburger"
+                onClick={handleHamburgerClick}
             >
                 <div className="hamburger-innerdiv"></div>
                 <div className="hamburger-innerdiv"></div>
                 <div className="hamburger-innerdiv"></div>
             </div>
 
-            <nav>
+            <nav
+                className={navBool ? "navBar" : "hideNav"}
+            >
                 <ul 
                     className="navUl"
                 >
@@ -46,14 +62,17 @@ export default function NavBar() {
                         <li className="navLi"><a className="navLiAnchor" href="#followSection" >follow</a></li>
                 </ul>
                     <button
-                        className={formBool ? "closeBtn" : "bookBtn"}
+                        //className={formBool ? "closeBtn" : "bookBtn"}
+                        className='bookBtn'
                         onClick={handleClick}
                         
                     >
                         {formBool ? "X" : "BOOK / CONTACT"} 
                         
                     </button>
+                    
             </nav>
+            
                 
             <ContactForm 
                 state={formClass} 

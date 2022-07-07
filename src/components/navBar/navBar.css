@@ -10,7 +10,6 @@ body {
 
 .navContainer {
     position: absolute;
-  
     height: 80vh;
     top: 1em;
     left: 18em;
@@ -40,8 +39,10 @@ body {
     border-radius: 4px; 
 }
 
-nav {
-    position: absolute;
+.navBar {
+    display: block;
+    visibility: visible;
+    position: relative;
     width: 7em;
     height: 35em;
     background: #FFFFFF;
@@ -53,6 +54,11 @@ nav {
     justify-content: center;
     text-align: center;
     font-size: .8rem;
+}
+
+.hideNav {
+    display: none;
+    visibility: hidden;
 }
 
 .navLi {
@@ -82,7 +88,6 @@ nav {
     color: #472B01;
     font-family: inherit;
     border: 1px solid #016205;
-    border: 2px solid blue;
     border-radius: 7px;
     width: 6em;
     height: 3.7em;
@@ -92,13 +97,22 @@ nav {
 }
 
 .closeBtn {
-    position: relative;
-    top: 2em;
-    left: -22em; 
+    /* position: absolute;
+    top: 1em;
+    left: -2em;  
     padding: .3em;
     background: rgba(1, 98, 5, 0.13);
-    border: 1px solid #016205;
-    border: 2px solid red;
+    border: 1px solid #016205; 
     border-radius: 7px;
     z-index: 2;
+    font-family: inherit; */
+    color: #472B01;
+    font-family: inherit;
+    border: 1px solid #016205;
+    border-radius: 7px;
+    width: 6em;
+    height: 3.7em;
+    padding: .2em;
+    margin: 1.5em auto 1.5em auto;
+    background: rgba(1, 98, 5, 0.13);
 }
