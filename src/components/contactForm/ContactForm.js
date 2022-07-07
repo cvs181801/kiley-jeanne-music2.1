@@ -10,7 +10,7 @@ export default function ContactForm(props) {
 }
   return (
     <div
-        className="modalContainer"
+        className="modalContainer" //add logic so the class name changes based on parent component
         style={{display: `${props.state}`}}
     >
         <h2>Let's Connect!</h2>

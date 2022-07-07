@@ -6,14 +6,21 @@ export default function NavBar() {
 
     const [formBool, setFormBool] = useState(false)
     const [formClass, setFormClass] = useState("none")
+    const [parentComponent, setParentComponent] = useState("navBar")
 
-    const handleClick = ()=> {
-        setFormBool(prevFormBool=> !prevFormBool)
+    const handleClick = (event)=> {
+        event.preventDefault();
         if (formBool) {
-            setFormClass("inline-block")
-        } else {
+            console.log('formbooltrue , set to false' )
+            setFormBool(false)
             setFormClass("none")
-        } 
+            
+            } else {
+            console.log('formboolfalse, set to true')
+            setFormBool(true)
+            setFormClass("inline-block")
+            setParentComponent("navBar")
+        }
     }
 
   return (
@@ -40,14 +47,16 @@ export default function NavBar() {
                         <li className="navLi"><a className="navLiAnchor" href="#followSection" >follow</a></li>
                 </ul>
                     <button
+                        className={formBool ? "closeBtn" : "bookBtn"}
                         onClick={handleClick}
+                        
                     >
-                        BOOK/ <br/>
-                        CONTACT
+                        {formBool ? "X" : "BOOK / CONTACT"} 
+                        
                     </button>
             </nav>
                 
-            <ContactForm state={formClass}/>
+            <ContactForm state={formClass} parent={parentComponent}/>
         
         </div>
     </div>

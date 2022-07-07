@@ -80,7 +80,8 @@ nav {
     
 }
 
-button {
+
+.bookBtn {
     color: #472B01;
     font-family: inherit;
     border-radius: 7px;
@@ -89,5 +90,15 @@ button {
     margin: 1.5em auto 1.5em auto;
     background: rgba(1, 98, 5, 0.13);
     border: 1px solid #016205;
-    
+}
+
+.closeBtn {
+    position: absolute;
+    top: 2em;
+    left: 21em;  
+    padding: .3em;
+    background: rgba(1, 98, 5, 0.13);
+    border: 1px solid #016205;
+    border-radius: 7px;
+    z-index: 2;
 }

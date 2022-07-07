@@ -9,6 +9,7 @@ export default function Schedule() {
     const [scheduleContent, setScheduleContent] = useState([]);
     const [formBool, setFormBool] = useState(false)
     const [formClass, setFormClass] = useState("none")
+    const [parentComponent, setParentComponent] = useState("schedule")
 
     const getScheduleContent = async ()=> {
         try{
@@ -89,16 +90,20 @@ export default function Schedule() {
     },[])
 
     useEffect(()=>{
-        //console.log(" scheduleContent :", scheduleContent)
     },[scheduleContent])
 
-    const handleClick = ()=> {
-        setFormBool(prevFormBool=> !prevFormBool )
+    const handleClick = (event)=> {
+        event.preventDefault();
         if (formBool) {
-            setFormClass("inline-block")
-        } else {
+            console.log('formbooltrue , set to false' )
+            setFormBool(false)
             setFormClass("none")
-        } 
+            } else {
+            console.log('formboolfalse, set to true')
+            setFormBool(true)
+            setFormClass("inline-block")
+            setParentComponent("schedule")
+        }
     }
 
   return (
@@ -116,15 +121,15 @@ export default function Schedule() {
             </div>   
 
                 <button
-                    //className={formBool ? "closeBtn" : "bookBtn"}
+                    className={formBool ? "closeBtn" : "bookBtn"}
                     onClick={handleClick}
                     
                 >
-                    {/* {formBool ? "X" : "BOOK / CONTACT"} */}
-                    BOOK / CONTACT
+                    {formBool ? "X" : "BOOK / CONTACT"} 
+                    
                 </button>
                 
-                <ContactForm state={formClass}/>
+                <ContactForm state={formClass} parent={parentComponent}/>
 
         </section>
     </div>

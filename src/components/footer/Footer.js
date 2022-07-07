@@ -9,12 +9,8 @@ export default function Footer() {
   const getFooterContent = async ()=> {
     try{
         const response = await client.getEntries({content_type:'footer'})
-        console.log()
-        // const title = response.items[0].fields.title;
         const image = response.items[0].fields.footerImage.fields.file.url;
         const alt = response.items[0].fields.footerImage.fields.title;
-        console.log(image, alt)
-        // const tagline = response.items[0].fields.tagline.content[0].content[0].value;
         setFooterContent({
             image: `https:${image}`,
             alt: alt
