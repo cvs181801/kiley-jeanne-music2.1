@@ -3,6 +3,8 @@ import './contactForm.css'
 
 export default function ContactForm(props) {
 
+    console.log(props)
+
   const handleSubmit = (event)=> { 
     event.preventDefault();
 }

@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import { client } from '../../client';
 import './schedule.css'
-//import '../contactForm/contactForm.css'
 import ContactForm from '../contactForm/ContactForm';
+import ContactFormClose from '../contactFormClose/ContactFormClose';
 
 export default function Schedule() {
     const [isScheduleLoading, setIsScheduleLoading] = useState(false);
@@ -93,7 +93,7 @@ export default function Schedule() {
     },[scheduleContent])
 
     const handleClick = ()=> {
-        setFormBool(prevFromBool=> !prevFromBool)
+        setFormBool(prevFormBool=> !prevFormBool )
         if (formBool) {
             setFormClass("inline-block")
         } else {
@@ -116,9 +116,12 @@ export default function Schedule() {
             </div>   
 
                 <button
-                    className="bookBtn"
+                    //className={formBool ? "closeBtn" : "bookBtn"}
                     onClick={handleClick}
-                >BOOK / CONTACT
+                    
+                >
+                    {/* {formBool ? "X" : "BOOK / CONTACT"} */}
+                    BOOK / CONTACT
                 </button>
                 
                 <ContactForm state={formClass}/>

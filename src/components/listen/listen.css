@@ -7,3 +7,15 @@ body {
 * {
     box-sizing: border-box;
 }
+
+.listenContainer {
+    width: 100vw;
+    height: 30em;
+    margin-top: 2em;
+    background-color:rgba(71, 43, 1, 0.71);
+    background-size: cover;
+    /*object-fit: scale-down;*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}

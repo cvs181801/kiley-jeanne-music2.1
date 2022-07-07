@@ -8,7 +8,7 @@ export default function NavBar() {
     const [formClass, setFormClass] = useState("none")
 
     const handleClick = ()=> {
-        setFormBool(prevFromBool=> !prevFromBool)
+        setFormBool(prevFormBool=> !prevFormBool)
         if (formBool) {
             setFormClass("inline-block")
         } else {

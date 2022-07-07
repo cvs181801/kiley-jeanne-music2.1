@@ -8,13 +8,14 @@ body {
     box-sizing: border-box;
 }
 
-.modalContainer {
+.modalCloseBtn {
     position: absolute;
     top: 2em;
-    left: 1em;
+    left: 21em;
     padding: .3em;
     display: none;
-    background: white;
+    background: rgba(1, 98, 5, 0.13);
     border: 1px solid #016205;
     border-radius: 7px;
+    z-index: 2;
 }
