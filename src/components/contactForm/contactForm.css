@@ -8,10 +8,21 @@ body {
     box-sizing: border-box;
 }
 
-.modalContainer {
+.contactFormParentSched {
     position: absolute;
     top: 2em;
     left: 1em;
+    padding: .3em;
+    display: none;
+    background: white;
+    border: 1px solid #016205;
+    border-radius: 7px;
+}
+
+.contactFormParentNav {
+    position: absolute;
+    top: 2em;
+    left: -11em;
     padding: .3em;
     display: none;
     background: white;

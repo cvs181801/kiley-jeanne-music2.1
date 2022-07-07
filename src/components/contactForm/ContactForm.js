@@ -3,14 +3,14 @@ import './contactForm.css'
 
 export default function ContactForm(props) {
 
-    console.log(props)
+    console.log(props.parent)
 
   const handleSubmit = (event)=> { 
     event.preventDefault();
 }
   return (
     <div
-        className="modalContainer" //add logic so the class name changes based on parent component
+        className={props.parent === "schedule" ? "contactFormParentSched" : "contactFormParentNav"}
         style={{display: `${props.state}`}}
     >
         <h2>Let's Connect!</h2>

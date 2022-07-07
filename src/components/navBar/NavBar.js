@@ -14,7 +14,6 @@ export default function NavBar() {
             console.log('formbooltrue , set to false' )
             setFormBool(false)
             setFormClass("none")
-            
             } else {
             console.log('formboolfalse, set to true')
             setFormBool(true)
@@ -56,7 +55,10 @@ export default function NavBar() {
                     </button>
             </nav>
                 
-            <ContactForm state={formClass} parent={parentComponent}/>
+            <ContactForm 
+                state={formClass} 
+                parent={parentComponent}
+            />
         
         </div>
     </div>
