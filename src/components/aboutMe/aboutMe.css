@@ -23,7 +23,7 @@ body {
     height: 20em;
     width: 20em;
     margin: 0 auto 1em 5px;
-    
+    padding: .5em;
 }
 
 .aboutMeImg {

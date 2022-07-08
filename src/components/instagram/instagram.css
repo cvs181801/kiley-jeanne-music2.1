@@ -12,3 +12,10 @@ body {
     height: 40em;
 }
 
+.instagram-p {
+    width: 100vw;
+height: 3em;
+margin: 0 auto;
+background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%);
+}
+

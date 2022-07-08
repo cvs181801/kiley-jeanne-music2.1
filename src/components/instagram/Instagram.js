@@ -28,9 +28,12 @@ export default function Instagram() {
         >
         </iframe> */}
 
-        <p>Follow me on Instagram!</p>
+        <p
+          className="instagram-p"
+        >Follow me on Instagram!</p>
 
         <iframe 
+        title="instagram-widget"
         src="https://snapwidget.com/embed/1002307" 
         className="snapwidget-widget" 
         allowtransparency="true" 
@@ -39,7 +42,8 @@ export default function Instagram() {
         style = {{
           border: "none",
           overflow: "hidden",
-          width: "100%"
+          width: "100%",
+          padding: ".5em"
         }}
         ></iframe>
 
