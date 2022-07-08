@@ -76,7 +76,7 @@ export default function NavBar() {
                         <li className="navLi"><p><a className="navLiAnchor" href="#aboutmeSection" >about me</a></p></li>
                         <li className="navLi"><p><a className="navLiAnchor" href="#scheduleSection" >schedule</a></p></li>
                         <li className="navLi"><p><a className="navLiAnchor" href="#listenSection" >listen</a></p></li>
-                        <li className="navLi"><a className="navLiAnchor" href="#gallerySection" >gallery</a></li>
+                        <li className="navLi"><p><a className="navLiAnchor" href="#gallerySection" >gallery</a></p></li>
                         <li className="navLi"><p><a className="navLiAnchor" href="#followSection" >follow</a></p></li>
                 </ul>
                     <button
