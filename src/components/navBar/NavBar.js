@@ -9,6 +9,7 @@ export default function NavBar() {
     const [parentComponent, setParentComponent] = useState("navBar")
     //const [showNav, setShowNav] = useState(false)
     const [navBool, setNavBool] = useState(false)
+    //const [change, setChange] = useState('')
 
     const handleClick = (event)=> {
         event.preventDefault();
@@ -29,6 +30,7 @@ export default function NavBar() {
         if (navBool) {
             console.log("shownav grue, set to false")
             setNavBool(false)
+
             } else {
             console.log("shownav false, set to true")
             setNavBool(true)
@@ -45,9 +47,24 @@ export default function NavBar() {
                 className="hamburger"
                 onClick={handleHamburgerClick}
             >
-                <div className="hamburger-innerdiv"></div>
-                <div className="hamburger-innerdiv"></div>
-                <div className="hamburger-innerdiv"></div>
+                <div 
+                    id="hamburger-innerdiv" 
+                    className={navBool ? "change hambar1" : "hambar1"}
+                >
+                </div>
+
+                <div 
+                    id="hamburger-innerdiv" 
+                    className={navBool ? "change hambar2" : "hambar2"}
+                >
+                </div>
+
+                <div 
+                    id="hamburger-innerdiv" 
+                    className={navBool ? "change hambar3" : "hambar3"}
+                >
+                </div>
+
             </div>
 
             <nav

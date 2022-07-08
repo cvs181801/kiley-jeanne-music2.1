@@ -16,7 +16,6 @@ body {
     left: 19em;
 }
 
-
 .hamburger {
     position: relative;
     height: 4em;
@@ -31,13 +30,28 @@ body {
     justify-content: center;
 }
 
-.hamburger-innerdiv {
+#hamburger-innerdiv {
     position: relative;
     background: #02C8AF;
     margin: .2em auto .2em auto;
     height: .4em;
     width: 3em;
     border-radius: 4px; 
+    transition: 0.3s;
+}
+
+.change.hambar1 {
+    transform: rotate(45deg);
+    top: .8em;
+}
+
+.change.hambar2 {
+    opacity: 0;
+}
+
+.change.hambar3 {
+    transform: rotate(-45deg);
+    bottom: .8em;
 }
 
 .navBar {
