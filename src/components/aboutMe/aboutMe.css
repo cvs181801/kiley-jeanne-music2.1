@@ -9,10 +9,21 @@ body {
     box-sizing: border-box;
 }
 
-.containerDiv {
+.containerDivAboutMe {
     margin: 0 auto;
     width: 100vw;
+    padding: 1em 0 1em 0;
     background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0) 48.96%, rgba(164, 252, 241, 0.01) 57.29%, #A4FCF1 97.4%);
+}
+
+.innerDivAboutMe {
+    background: #FFFFFF;
+    box-shadow: -4px -4px 5px 3px rgba(71, 43, 1, 0.35);
+    border-radius: 7px;
+    height: 20em;
+    width: 20em;
+    margin: 0 auto 1em 5px;
+    
 }
 
 .aboutMeImg {

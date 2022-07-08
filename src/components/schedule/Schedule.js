@@ -114,7 +114,7 @@ export default function Schedule() {
         id="scheduleSection"
        >
             <div
-                className="containerDiv"
+                className="containerDivSched"
             >
                 {scheduleContent.map(gig=> 
                 <p key={gig.id}>{gig.text}</p>)}
@@ -123,7 +123,6 @@ export default function Schedule() {
                 <button
                     className="bookBtnSched"
                     onClick={handleClick}
-                    
                 >
                     BOOK / CONTACT
                     

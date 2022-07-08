@@ -9,7 +9,6 @@ export default function AboutMe() {
     const getAboutMeContent = async ()=> {
         try{
             const response = await client.getEntries({content_type:'aboutMe'})
-            //console.log(response.items[0].fields)
             const text = response.items[0].fields.text;
             const image = response.items[0].fields.image.fields.file.url;
             console.log(text, image)
@@ -18,8 +17,6 @@ export default function AboutMe() {
                 text: text,
                 image: `https:${image}` //try to request all images / media from contentful at the needed size
             })
-
-            //console.log(text, image)
   
         }
         catch(error){
@@ -32,20 +29,26 @@ export default function AboutMe() {
     },[])
   return (
     <div
-        className="containerDiv"
+        className="containerDivAboutMe"
 
     >
         <section
             id="aboutmeSection"
         >
-            <p>
-                <div
-                    className="aboutMeImg"
-                    style={{
-                        backgroundImage: `url(${aboutMeContent.image})`
-                    }}
-                ></div>
-            {aboutMeContent.text}</p>
+            <div
+                className="innerDivAboutMe"
+            >
+                <p>
+                    <div
+                        className="aboutMeImg"
+                        style={{
+                            backgroundImage: `url(${aboutMeContent.image})`
+                        }}
+                    >
+                    </div>
+                {aboutMeContent.text}
+                </p>
+            </div>
         </section>
     </div>
   )

@@ -36,7 +36,7 @@ export default function Hero() {
   return (
     
     <div
-        className="containerDiv"
+        className="containerDivHero"
     >
         
         <div

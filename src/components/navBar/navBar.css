@@ -20,8 +20,8 @@ body {
 
 .hamburger {
     position: relative;
-    height: 4em;
-    width: 4em;
+    height: 3em;
+    width: 3em;
     background: #FFFFFF;
     border: 1px solid #472B01;
     box-shadow: -4px -4px 2px rgba(0, 0, 0, 0.25);
@@ -36,15 +36,15 @@ body {
     position: relative;
     background: #02C8AF;
     margin: .2em auto .2em auto;
-    height: .4em;
-    width: 3em;
+    height: .3em;
+    width: 2em;
     border-radius: 4px; 
     transition: 0.3s;
 }
 
 .change.hambar1 {
     transform: rotate(45deg);
-    top: .8em;
+    top: .7em;
 }
 
 .change.hambar2 {
@@ -53,7 +53,7 @@ body {
 
 .change.hambar3 {
     transform: rotate(-45deg);
-    bottom: .8em;
+    bottom: .7em;
 }
 
 .navBar {
@@ -92,10 +92,6 @@ body {
     padding: .2em;
     margin: 1.5em auto 1.5em auto;
     text-transform: uppercase;
-}
-
-.navLi p {
-    letter-spacing: .05rem;
 }
 
 .navUl {
