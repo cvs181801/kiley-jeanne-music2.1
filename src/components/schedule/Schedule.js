@@ -121,11 +121,11 @@ export default function Schedule() {
             </div>   
 
                 <button
-                    className={formBool ? "closeBtn" : "bookBtn"}
+                    className="bookBtnSched"
                     onClick={handleClick}
                     
                 >
-                    {formBool ? "X" : "BOOK / CONTACT"} 
+                    BOOK / CONTACT
                     
                 </button>
                 

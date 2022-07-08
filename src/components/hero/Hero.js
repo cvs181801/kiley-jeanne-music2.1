@@ -42,7 +42,9 @@ export default function Hero() {
         <div
             className="topDiv"
         >
-            <p>Welcome ♡</p>
+            <p
+                className="welcomeDiv"
+            >Welcome ♡</p>
             <h1>{heroContent.title}</h1>
             
         </div>

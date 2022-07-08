@@ -63,12 +63,10 @@ export default function NavBar() {
                         <li className="navLi"><a className="navLiAnchor" href="#followSection" >follow</a></li>
                 </ul>
                     <button
-                        //className={formBool ? "closeBtn" : "bookBtn"}
-                        className='bookBtn'
-                        onClick={handleClick}
-                        
+                        className="bookBtn"
+                        onClick={handleClick} 
                     >
-                        {formBool ? "X" : "BOOK / CONTACT"} 
+                        BOOK / CONTACT
                         
                     </button>
                     

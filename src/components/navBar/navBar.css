@@ -11,8 +11,9 @@ body {
 .navContainer {
     position: absolute;
     height: 80vh;
+    width: 89.594px;
     top: 1em;
-    left: 18em;
+    left: 19em;
 }
 
 
@@ -87,17 +88,17 @@ body {
 .bookBtn {
     color: #472B01;
     font-family: inherit;
-    border: 1px solid #016205;
+    border: 1px solid #016205; 
     border-radius: 7px;
     width: 6em;
     height: 3.7em;
     padding: .2em;
     margin: 1.5em auto 1.5em auto;
-    background: rgba(1, 98, 5, 0.13);
+    background-color: rgba(1, 98, 5, 0.13);
 }
 
-.closeBtn {
-    /* position: absolute;
+/* .closeBtn {
+    position: absolute;
     top: 1em;
     left: -2em;  
     padding: .3em;
@@ -105,7 +106,7 @@ body {
     border: 1px solid #016205; 
     border-radius: 7px;
     z-index: 2;
-    font-family: inherit; */
+    font-family: inherit; 
     color: #472B01;
     font-family: inherit;
     border: 1px solid #016205;
@@ -115,4 +116,4 @@ body {
     padding: .2em;
     margin: 1.5em auto 1.5em auto;
     background: rgba(1, 98, 5, 0.13);
-}
+} */

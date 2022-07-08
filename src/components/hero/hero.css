@@ -11,6 +11,7 @@ body {
 h1 {
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    padding: 5px;
 }
 
 .containerDiv {
@@ -26,7 +27,11 @@ h1 {
     margin: 0 auto;
     background: linear-gradient(180deg, #A4FCF1 0%, rgba(164, 252, 241, 0) 67.19%);
     border-top: 1px solid #A4FCF1;
+}
 
+.welcomeDiv {
+    margin-top: 0;
+    padding: 5px;
 }
 
 .imgDiv {
@@ -42,7 +47,7 @@ h1 {
 .imgDiv-p {
     position: relative;
     top: 1.5em;
-    left: 23em;
+    left: 24em;
     width: 9em;
     font-size: .5rem;
     letter-spacing: 0.1em;
@@ -74,8 +79,6 @@ h1 {
         width: 9em;
         font-size: .8rem;
     }
-    
-
 }
 
 @media (min-width: 1025px) {
