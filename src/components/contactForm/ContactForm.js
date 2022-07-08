@@ -3,21 +3,33 @@ import './contactForm.css'
 
 export default function ContactForm(props) {
 
-    console.log(props.parent)
+    console.log(props)
 
   const handleSubmit = (event)=> { 
     event.preventDefault();
 }
+
+    const handleClick = ()=> {
+        const setFormBool = props.formBool;
+        setFormBool(false)
+    }
+
   return (
     <div
         className={props.parent === "schedule" ? "contactFormParentSched" : "contactFormParentNav"}
         style={{display: `${props.state}`}}
     >
+        <button
+            onClick={handleClick}
+        >
+            X
+        </button>
+
         <h2>Let's Connect!</h2>
         <form
             className="form"
             name="contact v1"
-            method="post"
+            method="POST"
             onSubmit="submit"
             data-netlify="true"
             data-netlify-honeypot="bot-field"

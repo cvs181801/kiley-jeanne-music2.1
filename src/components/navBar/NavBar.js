@@ -7,17 +7,17 @@ export default function NavBar() {
     const [formBool, setFormBool] = useState(false)
     const [formClass, setFormClass] = useState("none")
     const [parentComponent, setParentComponent] = useState("navBar")
-    const [showNav, setShowNav] = useState(false)
+    //const [showNav, setShowNav] = useState(false)
     const [navBool, setNavBool] = useState(false)
 
     const handleClick = (event)=> {
         event.preventDefault();
         if (formBool) {
-            console.log('formbooltrue , set to false' )
+           
             setFormBool(false)
             setFormClass("none")
             } else {
-            console.log('formboolfalse, set to true')
+            
             setFormBool(true)
             setFormClass("inline-block")
             setParentComponent("navBar")
@@ -26,10 +26,11 @@ export default function NavBar() {
 
     const handleHamburgerClick = (event)=> {
         event.preventDefault();
-        console.log("hamburger clikced")
-        if (showNav) {
+        if (navBool) {
+            console.log("shownav grue, set to false")
             setNavBool(false)
             } else {
+            console.log("shownav false, set to true")
             setNavBool(true)
         }
         
@@ -74,10 +75,7 @@ export default function NavBar() {
             </nav>
             
                 
-            <ContactForm 
-                state={formClass} 
-                parent={parentComponent}
-            />
+            {formBool && <ContactForm state={formClass} parent={parentComponent} formBool={setFormBool}/>}
         
         </div>
     </div>

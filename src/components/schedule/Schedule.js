@@ -129,7 +129,7 @@ export default function Schedule() {
                     
                 </button>
                 
-                <ContactForm state={formClass} parent={parentComponent}/>
+                {formBool && <ContactForm state={formClass} parent={parentComponent} formBool={setFormBool}/>}
 
         </section>
     </div>
