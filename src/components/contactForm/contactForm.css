@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -42,14 +44,13 @@ input {
     width:15em;
 }
 
-button {
+.modalBtn {
+    color: #472B01;
+    float: right;
     background: rgba(1, 98, 5, 0.13);
     border: 1px solid #016205;
     border-radius: 7px;
     letter-spacing: .2rem;
     text-transform: uppercase;
-}
-
-.modalBtn {
-    float: right;
+    font-family: 'Roboto', sans-serif;
 }
