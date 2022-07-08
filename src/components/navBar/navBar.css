@@ -9,17 +9,28 @@ body {
     box-sizing: border-box;
 }
 
-.navContainer {
+ .navContainerOuter {
+    /*overflow: scroll;*/
     position: absolute;
+    background-attachment: fixed;
+    top: 1em;
+    left: 18.5em;
+    height: 3500px;
+    
+} 
+
+.navContainer {   
+    position: sticky; 
     height: 80vh;
     width: 89.594px;
     top: 1em;
-    left: 20em;
+    left: 0;
     z-index: 2;
 }
 
 .hamburger {
-    position: relative;
+    position: relative; 
+    /* position: sticky;  */
     height: 3em;
     width: 3em;
     background: #FFFFFF;
@@ -59,7 +70,8 @@ body {
 .navBar {
     display: block;
     visibility: visible;
-    position: relative;
+    position: relative; 
+    /* position: sticky;   */
     width: 7em;
     height: 35em;
     background: #FFFFFF;

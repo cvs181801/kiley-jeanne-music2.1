@@ -39,7 +39,9 @@ export default function NavBar() {
     }
 
   return (
-    <div>
+    <div
+        className="navContainerOuter"
+    >
         <div
             className="navContainer"
         >
