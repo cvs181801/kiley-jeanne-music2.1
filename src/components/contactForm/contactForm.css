@@ -10,6 +10,7 @@ body {
 
 .contactFormParentSched {
     position: absolute;
+    color: #472B01;
     top: 2em;
     left: 1em;
     padding: .3em;
@@ -17,15 +18,38 @@ body {
     background: white;
     border: 1px solid #016205;
     border-radius: 7px;
+    z-index: 3;
 }
 
 .contactFormParentNav {
     position: absolute;
+    color: #472B01;
     top: 2em;
-    left: -11em;
+    left: -18em;
     padding: .3em;
     display: none;
     background: white;
     border: 1px solid #016205;
     border-radius: 7px;
+    z-index: 3;
+}
+
+textarea {
+    height: 10em;
+}
+
+input {
+    width:15em;
+}
+
+button {
+    background: rgba(1, 98, 5, 0.13);
+    border: 1px solid #016205;
+    border-radius: 7px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.modalBtn {
+    float: right;
 }

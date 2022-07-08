@@ -21,6 +21,7 @@ export default function ContactForm(props) {
     >
         <button
             onClick={handleClick}
+            class="modalBtn"
         >
             X
         </button>
@@ -37,20 +38,25 @@ export default function ContactForm(props) {
 
             <input type="hidden" name="form-name" value="contact v1" />
            
-                <label> Name <br/>
+                <label> <br/> Name <br/>
                     <input type="text" name="name"/>
                 </label>
            
-                <label> Email <br/>
+                <label> <br/> Email <br/>
                     <input type="email" name="email"/>
                 </label>
             
-                <label> Add Your Message Here: <br/>
+                <label> <br/> Add Your Message Here: <br/>
                     <textarea type="text" name="message"></textarea>
                 </label>
+                <br/>
             
-            
-            <button type="submit">Say it!</button>
+            <button 
+                type="submit"
+                class="modalBtn"
+            >
+                Send it!
+            </button>
         </form>
     </div>
   )
