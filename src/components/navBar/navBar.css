@@ -9,14 +9,14 @@ body {
     box-sizing: border-box;
 }
 
- .navContainerOuter {
+.navContainerOuter {
     /*overflow: scroll;*/
     position: absolute;
     background-attachment: fixed;
     top: 1em;
     left: 18.5em;
-    height: 3500px;
-    
+    height: 3500px;  
+    /* border: 2px solid hotpink; */
 } 
 
 .navContainer {   
@@ -71,7 +71,6 @@ body {
     display: block;
     visibility: visible;
     position: relative; 
-    /* position: sticky;   */
     width: 7em;
     height: 35em;
     background: #FFFFFF;
@@ -150,3 +149,21 @@ body {
     margin: 1.5em auto 1.5em auto;
     background: rgba(1, 98, 5, 0.13);
 } */
+
+
+@media (min-width: 600px) {
+
+    .navContainer {
+        width: 600px;
+    }
+ 
+    .navBar {
+        flex-direction: row;
+    
+        width: 55em;
+        height: 7em;
+    }
+
+   
+}
+@media (min-width: 1025px) {}

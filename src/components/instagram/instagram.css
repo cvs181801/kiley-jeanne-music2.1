@@ -8,10 +8,9 @@ body {
     box-sizing: border-box;
 }
 
-.containerDiv {
-    
-    width: 20em;
-}
+.containerDiv {  
+    width: 80vw;
+} 
 
 .instagram-p {
     width: 100vw;
@@ -20,3 +19,10 @@ body {
     background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%);
 }
 
+@media (min-width: 600px) {
+    /* .containerDiv {  
+        width: 40em;
+        height: 30vh;
+    } */
+}
+@media (min-width: 1025px) {}
