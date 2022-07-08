@@ -10,6 +10,6 @@ body {
 
 .youtubeiframe {
     height: 20em;
-    width: 100vw;
-    padding: .7em;
+    width: 80vw;
+    margin: 1em 0 auto 5px;
 }

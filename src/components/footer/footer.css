@@ -10,7 +10,7 @@ body {
 
 .footerContainer {
     width: 100vw;
-    height: 20em;
+    height: 20em;   
     margin-top: 2em;
     /*background-color:rgba(212, 253, 212, 0.595);
      background: linear-gradient(180deg, #FFFFFF 40.63%, rgba(1, 98, 5, 0.44) 99.48%);*/
@@ -20,6 +20,10 @@ body {
 }
 
 .footerContainer p {
-    text-align: end;
+    /* padding-top: 20em;  */
+    /* position: absolute;
+        bottom: 0;
+        left: 20em; */
     color: white;
+    margin-left: 5px;
 }

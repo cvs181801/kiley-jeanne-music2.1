@@ -9,13 +9,14 @@ body {
 }
 
 .containerDiv {
-    height: 40em;
+    
+    width: 20em;
 }
 
 .instagram-p {
     width: 100vw;
-height: 3em;
-margin: 0 auto;
-background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%);
+    height: 3em;
+    margin: 0 auto 0 5px;
+    background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%);
 }
 
