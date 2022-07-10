@@ -114,7 +114,6 @@ body {
     flex-wrap: wrap;
     text-decoration: none;
     color: #472B01;
-    
 }
 
 .bookBtn {
@@ -157,15 +156,27 @@ body {
 
     .navContainer {
         width: 600px;
+        border: 2px solid red;
+        
     }
  
     .navBar {
         flex-direction: row;
-    
         width: 55em;
-        height: 7em;
+        height: 20em;
+        border: 2px solid blue;
+        top: -2em;
+        left: 2.5em;
     }
 
+    .navUl {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+        visibility: hidden;
+    }
    
 }
 @media (min-width: 1025px) {}
