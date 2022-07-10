@@ -15,7 +15,6 @@ export default function Schedule() {
         try{
             const response = await client.getEntries({content_type:'schedule'})
             const scheduleItems = response.items[0].fields.text.content;
-            console.log('schedule items :', scheduleItems)
             let ID = response.items[0].fields.id;
             let massagedScheduleItems = [];
            
@@ -95,11 +94,9 @@ export default function Schedule() {
     const handleClick = (event)=> {
         event.preventDefault();
         if (formBool) {
-            console.log('formbooltrue , set to false' )
             setFormBool(false)
             setFormClass("none")
             } else {
-            console.log('formboolfalse, set to true')
             setFormBool(true)
             setFormClass("inline-block")
             setParentComponent("schedule")

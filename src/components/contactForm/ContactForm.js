@@ -21,15 +21,15 @@ export default function ContactForm(props) {
     >
         <button
             onClick={handleClick}
-            class="modalBtn"
+            className="modalBtn"
         >
             X
         </button>
 
         <h2>Let's Connect!</h2>
         <form
-            className="form"
-            name="contact v1"
+            //className="form"
+            className="contact v1"
             method="POST"
             onSubmit="submit"
             data-netlify="true"
@@ -53,7 +53,7 @@ export default function ContactForm(props) {
             
             <button 
                 type="submit"
-                class="modalBtn"
+                className="modalBtn"
             >
                 Send it!
             </button>
