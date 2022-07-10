@@ -98,7 +98,3 @@ export default function NavBar() {
     </div>
   )
 }
-//remove the contact form close
-//remove console logs
-//add stickly position for nav bar scroll
-//set up responsive layout for larger browsers

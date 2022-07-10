@@ -20,13 +20,29 @@ body {
 }
 
 .footerContainer p {
-    /* padding-top: 20em;  */
+    padding-top: 9.5em;  
     /* position: absolute;
         bottom: 0;
         left: 20em; */
     color: white;
     margin-left: 5px;
 }
+
+.socialMediaContainer {
+    display: flex;
+    width: 80vw;
+    margin-left: 5px;
+    padding-top: 1em;
+}
+
+.socialMediaIcon {
+    height: 4em;
+    width: 4em;
+    background-size: contain;
+    margin: 1em;
+    justify-content: space-between;
+}
+
 
 @media (min-width: 600px) {}
 @media (min-width: 1025px) {}

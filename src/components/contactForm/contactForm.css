@@ -13,7 +13,8 @@ body {
 .contactFormParentSched {
     position: absolute;
     color: #472B01;
-    top: 2em;
+    /* top: 2em; */
+    top: 50%;
     left: 1em;
     padding: .3em;
     display: none;

@@ -9,11 +9,14 @@ export default function Footer() {
   const getFooterContent = async ()=> {
     try{
         const response = await client.getEntries({content_type:'footer'})
+        console.log(response.items[0].fields.socialMediaIcons[0].fields.file.url)
         const image = response.items[0].fields.footerImage.fields.file.url;
         const alt = response.items[0].fields.footerImage.fields.title;
+        const socialMediaIcons = response.items[0].fields.socialMediaIcons;
         setFooterContent({
             image: `https:${image}`,
-            alt: alt
+            alt: alt,
+            socialMediaIcons: socialMediaIcons
         })
 
 
@@ -38,7 +41,14 @@ useEffect(()=>{
               backgroundImage: `linear-gradient(to bottom, rgba(248, 251, 248, 0.83), rgba(1, 98, 5, 0.83)), url(${footerContent.image})`
             }}
           >
-            <p>Copyright 2022 All Rights Reserved</p>
+            <div
+              className="socialMediaContainer"
+            >
+              {footerContent.socialMediaIcons.map((icon)=> {
+                return <div key={icon.fields.title} className="socialMediaIcon" style={{backgroundImage: `url(${icon.fields.file.url})`}}></div>
+              })} 
+            </div>
+              <p>Copyright 2022 All Rights Reserved</p>
           </div>
    
         </section>
