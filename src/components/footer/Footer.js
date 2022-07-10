@@ -70,9 +70,13 @@ const handleClick = (url)=> {
             <div
               className="socialMediaContainer"
             >
-              {footerContent.socialMediaIcons.map((icon)=> {
+
+              {footerContent.socialMediaIcons ? footerContent.socialMediaIcons.map((icon)=> {
                 return <div key={icon.title} className="socialMediaIcon" style={{backgroundImage: `url(${icon.iconUrl})`}}  onClick={()=>handleClick(icon.url)}></div>
-              })}    
+              })
+              :
+              ''}  
+
             </div>
               <p>Copyright 2022 All Rights Reserved</p>
           </div>
