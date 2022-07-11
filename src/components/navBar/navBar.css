@@ -15,7 +15,7 @@ body {
     top: 1em;
     left: 18.5em;
     height: 3500px;  
-    /* border: 2px solid hotpink; */
+    
 } 
 
 .navContainer {   
@@ -25,7 +25,6 @@ body {
     top: 1em;
     left: 1em;
     z-index: 2;
-    border: 2px solid red;
 }
 
 .hamburger {
@@ -86,14 +85,12 @@ body {
     font-size: .8rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
-    border: 2px solid blue;
     
 }
 
 .hideNav {
     display: none;
     visibility: hidden;
-    border: 2px solid yellow;
 }
 
 .navLi {
@@ -134,28 +131,6 @@ body {
     cursor: pointer;
 }
 
-/* .closeBtn {
-    position: absolute;
-    top: 1em;
-    left: -2em;  
-    padding: .3em;
-    background: rgba(1, 98, 5, 0.13);
-    border: 1px solid #016205; 
-    border-radius: 7px;
-    z-index: 2;
-    font-family: inherit; 
-    color: #472B01;
-    font-family: inherit;
-    border: 1px solid #016205;
-    border-radius: 7px;
-    width: 6em;
-    height: 3.7em;
-    padding: .2em;
-    margin: 1.5em auto 1.5em auto;
-    background: rgba(1, 98, 5, 0.13);
-} */
-
-
 @media (min-width: 600px) {
 
     .navContainerOuter {
@@ -164,15 +139,13 @@ body {
 
     .navContainer {
         width: 600px;
-        border: 2px solid red;
         position: relative;
     }
  
     .navBar, nav, .hideNav {
         flex-direction: row;
         width: 40em;
-        height: 3500em;
-        border: 2px solid blue;
+        height: 2000em;
         background: none;
         position: absolute;
         background-attachment: fixed;
@@ -181,12 +154,8 @@ body {
         font-family: 'Martel', serif;
         display: block;
         visibility: visible;
+        border: none;
     }
-
-    /* .hideNav {
-        display: block;
-        visibility: visible;
-    } */
 
     .navUl {
         display: flex;
@@ -236,28 +205,29 @@ body {
         top: 0;
     }
 
-    .navUl {
-        border: 1px solid purple;
-    }
-   
 }
 @media (min-width: 1025px) {
 
     .navContainerOuter {
         left: 22em;
-        border: 1px solid hotpink;
     }
 
 
-    .navBar, nav {
+    .navBar, nav, .hideNav {
         display: flex;
+        width: 700px;
+        border: none;
     }
 
     .bookBtn {
         margin: 1.5em auto 1.5em auto;
     }
 
-    .navUl {
-        border: 1px solid purple;
+
+    .bookBtn {
+        width: 11em;
+        height: 3.7em;
+        padding: .5em;
+        letter-spacing: .06rem;   
     }
 }

@@ -13,7 +13,6 @@ body {
 .contactFormParentSched {
     position: absolute;
     color: #472B01;
-    /* top: 2em; */
     top: 50%;
     left: 1em;
     padding: .3em;
@@ -35,6 +34,8 @@ body {
     border: 1px solid #016205;
     border-radius: 7px;
     z-index: 3;
+    height: 50vh;
+    width: 40vw; 
 }
 
 textarea {
