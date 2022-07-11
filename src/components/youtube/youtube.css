@@ -14,12 +14,13 @@ body {
 
 .youTubeInnerContainer {
     margin: 1em 0 auto 5px;
-    width: 80vw;
+    width: 85vw;
     height: 20em;
 }
 
 .youtubeiframe {
     height: 20em;
+    width: 85vw;
 }
 
 @media (min-width: 600px) {
@@ -31,9 +32,26 @@ body {
     .youTubeInnerContainer {
         margin: 1em auto 1em auto;
         width: 70vw;
-        height: 20em;
+        height: 30em;
+    }
+
+    .youtubeiframe {
+        width: 70vw;
+        height: 30em;
     }
 
     
 }
-@media (min-width: 1025px) {}
+@media (min-width: 1025px) {
+
+    .youTubeInnerContainer {
+        margin: 1em auto 1em auto;
+        width: 50vw;
+        height: 30em;
+    }
+
+    .youtubeiframe {
+        width: 50vw;
+        height: 30em;
+    }
+}

@@ -8,8 +8,8 @@ body {
     box-sizing: border-box;
 }
 
-.containerDiv {  
-    width: 80vw;
+.instagramContainerDiv {  
+    width: 100vw;
 } 
 
 .instagram-p {
@@ -19,10 +19,36 @@ body {
     background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%);
 }
 
+.instagramInnerContainerDiv {
+    width: 100vw;
+    max-height: 100vh;
+}
+
+.snapwidget-widget {
+    border: none;
+    /*overflow: hidden;*/
+    width: 100vw;
+    padding: .5em;
+    max-height: 100vh;
+}
+
 @media (min-width: 600px) {
-    /* .containerDiv {  
-        width: 40em;
-        height: 30vh;
-    } */
+
+    .instagramContainerDiv {  
+        margin: 0 auto;
+    } 
+
+    .instagram-p {
+        margin: 0 auto;
+    }
+
+    .instagramInnerContainerDiv {
+        width: 85vw; 
+        margin: 0 auto;
+    }
+
+    .snapwidget-widget {
+        width: 85vw;
+    }
 }
 @media (min-width: 1025px) {}

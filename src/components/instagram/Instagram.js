@@ -4,7 +4,7 @@ import './instagram.css'
 export default function Instagram() {
   return (
     <div
-      className="containerDiv"
+      className="instagramContainerDiv"
     >
       <section
         id="gallerySection"
@@ -32,6 +32,9 @@ export default function Instagram() {
           className="instagram-p"
         >Follow me on Instagram!</p>
 
+    <div
+      className="instagramInnerContainerDiv"
+    >
         <iframe 
         title="instagram-widget"
         src="https://snapwidget.com/embed/1002307" 
@@ -39,13 +42,9 @@ export default function Instagram() {
         allowtransparency="true" 
         frameBorder="0" 
         //scrolling="no" 
-        style = {{
-          border: "none",
-          overflow: "hidden",
-          width: "100%",
-          padding: ".5em"
-        }}
+      
         ></iframe>
+        </div>
 
       </section>
     </div>
