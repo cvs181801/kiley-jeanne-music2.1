@@ -19,6 +19,7 @@ export default function ContactForm(props) {
         className={props.parent === "schedule" ? "contactFormParentSched" : "contactFormParentNav"}
         style={{display: `${props.state}`}}
     >
+        
         <button
             onClick={handleClick}
             className="modalBtn"
@@ -58,6 +59,7 @@ export default function ContactForm(props) {
                 Send it!
             </button>
         </form>
+        
     </div>
   )
   

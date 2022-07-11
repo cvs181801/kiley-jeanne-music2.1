@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { client } from '../../client';
 import './schedule.css'
 import ContactForm from '../contactForm/ContactForm';
-import ContactFormClose from '../contactFormClose/ContactFormClose';
+
 
 export default function Schedule() {
     const [isScheduleLoading, setIsScheduleLoading] = useState(false);

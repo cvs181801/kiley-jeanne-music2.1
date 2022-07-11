@@ -38,30 +38,37 @@ export default function Hero() {
     <div
         className="containerDivHero"
     >
-        
-        <div
-            className="topDiv"
+        <section
+            id="heroSection"
         >
-            <p
-                className="welcomeDiv"
-            >Welcome ♡</p>
-            <h1>{heroContent.title}</h1>
-            
-        </div>
-        <div
-            className="imgDiv"
-                style={{
-                    backgroundImage: `url(${heroContent.image})`,
-                }}
+        
+            <div
+                className="topDiv"
             >
                 <p
-                    className="imgDiv-p"
-                >{heroContent.tagline}</p>
-        </div>
-        
-        <div
-            className="bottomDiv"
-        ></div>
+                    className="welcomeDiv"
+                >Welcome ♡
+                </p>
+
+                    <h1>{heroContent.title}</h1>
+                
+                </div>
+                    <div
+                        className="imgDiv"
+                            style={{
+                                backgroundImage: `url(${heroContent.image})`,
+                            }}
+                        >
+                            <p
+                                className="imgDiv-p"
+                            >{heroContent.tagline}</p>
+                    </div>
+            
+            <div
+                className="bottomDiv"
+            >
+            </div>
+        </section>
     </div>
   )
 }

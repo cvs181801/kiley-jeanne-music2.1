@@ -17,22 +17,22 @@ export default function NavBar() {
            
             setFormBool(false)
             setFormClass("none")
+            window.scrollTo(0, 0);
             } else {
             
             setFormBool(true)
             setFormClass("inline-block")
             setParentComponent("navBar")
+            window.scrollTo(0, 0);
         }
     }
 
     const handleHamburgerClick = (event)=> {
         event.preventDefault();
         if (navBool) {
-            console.log("shownav grue, set to false")
             setNavBool(false)
 
             } else {
-            console.log("shownav false, set to true")
             setNavBool(true)
         }
         
