@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap&family=Quicksand:wght@500;700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap&family=Quicksand:wght@500;700&family=Martel:wght@200');
 
 body {
     margin: 0 auto;
@@ -10,7 +10,6 @@ body {
 }
 
 .navContainerOuter {
-    /*overflow: scroll;*/
     position: absolute;
     background-attachment: fixed;
     top: 1em;
@@ -24,13 +23,13 @@ body {
     height: 80vh;
     width: 89.594px;
     top: 1em;
-    left: 0;
+    left: 1em;
     z-index: 2;
+    border: 2px solid red;
 }
 
 .hamburger {
     position: relative; 
-    /* position: sticky;  */
     height: 3em;
     width: 3em;
     background: #FFFFFF;
@@ -41,12 +40,14 @@ body {
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
+    display: block;
+    visibility: visible;
 }
 
 #hamburger-innerdiv {
     position: relative;
     background: #02C8AF;
-    margin: .2em auto .2em auto;
+    margin: .3em auto .3em auto;
     height: .3em;
     width: 2em;
     border-radius: 4px; 
@@ -55,7 +56,7 @@ body {
 
 .change.hambar1 {
     transform: rotate(45deg);
-    top: .7em;
+    top: .5em;
 }
 
 .change.hambar2 {
@@ -67,7 +68,7 @@ body {
     bottom: .7em;
 }
 
-.navBar {
+.navBar, nav {
     color: #472B01;
     display: block;
     visibility: visible;
@@ -85,12 +86,14 @@ body {
     font-size: .8rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    border: 2px solid blue;
     
 }
 
 .hideNav {
     display: none;
     visibility: hidden;
+    border: 2px solid yellow;
 }
 
 .navLi {
@@ -128,6 +131,7 @@ body {
     margin: 1.5em auto 1.5em auto;
     background-color: rgba(1, 98, 5, 0.13);
     letter-spacing: .05rem;
+    cursor: pointer;
 }
 
 /* .closeBtn {
@@ -154,29 +158,106 @@ body {
 
 @media (min-width: 600px) {
 
+    .navContainerOuter {
+        font-family: 'Martel', serif;
+    }
+
     .navContainer {
         width: 600px;
         border: 2px solid red;
-        
+        position: relative;
     }
  
-    .navBar {
+    .navBar, nav, .hideNav {
         flex-direction: row;
-        width: 55em;
-        height: 20em;
+        width: 40em;
+        height: 3500em;
         border: 2px solid blue;
+        background: none;
+        position: absolute;
+        background-attachment: fixed;
         top: -2em;
-        left: 2.5em;
+        left: 1em;
+        font-family: 'Martel', serif;
+        display: block;
+        visibility: visible;
     }
+
+    /* .hideNav {
+        display: block;
+        visibility: visible;
+    } */
 
     .navUl {
         display: flex;
+        left: 20em;
+    }
+
+    .navLi {
+        position: relative;
+        left: -35px; 
+        border: none;
+        background: none;
+        border-radius: 7px;
+        width: 7em;
+        height: 2.7em;
+        padding: 0em;
+        margin: 1.5em auto 1.5em auto;  
+        text-align: center;
+        
+    }
+
+    .navLi p:hover {
+        border: 1px solid #016205;
+        border-radius: 7px;
+    }
+
+    /* .navLi p {
+        text-shadow: 3px 3px 20px white, 3px 3px 20px white, -3px -3px 20px white, -3px -3px 20px white,
+         1px 1px 2px white, 1px 1px 2px white, -1px -1px 2px white, -1px -1px 2px white;
+    } */
+
+    .navLiAnchor {
+        flex-wrap: nowrap;
+        font-size: .9rem;
+        margin-bottom: .5em;
     }
 
     .hamburger {
         display: none;
         visibility: hidden;
+    } 
+
+    .bookBtn {
+        margin: 0 auto 0 17em;
+        text-align: center;
+        background: white;
+        position: sticky;
+        top: 0;
+    }
+
+    .navUl {
+        border: 1px solid purple;
     }
    
 }
-@media (min-width: 1025px) {}
+@media (min-width: 1025px) {
+
+    .navContainerOuter {
+        left: 22em;
+        border: 1px solid hotpink;
+    }
+
+
+    .navBar, nav {
+        display: flex;
+    }
+
+    .bookBtn {
+        margin: 1.5em auto 1.5em auto;
+    }
+
+    .navUl {
+        border: 1px solid purple;
+    }
+}
