@@ -39,10 +39,17 @@ h1 {
     height: 17em;
     background-color: rgba(1, 98, 5, 0.83);
     background-blend-mode: screen;
-    background-size: cover;
+    background-size: 300%;
+    background-position: 35% 35%;
     color: white;
     background-repeat: no-repeat;
+    /*transition: all .5s;*/
 }
+
+/*.imgDiv:hover,
+.imgDiv:focus {
+    transform: scale(1.1);
+}*/
 
 .imgDiv-p {
     position: relative;
@@ -68,7 +75,8 @@ h1 {
         width: 100vw;
         height: 22em;
         background-blend-mode: screen;
-        background-size: cover;
+        background-size: 200%;
+        background-position: 35% 33%;
         background-repeat: no-repeat;
     }
 
@@ -78,6 +86,11 @@ h1 {
         left: 33em;
         width: 9em;
         font-size: .8rem;
+    }
+
+    h1 {
+        letter-spacing: 0.3em;
+        font-size: 1.8rem;
     }
 }
 
@@ -90,6 +103,8 @@ h1 {
         background-position: 55% 35%; 
         background-size: cover;
     }
+
+    
 
     .imgDiv-p {
         position: relative;

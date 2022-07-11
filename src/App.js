@@ -28,11 +28,10 @@ function App() {
 
 export default App;
 
-
-//remove the contact form close
 //remove console logs
 //set up responsive layout for larger browsers
 //remove the unused google fonts
 //how to request images from contently at the needed size?
 //figure out a way to create a loading effect for each component
-//how to get the contact form to appear at the place the user is at on the page - or navigate them to the top of the page
+//transition effect and pointer on the button
+//schd button not working at larger screen sizes

@@ -173,10 +173,15 @@ body {
         padding: 0em;
         margin: 1.5em auto 1.5em auto;  
         text-align: center;
-        
     }
 
-    .navLi p:hover {
+    .navLi p {
+        transition: 0.2s;
+        /*transition: all 2s ease-in-out;*/
+    }
+
+    .navLi p:hover,
+    .navLi p:focus {
         border: 1px solid #016205;
         border-radius: 7px;
     }

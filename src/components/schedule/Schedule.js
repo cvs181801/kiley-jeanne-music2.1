@@ -72,7 +72,7 @@ export default function Schedule() {
             // const result  = [arr.reduce((r, o) => Object.assign(r, o), {})];
             // console.log(result)
             
-            massagedScheduleItems = scheduleItems.map((item, index)=> {
+            massagedScheduleItems = scheduleItems.map((item)=> {
                 return {id: ID++, text: item.content[0].value}
             })
             setScheduleContent(massagedScheduleItems)
@@ -93,6 +93,7 @@ export default function Schedule() {
 
     const handleClick = (event)=> {
         event.preventDefault();
+        console.log('clicked')
         if (formBool) {
             setFormBool(false)
             setFormClass("none")
@@ -105,7 +106,7 @@ export default function Schedule() {
 
   return (
     <div
-        className='scheduleDiv'
+        className="scheduleDiv"
     >
        <section
         id="scheduleSection"
@@ -125,7 +126,7 @@ export default function Schedule() {
                     
                 </button>
                 
-                {formBool && <ContactForm state={formClass} parent={parentComponent} formBool={setFormBool}/>}
+                {scheduleContent && formBool && <ContactForm state={formClass} parent={parentComponent} formBool={setFormBool}/>}
 
         </section>
     </div>
