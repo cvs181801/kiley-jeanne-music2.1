@@ -20,7 +20,7 @@ body {
     background: #FFFFFF;
     box-shadow: -4px -4px 5px 3px rgba(71, 43, 1, 0.35);
     border-radius: 7px;
-    height: 20em;
+    height: auto;
     width: 20em;
     margin: 0 auto 1em 5px;
     padding: .7em 1.4em .7em .7em;
@@ -35,5 +35,14 @@ body {
     background-color: rgba(164, 252, 241, 0.99);
     background-blend-mode: luminosity;
     margin: .4em;
-
 }
+
+@media (min-width: 600px) {
+
+    .innerDivAboutMe {
+        margin: 0 auto;
+        width: 70vw;
+    }
+    
+}
+@media (min-width: 1025px) {}

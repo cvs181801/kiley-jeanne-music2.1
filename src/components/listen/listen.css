@@ -10,7 +10,7 @@ body {
 
 .listenContainer {
     width: 100vw;
-    height: 30em;
+    /* height: 30em; */
     margin-top: 2em;
     padding: 1em 0 1em 0;
     background-color:rgba(71, 43, 1, 0.71);
@@ -24,12 +24,18 @@ body {
     border: 1px solid #FFFFFF;
     border-radius: 7px;
     text-align: center;
-    height: 20em;
+    height: auto;
     width: 20em;
     margin: 1em auto 0 5px;
     color: white;
     padding: .7em 1.4em .7em .7em;
 }
 
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+
+    .listenInnerContainer {
+        margin: 0 auto;
+        width: 70vw;
+    }
+}
 @media (min-width: 1025px) {}

@@ -54,11 +54,13 @@ h1 {
 .imgDiv-p {
     position: relative;
     top: 1.5em;
-    left: 24em;
+    left: 30.5em;
     width: 9em;
     font-size: .5rem;
     letter-spacing: 0.1em;
     font-weight: 700;
+    text-shadow: 3px 3px 20px #472B01, 3px 3px 20px #472B01, -3px -3px 20px #472B01, -3px -3px 20px #472B01,
+         1px 1px 2px #472B01, 1px 1px 2px #472B01, -1px -1px 2px #472B01, -1px -1px 2px #472B01;
 }
 
 .bottomDiv {
@@ -82,10 +84,11 @@ h1 {
 
     .imgDiv-p {
         position: relative;
-        top: 6em;
-        left: 33em;
+        top: 1em;
+        left: 40em;
         width: 9em;
         font-size: .8rem;
+        
     }
 
     h1 {

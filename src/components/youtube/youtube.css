@@ -8,11 +8,32 @@ body {
     box-sizing: border-box;
 }
 
-.youtubeiframe {
-    height: 20em;
-    width: 80vw;
+.youTubeContainer {
     margin: 1em 0 auto 5px;
 }
 
-@media (min-width: 600px) {}
+.youTubeInnerContainer {
+    margin: 1em 0 auto 5px;
+    width: 80vw;
+    height: 20em;
+}
+
+.youtubeiframe {
+    height: 20em;
+}
+
+@media (min-width: 600px) {
+
+    .youTubeContainer {
+        margin: 0 auto;
+    }
+
+    .youTubeInnerContainer {
+        margin: 1em auto 1em auto;
+        width: 70vw;
+        height: 20em;
+    }
+
+    
+}
 @media (min-width: 1025px) {}
