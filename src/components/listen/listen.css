@@ -18,6 +18,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
+    border: 1px solid red;
 }
 
 .listenInnerContainer {
@@ -29,6 +30,7 @@ body {
     margin: 1em auto 0 5px;
     color: white;
     padding: .7em 1.4em .7em .7em;
+    border: 1px solid purple;
 }
 
 @media (min-width: 600px) {

@@ -59,6 +59,8 @@ input {
     letter-spacing: .2rem;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
+    z-index: 3;
+    cursor: pointer;
 }
 
 @media (min-width: 600px) {

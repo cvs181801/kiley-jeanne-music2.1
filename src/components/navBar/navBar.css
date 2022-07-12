@@ -15,6 +15,8 @@ body {
     top: 1em;
     left: 18.5em;
     height: 3500px;  
+    border: 2px solid red;
+    pointer-events: none;
     
 } 
 
@@ -25,6 +27,8 @@ body {
     top: 1em;
     left: 1em;
     z-index: 2;
+    pointer-events: none;
+    border: 2px solid blue;
 }
 
 .hamburger {
@@ -41,6 +45,7 @@ body {
     justify-content: center;
     display: block;
     visibility: visible;
+    cursor: pointer;
 }
 
 #hamburger-innerdiv {
@@ -51,6 +56,7 @@ body {
     width: 2em;
     border-radius: 4px; 
     transition: 0.3s;
+    border: 1px solid teal;
 }
 
 .change.hambar1 {
@@ -85,12 +91,14 @@ body {
     font-size: .8rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    border: 5px solid teal;
     
 }
 
 .hideNav {
     display: none;
     visibility: hidden;
+    border: 2px solid purple;
 }
 
 .navLi {
@@ -108,6 +116,8 @@ body {
 
 .navUl {
     list-style-type: none;
+    border: 2px solid pink;
+    pointer-events: none;
 }
 
 .navLiAnchor {
@@ -129,6 +139,8 @@ body {
     background-color: rgba(1, 98, 5, 0.13);
     letter-spacing: .05rem;
     cursor: pointer;
+    pointer-events: auto;
+    z-index: 9;
 }
 
 @media (min-width: 600px) {
@@ -177,6 +189,7 @@ body {
 
     .navLi p {
         transition: 0.2s;
+        pointer-events: auto;
         /*transition: all 2s ease-in-out;*/
     }
 
@@ -195,6 +208,7 @@ body {
         flex-wrap: nowrap;
         font-size: .9rem;
         margin-bottom: .5em;
+        pointer-events: auto;
     }
 
     .hamburger {
@@ -215,7 +229,6 @@ body {
 
     .navContainerOuter {
         left: 22em;
-        
     }
 
 
@@ -223,7 +236,6 @@ body {
         display: flex;
         width: 1500px;
         border: none;
-    
     }
 
 
@@ -233,6 +245,5 @@ body {
         height: 3.7em;
         padding: .5em;
         letter-spacing: .06rem;   
-    
     }
 }

@@ -33,5 +33,5 @@ export default App;
 //how to request images from contently at the needed size?
 //figure out a way to create a loading effect for each component
 //transition effect and pointer on the button
-//schd button not working at larger screen sizes
-//add cursor pointer to social media icons
+//scehd button not working at larger screen sizes***
+//ensure DNS is set with https

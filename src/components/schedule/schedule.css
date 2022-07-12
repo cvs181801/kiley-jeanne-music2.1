@@ -37,6 +37,7 @@ body {
     width: 10em;
     margin: 0 auto 1em 5px;
     background: rgba(1, 98, 5, 0.13);
+    cursor: pointer;
 }
 
 
@@ -56,6 +57,7 @@ body {
     .bookBtnSched {
         margin: 1em auto 1em auto;
         width: 12em;
+        z-index: 3;
         
         /* transition: all .5s; */
     }
@@ -66,4 +68,10 @@ body {
         cursor: pointer;
     }  */
 }
-@media (min-width: 1025px) {}
+@media (min-width: 1025px) {
+
+    .bookBtnSched {
+        z-index: 1000;
+        pointer-events: inherit;
+    }
+}
