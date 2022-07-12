@@ -10,7 +10,6 @@ body {
 
 .instagramContainerDiv {  
     width: 100vw;
-    border: 1px solid red;
 } 
 
 .instagram-p {
@@ -23,7 +22,6 @@ body {
 .instagramInnerContainerDiv {
     width: 100vw;
     max-height: 100vh;
-    border: 1px solid blue;
 }
 
 .snapwidget-widget {
@@ -32,7 +30,6 @@ body {
     width: 100vw;
     padding: .5em;
     max-height: 100vh;
-    border: 1px solid violet;
     pointer-events: inherit;
 }
 

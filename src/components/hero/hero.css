@@ -19,7 +19,6 @@ h1 {
     padding: 0;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 .topDiv {
@@ -28,7 +27,6 @@ h1 {
     margin: 0 auto;
     background: linear-gradient(180deg, #A4FCF1 0%, rgba(164, 252, 241, 0) 67.19%);
     border-top: 1px solid #A4FCF1;
-    border: 1px solid blue;
 }
 
 .welcomeDiv {
@@ -46,7 +44,6 @@ h1 {
     color: white;
     background-repeat: no-repeat;
     /*transition: all .5s;*/
-    border: 1px solid yellow;
 }
 
 /*.imgDiv:hover,
@@ -71,7 +68,6 @@ h1 {
     height: 3em;
     margin: 0 auto;
     background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%);
-    border: 1px solid purple;
 }
 
 @media (min-width: 600px) {

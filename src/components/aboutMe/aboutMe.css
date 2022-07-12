@@ -14,7 +14,6 @@ body {
     width: 100vw;
     padding: 1em 0 1em 0;
     background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0) 48.96%, rgba(164, 252, 241, 0.01) 57.29%, #A4FCF1 97.4%);
-    border: 1px solid red;
 }
 
 .innerDivAboutMe {
@@ -25,7 +24,6 @@ body {
     width: 20em;
     margin: 0 auto 1em 5px;
     padding: .7em 1.4em .7em .7em;
-    border: 1px solid pink;
 }
 
 .aboutMeImg {

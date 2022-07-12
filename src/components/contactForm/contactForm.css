@@ -23,7 +23,6 @@ body {
     z-index: 3;
     height: auto;
     width: auto;
-    
 }
 
 .contactFormParentNav {
@@ -38,8 +37,8 @@ body {
     border-radius: 7px;
     z-index: 3;
     height: auto;
-    width: auto;
-     
+    width: auto; 
+    pointer-events: auto;
 }
 
 textarea {
@@ -59,7 +58,7 @@ input {
     letter-spacing: .2rem;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    z-index: 3;
+    z-index: 5;
     cursor: pointer;
 }
 

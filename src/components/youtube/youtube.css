@@ -10,20 +10,17 @@ body {
 
 .youTubeContainer {
     margin: 1em 0 auto 5px;
-    border: 1px solid red;
 }
 
 .youTubeInnerContainer {
     margin: 1em 0 auto 5px;
     width: 85vw;
     height: 20em;
-    border: 1px solid blue;
 }
 
 .youtubeiframe {
     height: 20em;
     width: 85vw;
-    border: 1px solid violet;
 }
 
 @media (min-width: 600px) {
