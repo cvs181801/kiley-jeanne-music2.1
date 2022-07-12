@@ -94,7 +94,7 @@ export default function Schedule() {
     const handleClick = (event)=> {
         event.preventDefault();
 
-        console.log(event)
+        console.log("clicked!")
         if (formBool) {
             setFormBool(false)
             setFormClass("none")
