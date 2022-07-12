@@ -41,6 +41,7 @@ body {
     background-size: contain;
     margin: 1em;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 

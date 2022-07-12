@@ -215,24 +215,24 @@ body {
 
     .navContainerOuter {
         left: 22em;
+        
     }
 
 
     .navBar, nav, .hideNav {
         display: flex;
-        width: 700px;
+        width: 1500px;
         border: none;
-    }
-
-    .bookBtn {
-        margin: 1.5em auto 1.5em auto;
+    
     }
 
 
     .bookBtn {
+        margin: 1.5em auto 7.5em auto;
         width: 11em;
         height: 3.7em;
         padding: .5em;
         letter-spacing: .06rem;   
+    
     }
 }

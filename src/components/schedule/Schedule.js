@@ -93,7 +93,8 @@ export default function Schedule() {
 
     const handleClick = (event)=> {
         event.preventDefault();
-        console.log('clicked')
+
+        console.log(event)
         if (formBool) {
             setFormBool(false)
             setFormClass("none")
@@ -121,6 +122,7 @@ export default function Schedule() {
                 <button
                     className="bookBtnSched"
                     onClick={handleClick}
+                    
                 >
                     BOOK / CONTACT
                     
