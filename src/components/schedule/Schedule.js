@@ -5,7 +5,7 @@ import ContactForm from '../contactForm/ContactForm';
 
 
 export default function Schedule() {
-    const [isScheduleLoading, setIsScheduleLoading] = useState(false);
+    const [isScheduleLoading, setIsScheduleLoading] = useState(true);
     const [scheduleContent, setScheduleContent] = useState([]);
     const [formBool, setFormBool] = useState(false)
     const [formClass, setFormClass] = useState("none")
@@ -75,12 +75,15 @@ export default function Schedule() {
             massagedScheduleItems = scheduleItems.map((item)=> {
                 return {id: ID++, text: item.content[0].value}
             })
+            setIsScheduleLoading(false)
             setScheduleContent(massagedScheduleItems)
             //console.log(massagedScheduleItems)
   
         }
         catch(error){
             console.log(error)
+            setIsScheduleLoading(false)
+            setScheduleContent({id: 1, text: 'Sorry, something went wrong. Please try again.'},{id: 2, text: ''})
         }
     }
 
@@ -93,8 +96,7 @@ export default function Schedule() {
 
     const handleClick = (event)=> {
         event.preventDefault();
-
-        console.log("clicked!")
+        
         if (formBool) {
             setFormBool(false)
             setFormClass("none")
@@ -115,8 +117,8 @@ export default function Schedule() {
             <div
                 className="containerDivSched"
             >
-                {scheduleContent.map(gig=> 
-                <p key={gig.id}>{gig.text}</p>)}
+                {scheduleContent ? scheduleContent.map(gig=> 
+                <p key={gig.id}>{gig.text}</p>) : ''}
             </div>   
 
                 <button
@@ -127,7 +129,7 @@ export default function Schedule() {
                     BOOK / CONTACT
                     
                 </button>
-                
+                {isScheduleLoading ? 'Loading...' : ''}
                 {scheduleContent && formBool && <ContactForm state={formClass} parent={parentComponent} formBool={setFormBool}/>}
 
         </section>

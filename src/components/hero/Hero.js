@@ -3,7 +3,7 @@ import { client } from '../../client';
 import './hero.css'
 
 export default function Hero() {
-    const [isHeroLoading, setIsHeroLoading] = useState(false); //create a loading image/graphic for when contents are loading
+    const [isHeroLoading, setIsHeroLoading] = useState(true); //create a loading image/graphic for when contents are loading
     const [heroContent, setHeroContent] = useState({});
 
     const getHeroContent = async ()=> {
@@ -14,6 +14,7 @@ export default function Hero() {
             const image = response.items[0].fields.image.fields.file.url;
             const alt = response.items[0].fields.image.fields.description;
             const tagline = response.items[0].fields.tagline.content[0].content[0].value;
+            setIsHeroLoading(false)
             setHeroContent({
                 title: title,
                 image: image,
@@ -24,7 +25,14 @@ export default function Hero() {
   
         }
         catch(error){
-            console.log(error) //need better err handling
+            console.log(error) 
+            setIsHeroLoading(false)
+            setHeroContent({
+                title: 'Sorry! Something went wrong.  Please try again.',
+                image: '',
+                alt: 'sorry, something went wrong',
+                tagline: 'darn!'
+            })
         }
     }
 
@@ -61,7 +69,7 @@ export default function Hero() {
                         >
                             <p
                                 className="imgDiv-p"
-                            >{heroContent.tagline}</p>
+                            >{isHeroLoading ? 'Loading...' : heroContent.tagline}</p>
                     </div>
             
             <div

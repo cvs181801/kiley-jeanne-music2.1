@@ -3,13 +3,12 @@ import { client } from '../../client';
 import './footer.css'
 
 export default function Footer() {
-  const [isFooterLoading, setIsFooterLoading] = useState(false);
+  const [isFooterLoading, setIsFooterLoading] = useState(true);
   const [footerContent, setFooterContent] = useState({});
 
   const getFooterContent = async ()=> {
     try{
         const response = await client.getEntries({content_type:'footer2'})
-        console.log(response.items[0].fields)
         const image = response.items[0].fields.footerImage.fields.file.url;
         const alt = response.items[0].fields.footerImage.fields.title;
 
@@ -25,12 +24,7 @@ export default function Footer() {
         const spotifyIconUrl = response.items[0].fields.spotifyIcon.fields.file.url;
         const spotifyUrl = response.items[0].fields.spotifyLink;
 
-        console.log([
-          {title: instagramIconTitle, iconUrl: `https:${instagramIconUrl}`, url: instagramUrl},
-          {title: youTubeIconTitle, iconUrl: `https:${youTubeIconUrl}`, url: youTubeUrl},
-          {title: spotifyIconTitle, iconUrl: `https:${spotifyIconUrl}`, url: spotifyUrl}
-        ])
-        
+        setIsFooterLoading(false)
         setFooterContent({
             image: `https:${image}`,
             alt: alt,
@@ -44,7 +38,13 @@ export default function Footer() {
 
     }
     catch(error){
-        console.log(error) //need better err handling
+        console.log(error) 
+        setIsFooterLoading(false)
+        setFooterContent({
+        image: '',
+        alt: 'sorry, something went wrong',
+        socialMediaIcons:[{title: 'Sorry, something went wrong.  Please try again.', iconUrl: '', url: ''},{title: '', iconUrl: '', url: ''},{title: '', iconUrl: '', url: ''}]
+      })
     }
 }
 
@@ -70,7 +70,7 @@ const handleClick = (url)=> {
             <div
               className="socialMediaContainer"
             >
-
+              {isFooterLoading ? 'Loading...' : ''}
               {footerContent.socialMediaIcons ? footerContent.socialMediaIcons.map((icon)=> {
                 return <div key={icon.title} className="socialMediaIcon" style={{backgroundImage: `url(${icon.iconUrl})`}}  onClick={()=>handleClick(icon.url)}></div>
               })

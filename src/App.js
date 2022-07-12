@@ -28,10 +28,7 @@ function App() {
 
 export default App;
 
-//remove console logs
 //remove the unused google fonts
 //how to request images from contently at the needed size?
-//figure out a way to create a loading effect for each component
-//transition effect and pointer on the button
-//scehd button not working at larger screen sizes***
-//ensure DNS is set with https
+
+

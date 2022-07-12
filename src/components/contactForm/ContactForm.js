@@ -3,11 +3,9 @@ import './contactForm.css'
 
 export default function ContactForm(props) {
 
-    console.log(props)
-
-  const handleSubmit = (event)=> { 
-    event.preventDefault();
-}
+//   const handleSubmit = (event)=> { 
+//     event.preventDefault();
+// }
 
     const handleClick = ()=> {
         const setFormBool = props.formBool;
@@ -29,7 +27,6 @@ export default function ContactForm(props) {
 
         <h2>Let's Connect!</h2>
         <form
-            //className="form"
             className="contact v1"
             method="POST"
             onSubmit="submit"

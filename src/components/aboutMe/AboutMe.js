@@ -3,7 +3,7 @@ import { client } from '../../client';
 import './aboutMe.css'
 
 export default function AboutMe() {
-    const [isAboutMeLoading, setIsAboutMeLoading] = useState(false);
+    const [isAboutMeLoading, setIsAboutMeLoading] = useState(true);
     const [aboutMeContent, setAboutMeContent] = useState({});
 
     const getAboutMeContent = async ()=> {
@@ -11,8 +11,8 @@ export default function AboutMe() {
             const response = await client.getEntries({content_type:'aboutMe'})
             const text = response.items[0].fields.text;
             const image = response.items[0].fields.image.fields.file.url;
-            console.log(text, image)
 
+            setIsAboutMeLoading(false)
             setAboutMeContent({
                 text: text,
                 image: `https:${image}` //try to request all images / media from contentful at the needed size
@@ -21,6 +21,11 @@ export default function AboutMe() {
         }
         catch(error){
             console.log(error)
+            setIsAboutMeLoading(false)
+            setAboutMeContent({
+                text: 'Sorry! Something went wrong.  Please try again.',
+                image: ''
+            })
         }
     }
 
@@ -46,7 +51,7 @@ export default function AboutMe() {
                         }}
                     >
                     </div>
-                {aboutMeContent.text}
+                {isAboutMeLoading ? 'Loading...' : aboutMeContent.text}
                 </p>
             </div>
         </section>
