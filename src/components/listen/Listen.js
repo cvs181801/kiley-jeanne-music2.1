@@ -45,13 +45,7 @@ useEffect(()=>{
             <div
               className="listenInnerContainer"
             >
-              <p>Scroll down to listen on You Tube.  Stay tuned for more musical content coming your way soon.
-              Convallis a cras semper auctor neque vitae tempus. Feugiat vivamus at augue eget arcu dictum varius. 
-              Facilisis mauris sit amet massa vitae. Molestie nunc non blandit massa enim nec dui. 
-              Mattis nunc sed blandit libero volutpat sed cras ornare arcu. 
-              Eget felis eget nunc lobortis mattis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Est placerat in egestas erat. 
-              Aliquet eget sit amet tellus cras adipiscing enim eu. Id semper risus in hendrerit gravida. Vitae congue eu consequat ac felis donec. 
-              Placerat in egestas erat imperdiet. Nunc mattis enim ut tellus elementum. Metus aliquam eleifend mi in nulla posuere.
+              <p>Scroll down to listen on You Tube.  Stay tuned for more musical content coming your way soon!
               </p>
             </div>
         </div>
