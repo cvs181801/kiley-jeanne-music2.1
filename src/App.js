@@ -32,4 +32,5 @@ export default App;
 //how to request images from contently at the needed size?
 //placeholder 'error' messages in the repo?
 //make modal look better
+//issue with character limit in contentful on the about me text section/text field
 
