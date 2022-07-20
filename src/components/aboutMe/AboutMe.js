@@ -9,13 +9,13 @@ export default function AboutMe() {
     const getAboutMeContent = async ()=> {
         try{
             const response = await client.getEntries({content_type:'aboutMe'})
-            const text = response.items[0].fields.text;
+            const text = response.items[0].fields.text2.content[0].content[0].value;   //response.items[0].fields.text;
             const image = response.items[0].fields.image.fields.file.url;
 
             setIsAboutMeLoading(false)
             setAboutMeContent({
                 text: text,
-                image: `https:${image}` //try to request all images / media from contentful at the needed size
+                image: `https:${image}` 
             })
   
         }
