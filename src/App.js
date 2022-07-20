@@ -30,6 +30,5 @@ export default App;
 
 //remove the unused google fonts
 //how to request images from contently at the needed size?
-//placeholder 'error' messages in the repo?
-//emails not going to email inbox
-//extra white space at bottom of the page
+//make modal look better
+//remove white space at bottom of page

@@ -35,6 +35,7 @@ export default function AboutMe() {
   return (
     <div
         className="containerDivAboutMe"
+        data-testid="aboutMeContent"
 
     >
         <section
@@ -43,7 +44,7 @@ export default function AboutMe() {
             <div
                 className="innerDivAboutMe"
             >
-                <p>
+                <div>
                     <div
                         className="aboutMeImg"
                         style={{
@@ -52,7 +53,7 @@ export default function AboutMe() {
                     >
                     </div>
                 {isAboutMeLoading ? 'Loading...' : aboutMeContent.text}
-                </p>
+                </div>
             </div>
         </section>
     </div>

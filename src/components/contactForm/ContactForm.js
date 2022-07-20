@@ -37,11 +37,11 @@ export default function ContactForm(props) {
             <input type="hidden" name="form-name" value="contact v1" />
            
                 <label> <br/> Name <br/>
-                    <input type="text" name="name"/>
+                    <input type="text" name="name" data-testid="name"/>
                 </label>
            
                 <label> <br/> Email <br/>
-                    <input type="email" name="email"/>
+                    <input type="email" name="email" data-testid="email"/>
                 </label>
             
                 <label> <br/> Add Your Message Here: <br/>

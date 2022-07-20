@@ -116,6 +116,7 @@ export default function Schedule() {
        >
             <div
                 className="containerDivSched"
+                data-testid="scheduleContent"
             >
                 {scheduleContent ? scheduleContent.map(gig=> 
                 <p key={gig.id}>{gig.text}</p>) : ''}

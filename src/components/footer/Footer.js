@@ -69,6 +69,7 @@ const handleClick = (url)=> {
           >
             <div
               className="socialMediaContainer"
+              data-testid="socialMediaContainer"
             >
               {isFooterLoading ? 'Loading...' : ''}
               {footerContent.socialMediaIcons ? footerContent.socialMediaIcons.map((icon)=> {

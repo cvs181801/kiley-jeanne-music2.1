@@ -24,6 +24,7 @@ export default function Instagram() {
             className="snapwidget-widget" 
             allowtransparency="true" 
             frameBorder="0" 
+            data-testid="instagramIframe"
             >
             </iframe>
         </div>
