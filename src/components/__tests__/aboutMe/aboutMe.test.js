@@ -11,3 +11,5 @@ test('should render text', ()=> {
     const aboutMeContent = screen.getByTestId("aboutMeContent")
     expect(aboutMeContent).toBeInTheDocument();
 })
+
+//can I use jest.mock() to simulate getting the content from Contentful?  Will that work / hpw will that work w/o exposing API keys?

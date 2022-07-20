@@ -38,6 +38,7 @@ useEffect(()=>{
       >
         <div
           className="listenContainer"
+          data-testid="listenContent"
           style={{
             backgroundImage: `url(${listenContent.image})`
           }}
