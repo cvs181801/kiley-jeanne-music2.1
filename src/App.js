@@ -32,3 +32,4 @@ export default App;
 //how to request images from contently at the needed size?
 //make modal look better
 //remove white space at bottom of page
+//small change
