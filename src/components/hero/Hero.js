@@ -3,7 +3,7 @@ import { client } from '../../client';
 import './hero.css'
 
 export default function Hero() {
-    const [isHeroLoading, setIsHeroLoading] = useState(true); //create a loading image/graphic for when contents are loading
+    const [isHeroLoading, setIsHeroLoading] = useState(true); 
     const [heroContent, setHeroContent] = useState({});
 
     const getHeroContent = async ()=> {

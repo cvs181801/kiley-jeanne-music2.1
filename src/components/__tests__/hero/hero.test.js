@@ -17,3 +17,5 @@ test('should render hero tagline', ()=> {
     const heroTagline = screen.getByText(/Loading.../i)
     expect(heroTagline).toBeInTheDocument();
 })
+
+//write a test to test the API

@@ -6,8 +6,10 @@ afterEach(()=> {
     cleanup();
 })
 
-test('should render text input field', ()=> {
+test('should render nav bar', ()=> {
     render(<NavBar/>)
     const navBar = screen.getByRole("navigation")
     expect(navBar).toBeInTheDocument();
 })
+
+//write a test for all buttons

@@ -12,3 +12,4 @@ test('should render instagram widget in iframe', ()=> {
     expect(youtubeIframe).toBeInTheDocument();
 })
 
+//write a test to test the API IF snapwidget is added

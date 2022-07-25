@@ -30,6 +30,7 @@ export default App;
 
 //remove the unused google fonts
 //how to request images from contently at the needed size?
-//make modal look better
+//make modal look better and the modal from the sced component is still too high up.
 //remove white space at bottom of page
-//small change
+//why isn't netlify forms emailing her the messages?
+//extra content items in kiley's contentful

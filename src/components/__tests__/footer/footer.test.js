@@ -14,3 +14,5 @@ test('should render footer content', ()=> {
     //how do I access the object?
     
 })
+
+//write a test to test the API

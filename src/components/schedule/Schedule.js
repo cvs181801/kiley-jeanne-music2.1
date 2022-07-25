@@ -3,6 +3,7 @@ import { client } from '../../client';
 import './schedule.css'
 import ContactForm from '../contactForm/ContactForm';
 
+//console.log(client)
 
 export default function Schedule() {
     const [isScheduleLoading, setIsScheduleLoading] = useState(true);
@@ -17,6 +18,8 @@ export default function Schedule() {
             const scheduleItems = response.items[0].fields.text.content;
             let ID = response.items[0].fields.id;
             let massagedScheduleItems = [];
+            console.log('mock this!', response)
+            
            
             //console.log("content :", content)
             //let itemObj={};
