@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap&family=Quicksand:wght@500;700&family=Martel:wght@200');
 
+:root {
+    --light-blue: #B2EBF2;
+}
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -33,10 +37,11 @@ body {
     position: relative; 
     height: 3em;
     width: 3em;
-    background: #FFFFFF;
-    border: 1px solid #472B01;
+    background: var(--light-blue);
+    /*border: 1px solid #472B01;*/
+    border: none;
     box-shadow: -4px -4px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
