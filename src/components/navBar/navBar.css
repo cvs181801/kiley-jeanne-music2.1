@@ -2,6 +2,7 @@
 
 :root {
     --light-blue: #B2EBF2;
+    --dark-blue: #0097A7;
 }
 
 body {
@@ -17,9 +18,11 @@ body {
     position: absolute;
     background-attachment: fixed;
     top: 1em;
-    left: 18.5em;
+   /* left: 18.5em;*/
+    left: 19.5em;
     height: 3500px;  
     pointer-events: none;
+    border: 2px solid red;
     
 } 
 
@@ -31,16 +34,16 @@ body {
     left: 1em;
     z-index: 2;
     pointer-events: none;
+    border: 2px solid purple;
 }
 
 .hamburger {
     position: relative; 
-    height: 3em;
-    width: 3em;
+    height: 2.2em;
+    width: 2.2em;
     background: var(--light-blue);
-    /*border: 1px solid #472B01;*/
     border: none;
-    box-shadow: -4px -4px 2px rgba(0, 0, 0, 0.25);
+    /* box-shadow: -4px -4px 2px rgba(0, 0, 0, 0.25); */
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -52,13 +55,18 @@ body {
     pointer-events: auto;
 }
 
+.hambarContainer {
+    padding-top: .2em;
+} 
+
 #hamburger-innerdiv {
     position: relative;
-    background: #02C8AF;
-    margin: .3em auto .3em auto;
-    height: .3em;
-    width: 2em;
+    background: var(--dark-blue);
+    margin: .2em auto .2em auto;
+    height: .2em;
+    width: 1.5em;
     border-radius: 4px; 
+    border: none;
     transition: 0.3s;
 }
 

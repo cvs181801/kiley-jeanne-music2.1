@@ -1,4 +1,9 @@
 
+:root {
+    --light-blue: #B2EBF2;
+    --dark-blue: #0097A7;
+}
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -11,7 +16,9 @@ body {
 h1 {
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    padding: 5px;
+    /* padding: 5px; */
+    text-align: center;
+    color: var(--dark-blue);
 }
 
 .containerDivHero {
@@ -23,16 +30,16 @@ h1 {
 
 .topDiv {
     width: 100vw;
-    height: 7em;
+    /* height: 7em; */
     margin: 0 auto;
-    background: linear-gradient(180deg, #A4FCF1 0%, rgba(164, 252, 241, 0) 67.19%);
-    border-top: 1px solid #A4FCF1;
+    /* background: linear-gradient(180deg, #A4FCF1 0%, rgba(164, 252, 241, 0) 67.19%);
+    border-top: 1px solid #A4FCF1; */
 }
 
-.welcomeDiv {
+/* .welcomeDiv {
     margin-top: 0;
     padding: 5px;
-}
+} */
 
 .imgDiv {
     width: 100vw;
@@ -45,11 +52,6 @@ h1 {
     background-repeat: no-repeat;
     /*transition: all .5s;*/
 }
-
-/*.imgDiv:hover,
-.imgDiv:focus {
-    transform: scale(1.1);
-}*/
 
 .imgDiv-p {
     position: relative;
@@ -67,7 +69,7 @@ h1 {
     width: 100vw;
     height: 3em;
     margin: 0 auto;
-    background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%);
+    /* background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%); */
 }
 
 @media (min-width: 600px) {

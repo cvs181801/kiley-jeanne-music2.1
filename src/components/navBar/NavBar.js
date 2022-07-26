@@ -49,22 +49,26 @@ export default function NavBar() {
                 className="hamburger"
                 onClick={handleHamburgerClick}
             >
-                <div 
-                    id="hamburger-innerdiv" 
-                    className={navBool ? "change hambar1" : "hambar1"}
+                <div
+                    className="hambarContainer"
                 >
-                </div>
+                    <div 
+                        id="hamburger-innerdiv" 
+                        className={navBool ? "change hambar1" : "hambar1"}
+                    >
+                    </div>
 
-                <div 
-                    id="hamburger-innerdiv" 
-                    className={navBool ? "change hambar2" : "hambar2"}
-                >
-                </div>
+                    <div 
+                        id="hamburger-innerdiv" 
+                        className={navBool ? "change hambar2" : "hambar2"}
+                    >
+                    </div>
 
-                <div 
-                    id="hamburger-innerdiv" 
-                    className={navBool ? "change hambar3" : "hambar3"}
-                >
+                    <div 
+                        id="hamburger-innerdiv" 
+                        className={navBool ? "change hambar3" : "hambar3"}
+                    >
+                    </div>
                 </div>
 
             </div>
