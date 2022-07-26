@@ -23,29 +23,31 @@ body {
     top: 1em;
     /* left: 21em; */
     left: 15em;
-    height: 3500px;  
+    /* height: 3500px;   */
+    
     pointer-events: none;
     border: 2px solid red; 
     
 } 
 
 .navContainer {   
-    position: sticky; 
-    height: 80vh;
+    /* position: sticky;  */
+    /* height: 80vh; */
     /* width: 89.594px;  */
-    width: 200px;
+    width: 11em; 
     border-radius: 4px;
     top: 1em;
-    left: 1em;
+    left: 2em;
     z-index: 2;
     pointer-events: none;
     border: 2px solid purple; 
-    /* justify-content: right;
-    align-items: right; */
+    justify-content: right;
+    align-items: right; 
 }
 
 .hamburger {
     position: relative; 
+    float: right;
     height: 2.2em;
     width: 2.2em;
     /* background: var(--light-blue); */
@@ -64,7 +66,7 @@ body {
 
 .hambarContainer {
     padding-top: .3em;
-    float: right;
+    
 } 
 
 #hamburger-innerdiv {
@@ -98,7 +100,7 @@ body {
     visibility: visible;
     position: relative; 
     /* width: 7em; */
-    width: 15em;
+    width: 13em;
     height: 35em;
     background: #FFFFFF;
     box-shadow: 0px 4px 8px var(--dark-teal-drop-1), 0px 8px 16px var(--dark-teal-drop-2);
@@ -107,10 +109,12 @@ body {
     flex-direction: column;
     margin: 2.5em auto 0 auto;
     justify-content: right;
-    text-align: right;
+    text-align: right; 
     font-size: .8rem;
     /*font-family: 'Quicksand', sans-serif;
-    font-weight: 700;    */
+    font-weight: 700;*/
+    z-index: 2;
+    border: 1px solid lightseagreen;
 }
 
 .hideNav {
@@ -118,33 +122,36 @@ body {
     visibility: hidden;
 }
 
+.navUl {
+    list-style-type: none;
+    pointer-events: none;
+    border: 1px solid hotpink;
+}
+
 .navLi {
     position: relative;
-    left: -35px;
-    /* background: rgba(1, 98, 5, 0.13);
-    border: 1px solid #016205; */
+    /* left: -35px; */
+    /* background: rgba(1, 98, 5, 0.13); */
+    border: 1px solid #016205; 
     border-radius: 7px;
     width: 6em;
     height: 3.7em;
     padding: .2em;
-    margin: 1.5em auto 1.5em auto;
+    margin: .5em auto .5em auto; 
     text-transform: uppercase;
     pointer-events: auto;
     cursor: pointer;
     font-family: var(--ff-accent);
     font-weight: 400;
     letter-spacing: .05rem;
-}
-
-.navUl {
-    list-style-type: none;
-    pointer-events: none;
+    float: right;
 }
 
 .navLiAnchor {
     flex-wrap: wrap;
     text-decoration: none;
     color: #472B01;
+    border: 1px solid red;
 }
 
 .bookBtn {
@@ -156,12 +163,13 @@ body {
     width: 6em;
     height: 3.7em;
     padding: .2em;
-    margin: 1.5em auto 1.5em auto;
+    margin: .5em auto .5em auto;
     background-color: rgba(1, 98, 5, 0.13);
     cursor: pointer;
     pointer-events: auto;
     z-index: 9;
     transition: all .5s; 
+    float: right;
 }
 
 .bookBtn:hover,
