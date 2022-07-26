@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap&family=Quicksand:wght@500;700&family=Martel:wght@200');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap&family=Quicksand:wght@500;700&family=Martel:wght@200?family=Roboto+Flex:opsz@8..144&display=swap');
 
 :root {
     --light-blue: #B2EBF2;
     --dark-blue: #0097A7;
+    --dark-teal-drop-1: rgba(4, 96, 97, 0.16);
+    --dark-teal-drop-2: rgba(6, 150, 151, 0.16);
+    --ff-accent: 'Roboto Flex', sans-serif;
 }
 
 body {
@@ -18,37 +21,41 @@ body {
     position: absolute;
     background-attachment: fixed;
     top: 1em;
-   /* left: 18.5em;*/
-    left: 19.5em;
+    /* left: 21em; */
+    left: 15em;
     height: 3500px;  
     pointer-events: none;
-    border: 2px solid red;
+    border: 2px solid red; 
     
 } 
 
 .navContainer {   
     position: sticky; 
     height: 80vh;
-    width: 89.594px;
+    /* width: 89.594px;  */
+    width: 200px;
+    border-radius: 4px;
     top: 1em;
     left: 1em;
     z-index: 2;
     pointer-events: none;
-    border: 2px solid purple;
+    border: 2px solid purple; 
+    /* justify-content: right;
+    align-items: right; */
 }
 
 .hamburger {
     position: relative; 
     height: 2.2em;
     width: 2.2em;
-    background: var(--light-blue);
+    /* background: var(--light-blue); */
     border: none;
     /* box-shadow: -4px -4px 2px rgba(0, 0, 0, 0.25); */
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    justify-content: center;
+    /* justify-content: right; */
     display: block;
     visibility: visible;
     cursor: pointer;
@@ -56,7 +63,8 @@ body {
 }
 
 .hambarContainer {
-    padding-top: .2em;
+    padding-top: .3em;
+    float: right;
 } 
 
 #hamburger-innerdiv {
@@ -81,7 +89,7 @@ body {
 
 .change.hambar3 {
     transform: rotate(-45deg);
-    bottom: .7em;
+    bottom: .3em;
 }
 
 .navBar, nav {
@@ -89,19 +97,20 @@ body {
     display: block;
     visibility: visible;
     position: relative; 
-    width: 7em;
+    /* width: 7em; */
+    width: 15em;
     height: 35em;
     background: #FFFFFF;
-    border: 1px solid #016205;
+    box-shadow: 0px 4px 8px var(--dark-teal-drop-1), 0px 8px 16px var(--dark-teal-drop-2);
     border-radius: 7px;
     display: flex;
     flex-direction: column;
     margin: 2.5em auto 0 auto;
-    justify-content: center;
-    text-align: center;
+    justify-content: right;
+    text-align: right;
     font-size: .8rem;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;    
+    /*font-family: 'Quicksand', sans-serif;
+    font-weight: 700;    */
 }
 
 .hideNav {
@@ -112,8 +121,8 @@ body {
 .navLi {
     position: relative;
     left: -35px;
-    background: rgba(1, 98, 5, 0.13);
-    border: 1px solid #016205;
+    /* background: rgba(1, 98, 5, 0.13);
+    border: 1px solid #016205; */
     border-radius: 7px;
     width: 6em;
     height: 3.7em;
@@ -122,6 +131,9 @@ body {
     text-transform: uppercase;
     pointer-events: auto;
     cursor: pointer;
+    font-family: var(--ff-accent);
+    font-weight: 400;
+    letter-spacing: .05rem;
 }
 
 .navUl {
@@ -137,8 +149,8 @@ body {
 
 .bookBtn {
     color: #472B01;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
+    font-family: var(--ff-accent);
+    letter-spacing: .05rem;
     border: 1px solid #016205; 
     border-radius: 7px;
     width: 6em;
@@ -146,7 +158,6 @@ body {
     padding: .2em;
     margin: 1.5em auto 1.5em auto;
     background-color: rgba(1, 98, 5, 0.13);
-    letter-spacing: .05rem;
     cursor: pointer;
     pointer-events: auto;
     z-index: 9;

@@ -50,7 +50,7 @@ h1 {
     background-position: 35% 35%;
     color: white;
     background-repeat: no-repeat;
-    /*transition: all .5s;*/
+    margin: 0 auto;
 }
 
 .imgDiv-p {
