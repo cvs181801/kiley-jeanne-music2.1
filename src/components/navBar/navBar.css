@@ -110,7 +110,7 @@ body {
     margin: 2.5em auto 0 auto;
     justify-content: right;
     text-align: right; 
-    font-size: .8rem;
+    font-size: .8rem; 
     /*font-family: 'Quicksand', sans-serif;
     font-weight: 700;*/
     z-index: 2;
@@ -134,9 +134,9 @@ body {
     /* background: rgba(1, 98, 5, 0.13); */
     border: 1px solid #016205; 
     border-radius: 7px;
-    width: 6em;
+    width: 8em;
     height: 3.7em;
-    padding: .2em;
+    padding: .5em;
     margin: .5em auto .5em auto; 
     text-transform: uppercase;
     pointer-events: auto;
@@ -155,21 +155,23 @@ body {
 }
 
 .bookBtn {
-    color: #472B01;
+    /* color: #472B01; */
     font-family: var(--ff-accent);
     letter-spacing: .05rem;
-    border: 1px solid #016205; 
     border-radius: 7px;
-    width: 6em;
+    width: 10em;
     height: 3.7em;
     padding: .2em;
-    margin: .5em auto .5em auto;
-    background-color: rgba(1, 98, 5, 0.13);
+    margin-left: 2em;  
+    /* background-color: rgba(1, 98, 5, 0.13); */
     cursor: pointer;
     pointer-events: auto;
     z-index: 9;
     transition: all .5s; 
-    float: right;
+    border: none;
+    border: 1px solid #016205;  
+    background-color: transparent;
+    
 }
 
 .bookBtn:hover,
