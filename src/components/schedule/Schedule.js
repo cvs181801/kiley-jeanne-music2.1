@@ -117,22 +117,24 @@ export default function Schedule() {
        <section
         id="scheduleSection"
        >
+
+            <button
+                className="bookBtnSched"
+                onClick={handleClick}
+            >
+                BOOK / CONTACT
+                    
+            </button>
+
             <div
                 className="containerDivSched"
                 data-testid="scheduleContent"
             >
                 {scheduleContent ? scheduleContent.map(gig=> 
-                <p key={gig.id}>{gig.text}</p>) : ''}
+                <p key={gig.id} className="gigContent">{gig.text}</p>) : ''}
             </div>   
 
-                <button
-                    className="bookBtnSched"
-                    onClick={handleClick}
-                    
-                >
-                    BOOK / CONTACT
-                    
-                </button>
+                
                 {isScheduleLoading ? 'Loading...' : ''}
                 {scheduleContent && formBool && <ContactForm state={formClass} parent={parentComponent} formBool={setFormBool}/>}
 

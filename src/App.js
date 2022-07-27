@@ -28,6 +28,8 @@ function App() {
 
 export default App;
 
+
+
 //remove the unused google fonts
 //add global variables for all colors and fonts in css
 //how to request images from contently at the needed size?

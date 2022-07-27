@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap&family=Quicksand:wght@500;700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap&family=Quicksand:wght@500;700&family=Martel:wght@200?family=Roboto+Flex:opsz@8..144&display=swap');
+
+:root {
+    --dark-teal: #0097A7;
+    --vanilla: #FFFAF3;
+    --ff-accent: 'Roboto Flex', sans-serif;
+}
 
 body {
     margin: 0 auto;
@@ -9,23 +15,34 @@ body {
     box-sizing: border-box;
 }
 
+.scheduleDiv {
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--ff-accent);
+}
+
 .containerDivSched {
-    background: #FFFFFF;
-    box-shadow: -4px -4px 5px 3px rgba(71, 43, 1, 0.35);
+    background: var(--vanilla);
+    /* box-shadow: -4px -4px 5px 3px rgba(71, 43, 1, 0.35); */
     border-radius: 7px;
     height: auto;
     width: 20em;
-    margin: 0 auto 1em 5px;
-    padding: .7em .7em .7em 1.4em;
+    /* margin: 0 auto 1em 5px; */
+    margin: 0 auto;
+    /* padding: .7em .7em .7em 1.4em; */
+    padding: .7em;
     letter-spacing: .1rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    text-align: left;
     font-family: 'Quicksand', sans-serif;
 } 
 
 .bookBtnSched {
-    background: #FFFFFF;
-    border: 3px solid #472B01;
-    border-radius: 7px;
+    /* border: 3px solid #472B01; */
+    background: white;
+    border: 1px solid var(--dark-teal);
+    border-radius: 4px; 
+    /* border-radius: 7px; */
     font-family: 'Quicksand', sans-serif;
     font-weight: 900;
     font-size: 12px;
@@ -33,10 +50,13 @@ body {
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.2em;
-    color: #000000;
-    width: 10em;
-    margin: 0 auto 1em 5px;
-    background: rgba(1, 98, 5, 0.13);
+    color: var(--dark-teal);
+    /* width: 10em; */
+    width: 90vw;
+    height: 4em;
+    /* margin: 0 auto 1em 5px; */
+    margin: 0 auto;
+    /* background: rgba(1, 98, 5, 0.13); */
     cursor: pointer;
     transition: all .5s; 
 }
@@ -47,13 +67,14 @@ body {
     cursor: pointer;
 }  
 
+.gigContent {
+    background: var(--vanilla);
+}
+
 
 @media (min-width: 600px) {
 
-    .scheduleDiv {
-        margin: 0 auto;
-        text-align: center;
-    }
+ 
 
     .containerDivSched {
         margin: 0 auto;

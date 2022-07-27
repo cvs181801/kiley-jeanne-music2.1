@@ -12,7 +12,7 @@ export default function Instagram() {
 
         <p
           className="instagram-p"
-        >Follow me on Instagram!
+        >What I'm up to
         </p>
 
         <div

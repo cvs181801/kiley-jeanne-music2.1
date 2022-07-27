@@ -9,9 +9,11 @@ body {
 }
 
 .listenContainer {
+    margin: 0 auto;
     width: 100vw;
     margin-top: 2em;
-    padding: 1em 0 1em 0;
+    /* padding: 1em 0 1em 0; */
+    padding: .7em;
     background-color:rgba(71, 43, 1, 0.71);
     background-size: cover;
     background-position: center center;
@@ -20,12 +22,14 @@ body {
 }
 
 .listenInnerContainer {
-    border: 1px solid #FFFFFF;
-    border-radius: 7px;
+    /* border: 1px solid #FFFFFF;
+    border-radius: 7px; */
     text-align: center;
     height: auto;
-    width: 20em;
-    margin: 1em auto 0 5px;
+    /* width: 20em; */
+    width: 90vw;
+    /* margin: 1em auto 0 5px; */
+    margin: 0 auto;
     color: white;
     padding: .7em 1.4em .7em .7em;
 }
