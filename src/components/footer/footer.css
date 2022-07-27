@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap&family=Quicksand:wght@500;700&family=Martel:wght@200?family=Roboto+Flex:opsz@8..144&display=swap');
+
+
+:root {
+    --light-blue: #E0F7FA;
+    --ff-main: 'Roboto', sans-serif;
+}  
 
 body {
     margin: 0 auto;
@@ -10,36 +17,43 @@ body {
 
 .footerContainer {
     width: 100vw;
-    height: 20em;   
-    margin-top: 2em;
+    /* height: 20em;    */
+    /* margin-top: 2em; */
     /*background-color:rgba(212, 253, 212, 0.595);
      background: linear-gradient(180deg, #FFFFFF 40.63%, rgba(1, 98, 5, 0.44) 99.48%);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: screen;
+    font-family: var(--ff-main);
 }
 
 .footerContainer p {
-    padding-top: 9.5em;  
+    /* padding-top: 9.5em;   */
     /* position: absolute;
         bottom: 0;
         left: 20em; */
-    color: white;
-    margin-left: 5px;
+    color: black;
+    background: var(--light-blue);
+    text-align: center;
+    /* margin-left: 5px; */
 }
 
 .socialMediaContainer {
     display: flex;
     width: 80vw;
-    margin-left: 5px;
+    margin: 0 auto;
+    /* margin-left: 5px; */
     padding-top: 1em;
+    justify-content: space-between;
 }
 
 .socialMediaIcon {
-    height: 4em;
-    width: 4em;
+    /* height: 4em;
+    width: 4em; */
+    height: 1.5em;
+    width: 1.5em;
     background-size: contain;
-    margin: 1em;
+    /* margin: 1em; */
     justify-content: space-between;
     cursor: pointer;
 }

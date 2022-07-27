@@ -22,9 +22,8 @@ body {
     background-attachment: fixed;
     top: 1em;
     /* left: 21em; */
-    left: 15em;
+    left: 14em;
     /* height: 3500px;   */
-    
     pointer-events: none;
     border: 2px solid red; 
     
@@ -34,7 +33,7 @@ body {
     /* position: sticky;  */
     /* height: 80vh; */
     /* width: 89.594px;  */
-    width: 11em; 
+    width: 10em; 
     border-radius: 4px;
     top: 1em;
     left: 2em;
