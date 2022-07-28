@@ -19,34 +19,37 @@ body {
 
 .navContainerOuter {
     position: absolute;
-    background-attachment: fixed;
+    /* background-attachment: fixed;  needed for sticky button*/
     top: 1em;
-    /* left: 21em; */
-    left: 14em;
-    /* height: 3500px;   */
+    /* left: 14em; */
+    /* left: .2em; */
+    /* height: 3500px;   needed for sticky button*/
     pointer-events: none;
-    border: 2px solid red; 
+    border: 2px solid red;   
     
 } 
 
 .navContainer {   
     /* position: sticky;  */
     /* height: 80vh; */
-    /* width: 89.594px;  */
-    width: 10em; 
+    /* width: 89.594px; needed for sticky button */
+
+    /* width: 10em;  */
     border-radius: 4px;
     top: 1em;
-    left: 2em;
+    /* left: 2em; */
     z-index: 2;
     pointer-events: none;
-    border: 2px solid purple; 
-    justify-content: right;
-    align-items: right; 
+    border: 2px solid transparent;  
+    border: 2px solid purple;
+    /* justify-content: right;
+    align-items: right;  */
 }
 
 .hamburger {
     position: relative; 
-    float: right;
+    /* float: right; */
+    float: left;
     height: 2.2em;
     width: 2.2em;
     /* background: var(--light-blue); */
@@ -71,7 +74,7 @@ body {
 #hamburger-innerdiv {
     position: relative;
     background: var(--dark-blue);
-    margin: .2em auto .2em auto;
+    margin: .3em auto .3em auto;
     height: .2em;
     width: 1.5em;
     border-radius: 4px; 
@@ -90,7 +93,7 @@ body {
 
 .change.hambar3 {
     transform: rotate(-45deg);
-    bottom: .3em;
+    bottom: .5em;
 }
 
 .navBar, nav {
@@ -100,15 +103,15 @@ body {
     position: relative; 
     /* width: 7em; */
     width: 13em;
-    height: 35em;
+    height: 31em;
     background: #FFFFFF;
     box-shadow: 0px 4px 8px var(--dark-teal-drop-1), 0px 8px 16px var(--dark-teal-drop-2);
     border-radius: 7px;
     display: flex;
     flex-direction: column;
     margin: 2.5em auto 0 auto;
-    justify-content: right;
-    text-align: right; 
+    /* justify-content: right;
+    text-align: right;  */
     font-size: .8rem; 
     /*font-family: 'Quicksand', sans-serif;
     font-weight: 700;*/

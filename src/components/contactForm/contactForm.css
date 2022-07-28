@@ -29,7 +29,7 @@ body {
     position: absolute;
     color: #472B01;
     top: 2em;
-    left: -18em;
+    /* left: -18em; */
     padding: .3em;
     display: none;
     background: white;

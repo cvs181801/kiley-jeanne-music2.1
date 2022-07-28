@@ -39,7 +39,7 @@ body {
 
 .bookBtnSched {
     /* border: 3px solid #472B01; */
-    background: white;
+    background: var(--dark-teal);
     border: 1px solid var(--dark-teal);
     border-radius: 4px; 
     /* border-radius: 7px; */
@@ -50,7 +50,7 @@ body {
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.2em;
-    color: var(--dark-teal);
+    color: white;
     /* width: 10em; */
     width: 90vw;
     height: 4em;

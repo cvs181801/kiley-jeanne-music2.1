@@ -9,11 +9,13 @@ export default function Instagram() {
       <section
         id="gallerySection"
       >
-
-        <p
-          className="instagram-p"
-        >What I'm up to
-        </p>
+        <div className="instagram-div">
+          <p
+            className="instagram-p"
+          >What I'm up to
+          </p>
+        </div>
+        
 
         <div
           className="instagramInnerContainerDiv"
