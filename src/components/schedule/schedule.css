@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap&family=Quicksand:wght@500;700&family=Martel:wght@200?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
 
 :root {
     --dark-teal: #0097A7;
     --vanilla: #FFFAF3;
-    --ff-accent: 'Roboto Flex', sans-serif;
+    --ff-accent: 'Martel', serif;
+    --ff-main1: 'Roboto Flex', sans-serif;
+    --ff-main2: 'Roboto', sans-serif;
 }
 
 body {
@@ -18,11 +20,11 @@ body {
 .scheduleDiv {
     margin: 0 auto;
     text-align: center;
-    font-family: var(--ff-accent);
+    background: var(--vanilla);
 }
 
 .containerDivSched {
-    background: var(--vanilla);
+ 
     /* box-shadow: -4px -4px 5px 3px rgba(71, 43, 1, 0.35); */
     border-radius: 7px;
     height: auto;
@@ -34,7 +36,6 @@ body {
     letter-spacing: .1rem;
     /* text-transform: uppercase; */
     text-align: left;
-    font-family: 'Quicksand', sans-serif;
 } 
 
 .bookBtnSched {

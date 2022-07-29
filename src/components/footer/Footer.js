@@ -57,7 +57,9 @@ const handleClick = (url)=> {
 }
 
   return (
-    <div>
+    <div
+      className="footerOuterContainer"
+    >
        <section
           id="followSection"
         >
@@ -79,8 +81,8 @@ const handleClick = (url)=> {
                 ''}  
 
               </div>
-              <p>© 2022 Kiley Jeanne | All Rights Reserved</p>
-          </div>
+                <p>© 2022 Kiley Jeanne | All Rights Reserved</p>
+              </div>
    
         </section>
       </div>

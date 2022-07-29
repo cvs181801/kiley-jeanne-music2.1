@@ -19,19 +19,28 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .listenInnerContainer {
     /* border: 1px solid #FFFFFF;
     border-radius: 7px; */
     text-align: center;
-    height: auto;
+    height: auto; 
     /* width: 20em; */
     width: 90vw;
     /* margin: 1em auto 0 5px; */
     margin: 0 auto;
     color: white;
     padding: .7em 1.4em .7em .7em;
+    letter-spacing: .07rem;
 }
 
 @media (min-width: 600px) {

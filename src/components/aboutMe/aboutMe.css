@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
 
 :root {
-    --light-blue: #E0F7FA;
-}   
+    --light-blue: #B2EBF2;
+    --vanilla: #FFFAF3;
+    --dark-blue: #0097A7;
+    --ff-accent: 'Martel', serif;
+    --ff-main1: 'Roboto Flex', sans-serif;
+    --ff-main2: 'Roboto', sans-serif;
+}
+
     body {
     margin: 0 auto;
     padding: 0;
@@ -29,6 +36,8 @@
     margin: 0 auto;
     /* padding: .7em 1.4em .7em .7em; */
     padding: .7em;
+    letter-spacing: .07rem;
+    
 }
 
 .aboutMeImg {
