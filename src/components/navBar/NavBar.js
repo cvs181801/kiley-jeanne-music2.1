@@ -7,19 +7,15 @@ export default function NavBar() {
     const [formBool, setFormBool] = useState(false)
     const [formClass, setFormClass] = useState("none")
     const [parentComponent, setParentComponent] = useState("navBar")
-    //const [showNav, setShowNav] = useState(false)
     const [navBool, setNavBool] = useState(false)
-    //const [change, setChange] = useState('')
 
     const handleClick = (event)=> {
         event.preventDefault();
-        if (formBool) {
-           
+        if (formBool) {      
             setFormBool(false)
             setFormClass("none")
             window.scrollTo(0, 0);
-            } else {
-            
+            } else {  
             setFormBool(true)
             setFormClass("inline-block")
             setParentComponent("navBar")
@@ -49,26 +45,22 @@ export default function NavBar() {
                 className="hamburger"
                 onClick={handleHamburgerClick}
             >
-                <div
-                    className="hambarContainer"
+                <div 
+                    id="hamburger-innerdiv" 
+                    className={navBool ? "change hambar1" : "hambar1"}
                 >
-                    <div 
-                        id="hamburger-innerdiv" 
-                        className={navBool ? "change hambar1" : "hambar1"}
-                    >
-                    </div>
+                </div>
 
-                    <div 
-                        id="hamburger-innerdiv" 
-                        className={navBool ? "change hambar2" : "hambar2"}
-                    >
-                    </div>
+                <div 
+                    id="hamburger-innerdiv" 
+                    className={navBool ? "change hambar2" : "hambar2"}
+                >
+                </div>
 
-                    <div 
-                        id="hamburger-innerdiv" 
-                        className={navBool ? "change hambar3" : "hambar3"}
-                    >
-                    </div>
+                <div 
+                    id="hamburger-innerdiv" 
+                    className={navBool ? "change hambar3" : "hambar3"}
+                >
                 </div>
 
             </div>
@@ -84,14 +76,17 @@ export default function NavBar() {
                         <li className="navLi"><p><a className="navLiAnchor" href="#listenSection" >listen</a></p></li>
                         <li className="navLi"><p><a className="navLiAnchor" href="#gallerySection" >gallery</a></p></li>
                         <li className="navLi"><p><a className="navLiAnchor" href="#followSection" >follow</a></p></li>
-                </ul>
-                    <button
+
+                        <button
                         className="bookBtn"
                         onClick={handleClick} 
                     >
                         BOOK / CONTACT
                         
                     </button>
+                    
+                </ul>
+                    
                     
             </nav>
             

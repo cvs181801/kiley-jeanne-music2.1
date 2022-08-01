@@ -1,19 +1,23 @@
 import {render, screen, cleanup, fireEvent} from '@testing-library/react'
+import {create, act} from 'react-test-renderer'
 import '@testing-library/jest-dom'
-import getScheduleContent from '../../schedule/Schedule'
+import GetScheduleContent from '../../schedule/Schedule'
 import { client } from '../../../client';
 import '../../../../jest.config'
-
-// Import the module you want to mock into your test file.
-// jest.mock() the module.
-// Use .mockResolvedValue(<mocked response>) to mock the response.
+import { createRenderer } from 'react-dom/test-utils';
 
 afterEach(()=> {
     cleanup();
 })
 
+let root; 
+
+act(() => {
+  root = create(<GetScheduleContent scheduleContent={[]}/>)
+});
+
 test('should render schedule content', ()=> {
-    render(<getScheduleContent/>)
+    render(<GetScheduleContent/>)
     const scheduleContent = screen.getByTestId('scheduleContent')
     expect(scheduleContent).toBeInTheDocument();
 })
@@ -220,15 +224,22 @@ it('returns an array of strings', async ()=> {
     ]
 }   
     } 
-    //     items: [
-    // {nodeType: 'paragraph', content: {nodeType: 'text', value: "Live at Galiotti's"}},
-    // {nodeType: 'paragraph', content: {nodeType: 'text', value: "Live at Galiotti's"}},
-    // {nodeType: 'paragraph', content: {nodeType: 'text', value: "Live at Galiotti's"}}
-    // ]}
+    
     )
     const content = await getScheduleContent();
     expect(content).not.toBeNull();
+    console.log('content:' , content)
+
+    const scheduleItems = content.items[0].fields.text.content
+    act(() => {
+        root.update(<GetScheduleContent scheduleContent={[scheduleItems]}/>);
+    })
 })
+
+
+  
+  // make assertions on root 
+  //expect(root.toJSON()).toMatchSnapshot();
 
 ///
 
@@ -239,3 +250,6 @@ it('returns an array of strings', async ()=> {
 //     //need to figre out how to expect class name on the modal/contact form to change
 // })
 
+// Import the module you want to mock into your test file.
+// jest.mock() the module.
+// Use .mockResolvedValue(<mocked response>) to mock the response.

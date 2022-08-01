@@ -27,33 +27,30 @@ body {
     /* left: 14em; */
     /* left: .2em; */
     /* height: 3500px;   needed for sticky button*/
+    /* padding-bottom: 4.1em; */
     pointer-events: none;
-    border: 2px solid red;  
-    font-family: var(--ff-main1); 
-    
+    /* border: 2px solid red;   */
+    font-family: var(--ff-main1);  
 } 
 
 .navContainer {   
     /* position: sticky;  */
     /* height: 80vh; */
     /* width: 89.594px; needed for sticky button */
-
     /* width: 10em;  */
     border-radius: 4px;
-    top: 1em;
+    /* top: 1em; */
     /* left: 2em; */
     z-index: 2;
     pointer-events: none;
     border: 2px solid transparent;  
-    border: 2px solid purple;
-    /* justify-content: right;
-    align-items: right;  */
+    /* border: 2px solid purple; */
+    /* padding-bottom: 4.1em; */
 }
 
 .hamburger {
-    position: relative; 
-    /* float: right; */
-    float: left;
+    position: absolute; 
+    /* float: left;   */
     height: 2.2em;
     width: 2.2em;
     /* background: var(--light-blue); */
@@ -101,25 +98,27 @@ body {
 }
 
 .navBar, nav {
-    color: #472B01;
-    display: block;
+    /* color: #472B01; */
+    display: block; 
     visibility: visible;
-    position: relative; 
-    /* width: 7em; */
-    width: 13em;
-    height: 31em;
+    position: relative;  
+    /* width: 9em; */
+    /* height: 31em; */
     background: #FFFFFF;
     box-shadow: 0px 4px 8px var(--dark-teal-drop-1), 0px 8px 16px var(--dark-teal-drop-2);
     border-radius: 7px;
     display: flex;
     flex-direction: column;
-    margin: 2.5em auto 0 auto;
-    /* justify-content: right;
-    text-align: right;  */
+    margin: 2.5em auto 0 auto; 
+    padding-bottom: 4.1em;
+    /* justify-content: left;
+    align-items: left;  
+    text-align: left; */
     font-size: .8rem; 
     /*font-weight: 700;*/
     z-index: 2;
-    border: 1px solid lightseagreen;
+    /* border: 1px solid lightseagreen; */
+    /* background: lightseagreen; */
 }
 
 .hideNav {
@@ -130,51 +129,53 @@ body {
 .navUl {
     list-style-type: none;
     pointer-events: none;
-    border: 1px solid hotpink;
+    /* border: 1px solid hotpink;  */
+    /* background: hotpink;  */
+    text-align: right;
 }
 
 .navLi {
-    position: relative;
-    /* left: -35px; */
-    /* background: rgba(1, 98, 5, 0.13); */
-    border: 1px solid #016205; 
-    border-radius: 7px;
-    width: 8em;
-    height: 3.7em;
+    /* border: 1px solid #016205;  */
+    border-radius: 7px; 
+    /* width: 8em;
+    height: 3.7em; */
     padding: .5em;
-    margin: .5em auto .5em auto; 
     text-transform: uppercase;
     pointer-events: auto;
     cursor: pointer;
     font-weight: 400;
     letter-spacing: .05rem;
-    float: right;
+
 }
 
 .navLiAnchor {
     flex-wrap: wrap;
     text-decoration: none;
     color: #472B01;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    text-align: right;
 }
 
 .bookBtn {
     /* color: #472B01; */
     letter-spacing: .05rem;
     border-radius: 7px;
-    width: 10em;
+    /* width: 7em; */
     height: 3.7em;
-    padding: .2em;
-    margin-left: 2em;  
+    padding: .5em;
+    /* margin-left: 2em;   */
     /* background-color: rgba(1, 98, 5, 0.13); */
     cursor: pointer;
     pointer-events: auto;
     z-index: 9;
     transition: all .5s; 
     border: none;
-    border: 1px solid #016205;  
+    /* border: 1px solid #016205;   */
     background-color: transparent;
-    
+    text-align: right; 
+    font-size: .7rem;
+    position: absolute;
+    right: 0;
 }
 
 .bookBtn:hover,
