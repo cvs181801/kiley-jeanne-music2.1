@@ -19,56 +19,103 @@ body {
 
 .contactFormParentSched {
     position: absolute;
-    color: #472B01;
-    top: 50%;
-    left: 1em;
-    padding: .3em;
+    color: black;
+    top: 5em;
+    left: 0;
+    padding: .3em .3em .3em .9em;
     display: none;
     background: white;
     border: 1px solid #016205;
     border-radius: 7px;
     z-index: 3;
     height: auto;
-    width: auto;
+    width: 100%;
     letter-spacing: .07rem;
+    font-family: var(--ff-main1);
+    text-align: left;
+}
+
+h2 {
+    font-size: 1rem;
 }
 
 .contactFormParentNav {
     position: absolute;
-    color: #472B01;
-    top: 2em;
-    /* left: -18em; */
-    padding: .3em;
+    color: black;
+    top: 5em;
+    left: 0;
+    padding: .3em .3em .3em .9em;
     display: none;
     background: white;
     border: 1px solid #016205;
     border-radius: 7px;
     z-index: 3;
     height: auto;
-    width: auto; 
-    pointer-events: auto;
+    width: 100%;
     letter-spacing: .07rem;
+    font-family: var(--ff-main1);
+    text-align: left;
 }
 
 textarea {
-    height: 10em;
+    /* height: 10em; */
+    color: black;
+    width: 95%;
+    font-family: inherit;
+    padding: .4em;
+    margin-bottom: .7em;
+    height: 7em;
+    border: 1px solid black;
+    border-radius: 4px; 
 }
 
 input {
-    width:15em;
+    width: 95%;
+    color: black;
+    font-family: inherit;
+    padding: .4em;
+    margin-bottom: .7em;
+    border: 1px solid black;
+    border-radius: 4px; 
 }
 
-.modalBtn {
-    color: #472B01;
+.modalBtnClose {
+    color: var(--dark-blue);
     float: right;
-    background: rgba(1, 98, 5, 0.13);
-    border: 1px solid #016205;
-    border-radius: 7px;
+    /* background: rgba(1, 98, 5, 0.13); */
+    /* border: 1px solid #016205; */
+    /* border-radius: 7px; */
     letter-spacing: .2rem;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
     z-index: 5;
     cursor: pointer;
+    /* border: 1px solid grey; */
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    font-size: 2.7rem;
+    transform: rotate(45deg);
+    font-weight: 700;
+}
+
+.modalBtnSubmit {
+    background: var(--dark-blue);
+    color: white;
+    /* float: right; */
+    /* background: rgba(1, 98, 5, 0.13); */
+    /* border: 1px solid #016205; */
+    /* border-radius: 7px; */
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    z-index: 5;
+    cursor: pointer;
+    /* border: 1px solid grey; */
+    border: none;
+    text-align: center;
+    padding: .7em;
+    margin: 0 auto .7em auto;
+    width: 95%;
+    border-radius: 4px; 
 }
 
 @media (min-width: 600px) {

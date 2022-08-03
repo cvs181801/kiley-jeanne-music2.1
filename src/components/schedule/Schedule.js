@@ -46,10 +46,12 @@ export default function Schedule() {
         if (formBool) {
             setFormBool(false)
             setFormClass("none")
+            window.scrollTo(0, 0);
             } else {
             setFormBool(true)
             setFormClass("inline-block")
             setParentComponent("schedule")
+            window.scrollTo(0, 0);
         }
     }
 
