@@ -4,6 +4,7 @@
     --light-blue: #B2EBF2;
     --dark-blue: #0097A7;
     --vanilla: #FFFAF3;
+    --grey: rgba(0, 0, 0, 0.709);
     --dark-teal-drop-1: rgba(4, 96, 97, 0.16);
     --dark-teal-drop-2: rgba(6, 150, 151, 0.16);
     --ff-accent: 'Martel', serif;
@@ -31,7 +32,6 @@ body {
     pointer-events: none;
     /* border: 2px solid red;   */
     font-family: var(--ff-main1); 
-    /* border: 1px solid red;  */
 } 
 
 .navContainer {   
@@ -45,7 +45,6 @@ body {
     z-index: 2;
     pointer-events: none;
     border: 2px solid transparent;  
-    /* border: 2px solid purple;  */
     /* padding-bottom: 4.1em; */
 }
 
@@ -105,9 +104,9 @@ body {
     display: block; 
     visibility: visible;
     position: relative;  
+    background: white;
     /* width: 9em; */
     /* height: 31em; */
-    background: #FFFFFF;
     box-shadow: 0px 4px 8px var(--dark-teal-drop-1), 0px 8px 16px var(--dark-teal-drop-2);
     border-radius: 7px;
     display: flex;
@@ -120,7 +119,6 @@ body {
     font-size: .8rem; 
     /*font-weight: 700;*/
     z-index: 2;
-    /* border: 1px solid lightseagreen; */
     /* background: lightseagreen; */
 }
 
@@ -131,8 +129,7 @@ body {
 
 .navUl {
     list-style-type: none;
-    pointer-events: none;
-    /* border: 1px solid hotpink;  */
+    pointer-events: none; 
     /* background: hotpink;  */
     text-align: right;
 }
@@ -140,6 +137,7 @@ body {
 .navLi {
     /* border: 1px solid #016205;  */
     border-radius: 7px; 
+    color: var(--grey);
     /* width: 8em;
     height: 3.7em; */
     padding: .5em;
@@ -181,50 +179,56 @@ body {
     right: 0;
 }
 
-.bookBtn:hover,
-.bookBtn:focus {
-    transform: scale(1.2);
-    cursor: pointer;
-}  
-
 @media (min-width: 600px) {
 
-
-    .navContainer {
-        width: 600px;
-        position: relative;
+    .navContainerOuter {
+        /* border: 1px solid red;  */
+        left: 25%;
+        width: 50%;
     }
+
+    /* .navContainer {
+        /* width: 600px; 
+        border: 2px solid purple;  
+    } */
  
     .navBar, nav, .hideNav {
-        flex-direction: row;
-        width: 40em;
-        height: 2000em;
-        background: none;
-        position: absolute;
-        background-attachment: fixed;
-        top: -2em;
-        left: 1em;
+        /* flex-direction: row; */
+        /* width: 40em;
+        height: 2000em; */
+        /* background-attachment: fixed; */
+        /* top: -2em;
+        left: 1em; */
         display: block;
         visibility: visible;
         border: none;
+        box-shadow: none;
+        background: transparent;
+        /* border: 1px solid lightseagreen;  */
     }
 
     .navUl {
         display: flex;
-        left: 20em;
+        /* flex-direction: row; */
+        /* left: 20em; */
+        /* border: 1px solid grey; */
+        padding: .2em .3em 0 0;
+        justify-content: space-around; 
     }
 
     .navLi {
-        position: relative;
-        left: -35px; 
+        /* position: relative; */
+        /* left: -35px;  */
         border: none;
+        /* border: 1px solid red; */
         background: none;
         border-radius: 7px;
-        width: 7em;
-        height: 2.7em;
+        /* width: 7em;
+        height: 2.7em; */
         padding: 0em;
-        margin: 1.5em auto 1.5em auto;  
+        /* margin: 1.5em auto 1.5em auto;   */
         text-align: center;
+        letter-spacing: .1rem;
     }
 
     .navLi p {
@@ -233,16 +237,10 @@ body {
         transition: border .5s ease-in-out;
     }
 
-    .navLi p:hover,
-    .navLi p:focus {
-        border: 1px solid #016205;
-        border-radius: 7px;
-    }
-
     .navLiAnchor {
         flex-wrap: nowrap;
         font-size: .9rem;
-        margin-bottom: .5em;
+        /* margin-bottom: .5em; */
         pointer-events: auto;
     }
 
@@ -252,11 +250,13 @@ body {
     } 
 
     .bookBtn {
-        margin: 0 auto 0 17em;
+        /* margin: 0 auto 0 17em;
         text-align: center;
         background: white;
-        position: sticky;
-        top: 0;
+        /* position: sticky; 
+        top: 0; */
+        display: none;
+        visibility: hidden;
     }
 
 }
@@ -273,6 +273,17 @@ body {
         border: none;
     }
 
+    .navLi p:hover,
+    .navLi p:focus {
+        border: 1px solid #016205;
+        border-radius: 7px;
+    }
+
+    .bookBtn:hover,
+    .bookBtn:focus {
+        transform: scale(1.2);
+        cursor: pointer;
+    }  
 
     .bookBtn {
         margin: 1.5em auto 7.5em auto;

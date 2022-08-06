@@ -107,7 +107,9 @@ h1 {
 
     h1 {
         letter-spacing: 0.3em;
-        font-size: 1.8rem;
+        font-size: 2.7rem;
+        margin-top: .2em;
+
     }
 }
 
@@ -120,8 +122,6 @@ h1 {
         background-position: 55% 35%; 
         background-size: cover;
     }
-
-    
 
     .imgDiv-p {
         position: relative;

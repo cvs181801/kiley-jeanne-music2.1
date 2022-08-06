@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import { client } from '../../client';
 import './schedule.css'
-import ContactForm from '../contactForm/ContactForm';
+//import ContactForm from '../contactForm/ContactForm';
 
 
 export default function Schedule() {
     const [isScheduleLoading, setIsScheduleLoading] = useState(true);
     const [scheduleContent, setScheduleContent] = useState([]);
-    const [formBool, setFormBool] = useState(false)
-    const [formClass, setFormClass] = useState("none")
-    const [parentComponent, setParentComponent] = useState("schedule")
+    //const [formBool, setFormBool] = useState(false)
+    //const [formClass, setFormClass] = useState("none")
+    //const [parentComponent, setParentComponent] = useState("schedule")
 
     const getScheduleContent = async ()=> {
         try{
@@ -40,20 +40,20 @@ export default function Schedule() {
     useEffect(()=>{
     },[scheduleContent])
 
-    const handleClick = (event)=> {
-        event.preventDefault();
+    // const handleClick = (event)=> {
+    //     event.preventDefault();
         
-        if (formBool) {
-            setFormBool(false)
-            setFormClass("none")
-            window.scrollTo(0, 0);
-            } else {
-            setFormBool(true)
-            setFormClass("inline-block")
-            setParentComponent("schedule")
-            window.scrollTo(0, 0);
-        }
-    }
+    //     if (formBool) {
+    //         setFormBool(false)
+    //         setFormClass("none")
+    //         window.scrollTo(0, 0);
+    //         } else {
+    //         setFormBool(true)
+    //         setFormClass("inline-block")
+    //         setParentComponent("schedule")
+    //         window.scrollTo(0, 0);
+    //     }
+    // }
 
   return (
     <div
@@ -63,13 +63,13 @@ export default function Schedule() {
         id="scheduleSection"
        >
 
-            <button
+            {/* <button
                 className="bookBtnSched"
                 onClick={handleClick}
             >
                 BOOK / CONTACT
                     
-            </button>
+            </button> */}
 
             <div
                 className="containerDivSched"
@@ -81,7 +81,7 @@ export default function Schedule() {
 
                 
                 {isScheduleLoading ? 'Loading...' : ''}
-                {scheduleContent && formBool && <ContactForm state={formClass} parent={parentComponent} formBool={setFormBool}/>}
+                {/* {scheduleContent && formBool && <ContactForm state={formClass} parent={parentComponent} formBool={setFormBool}/>} */}
 
         </section>
     </div>

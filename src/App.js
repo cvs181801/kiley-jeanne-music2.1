@@ -7,6 +7,7 @@ import Youtube from './components/youtube/Youtube'
 import Instagram from './components/instagram/Instagram';
 import Footer from './components/footer/Footer'
 import ContactForm from './components/contactForm/ContactForm';
+import ContactButton from './components/contactButton/ContactButton';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <header className="App-header">
         <NavBar/>
         <Hero/>
+        <ContactButton/>
         <Schedule/>
         <ContactForm/>
         <AboutMe/>
@@ -29,7 +31,7 @@ function App() {
 export default App;
 
 
-
+//sticky button on tablet and desktop ? ? 
 //remove the unneeded function and piece of state for designating whether user clicked on contact form from sched vs. from navbar
 //add global variables for all colors and fonts in css. how to do in Sass?
 //how to request images from contently at the needed size?

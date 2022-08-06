@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
+
+:root {
+    --dark-teal: #0097A7;
+    --deep-teal: #01565f;
+    --light-blue: #B2EBF2;
+    --vanilla: #FFFAF3;
+    --ff-accent: 'Martel', serif;
+    --ff-main1: 'Roboto Flex', sans-serif;
+    --ff-main2: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bookBtnContainer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bookBtnSched {
+    /* background: var(--dark-teal); */
+    background-image: linear-gradient(
+        -200deg,
+        var(--deep-teal) 0%,
+        var(--dark-teal) 59%,
+        var(--light-blue) 60%,
+        var(--dark-teal) 63%,
+        var(--deep-teal) 66%,
+        /* var(--light-blue) 67%, */
+        /* var(--dark-teal) 68%, */
+        var(--deep-teal) 100%
+    );
+    /* background-clip: text;
+    -webkit-background-clip: text; */
+    background-size: 200% auto; 
+    border: 1px solid var(--dark-teal);
+    border-radius: 4px; 
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: white;
+    width: 90vw;
+    height: 4em;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .5s; 
+    animation: textclip 1.5s linear infinite alternate;
+    animation-timing-function: ease-out;
+}
+
+ .bookBtnSched:hover,
+.bookBtnSched:focus {
+    transform: scale(1.1);
+    cursor: pointer;
+}   
+
+/* .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+} */
+
+@keyframes textclip {
+  /* to {
+    background-position: 200% center; 
+    background-position: 200% 100%; 
+  } */
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200% 100%;
+  }
+} 
