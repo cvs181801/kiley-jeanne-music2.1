@@ -12,18 +12,20 @@ import ContactButton from './components/contactButton/ContactButton';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <NavBar/>
         <Hero/>
         <ContactButton/>
-        <Schedule/>
         <ContactForm/>
-        <AboutMe/>
+        <div
+          className="flowContainer"
+        >
+          <Schedule/>
+          <AboutMe/>
+        </div>
         <Listen/>
         <Youtube/>
         <Instagram/>
         <Footer/>
-      </header>
     </div>
   );
 }

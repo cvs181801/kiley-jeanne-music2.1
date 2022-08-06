@@ -75,7 +75,8 @@ body {
 
     .containerDivSched {
         margin: 0 auto;
-        width: 70vw;
+        /* width: 70vw; */
+        width: auto;
         height: auto;
     }
 

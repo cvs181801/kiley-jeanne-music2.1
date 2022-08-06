@@ -14,7 +14,8 @@ export default function ContactForm(props) {
 
   return (
     <div
-        className={props.parent === "schedule" ? "contactFormParentSched" : "contactFormParentNav"}
+        // className={props.parent === "schedule" ? "contactFormParentSched" : "contactFormParentNav"}
+        className="contactFormParentSched"
         style={{display: `${props.state}`}}
     >
         

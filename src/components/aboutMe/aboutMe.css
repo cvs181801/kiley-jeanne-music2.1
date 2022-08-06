@@ -54,9 +54,15 @@
 
 @media (min-width: 600px) {
 
+    .containerDivAboutMe {
+        width: 20vw;
+        
+    }
+
     .innerDivAboutMe {
         margin: 0 auto;
-        width: 70vw;
+        /* width: 70vw; */
+        width: auto;
     }
     
 }

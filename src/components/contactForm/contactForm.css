@@ -39,7 +39,7 @@ h2 {
     font-size: 1rem;
 }
 
-.contactFormParentNav {
+/* .contactFormParentNav {
     position: absolute;
     color: black;
     top: 5em;
@@ -55,7 +55,7 @@ h2 {
     letter-spacing: .07rem;
     font-family: var(--ff-main1);
     text-align: left;
-}
+} */
 
 textarea {
     /* height: 10em; */
@@ -89,7 +89,6 @@ input {
     text-transform: uppercase;
     z-index: 5;
     cursor: pointer;
-    /* border: 1px solid grey; */
     border: none;
     padding: 0;
     background-color: transparent;
@@ -119,13 +118,10 @@ input {
 }
 
 @media (min-width: 600px) {
-
-    .contactFormParentNav, 
-    .contactFormParentSched {
-        height: 50vh;
-        width: 40vw; 
-    }
-
+    /* .contactFormParentSched {
+        text-align: center;
+ 
+    }  */
    
 }
 @media (min-width: 1025px) {}

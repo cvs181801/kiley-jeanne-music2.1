@@ -3,7 +3,7 @@
 :root {
     --feather-grey: #EFEBE9;
     --vanilla: #FFFAF3;
-    --ff-accent: 'Roboto Flex', sans-serif;
+    --ff-main1: 'Roboto Flex', sans-serif;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 
 .instagramContainerDiv {  
     width: 100vw;
-    font-family: var(--ff-accent);
+    font-family: var(--ff-main1);
     text-align: center;
     justify-content: center;
    

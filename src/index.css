@@ -27,3 +27,16 @@ body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+.flowContainer {
+  display:block;
+}
+
+@media (min-width: 600px) {
+ 
+  .flowContainer {
+    display:flex;
+    flex-direction: row-reverse;
+  }
+ 
+}
+@media (min-width: 1025px) {}
