@@ -23,9 +23,11 @@ test('should render schedule content', ()=> {
 })
 
 jest.mock('../../../client')
-it('returns an array of strings', async ()=> {
-    client.getEntries.mockResolvedValue({
-        items:
+//it('returns an array of strings', async ()=> {
+    it('returns an array of strings', ()=>{
+const content = //is this the correct data format??
+{
+items:
     {
     "sys": {
         "type": "Array"
@@ -223,32 +225,33 @@ it('returns an array of strings', async ()=> {
         }
     ]
 }   
-    } 
+} 
     
-    )
-    const content = await getScheduleContent();
-    expect(content).not.toBeNull();
-    console.log('content:' , content)
+    // )
+    // const contentfulContent = await getScheduleContent();
+    // expect(content).not.toBeNull();
+    // console.log('content:' , content)
 
-    const scheduleItems = content.items[0].fields.text.content
-    act(() => {
-        root.update(<GetScheduleContent scheduleContent={[scheduleItems]}/>);
-    })
+    // const scheduleItems = content.items[0].fields.text.content
+    // act(() => {
+    //     root.update(<GetScheduleContent scheduleContent={[scheduleItems]}/>);
+    // })
+
+    // const myMock = jest.fn();
+    // console.log(myMock());
+    // //should return undefined
+
+    // myMock.mockReturnValueOnce();
+
+    // console.log(myMock());
+    // //should return 10
+
+    expect(content).toBeTruthy()
+    console.log(content)
+    //client.getEntries.mockResolvedValue(content)
+    client.getEntries.mockImplementation(() => Promise.resolve(content))
 })
 
-
-  
-  // make assertions on root 
-  //expect(root.toJSON()).toMatchSnapshot();
-
-///
-
-// test('modal should open when book/contact button is clicked', ()=> {
-//     render(<Schedule/>)
-//     const button = screen.getByRole('button')
-//     fireEvent.click(button)
-//     //need to figre out how to expect class name on the modal/contact form to change
-// })
 
 // Import the module you want to mock into your test file.
 // jest.mock() the module.

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the hero component 1`] = `
+<div
+  className="containerDivHero"
+>
+  <section
+    id="heroSection"
+  >
+    <div
+      className="topDiv"
+    >
+      <h1 />
+    </div>
+    <div
+      className="imgDiv"
+      style={
+        Object {
+          "backgroundImage": "url(undefined)",
+        }
+      }
+    >
+      <p
+        className="imgDiv-p"
+      >
+        Loading...
+      </p>
+    </div>
+    <div
+      className="bottomDiv"
+    />
+  </section>
+</div>
+`;
