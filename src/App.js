@@ -33,9 +33,9 @@ function App() {
 export default App;
 
 
-//sticky button on tablet and desktop ? ? 
+//make modal bogger on larger screen sizes?
 //remove the unneeded function and piece of state for designating whether user clicked on contact form from sched vs. from navbar
 //add global variables for all colors and fonts in css. how to do in Sass?
 //how to request images from contently at the needed size?
-//remove white space at bottom of page
 //why isn't netlify forms emailing her the messages?
+//remove the book/contact button from the navbar on mobile version

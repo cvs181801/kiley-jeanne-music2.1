@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
+
+:root {
+    --feather-grey: #EFEBE9;
+    --vanilla: #FFFAF3;
+    --ff-main1: 'Roboto Flex', sans-serif;
+}
 
 body {
     margin: 0 auto;
@@ -10,8 +17,9 @@ body {
 
 .youTubeContainer {
     /* margin: 1em 0 auto 5px; */
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
     /* padding: .7em; */
+    /* border: 1px solid green; */
 }
 
 .youTubeInnerContainer {
@@ -20,13 +28,30 @@ body {
     /* width: 85vw; */
     width: 100vw;
     height: 20em;
+    /* border: 1px solid blue; */
+}
+
+/* .youtube-div {
+    width: 100vw;
+    margin: 0 auto;
+    background: var(--feather-grey);
+    
+} */
+
+.youtube-div--p {
+    width: 100vw;
+    background: var(--feather-grey);
+    padding: 1em;
+    letter-spacing: .05rem;
+    text-align: center;
 }
 
 .youtubeiframe {
     height: 20em;
-    /* width: 85vw; */
     width: 100vw;
     padding-top: .7em;
+    padding-bottom: .7em;
+    /* border: 1px solid red; */
 }
 
 @media (min-width: 600px) {
@@ -36,7 +61,7 @@ body {
     }
 
     .youTubeInnerContainer {
-        margin: 1em auto 1em auto;
+        /* margin: 1em auto 1em auto; */
         width: 70vw;
         height: 30em;
     }
@@ -52,7 +77,7 @@ body {
 @media (min-width: 1025px) {
 
     .youTubeInnerContainer {
-        margin: 1em auto 1em auto;
+        /* margin: 1em auto 1em auto; */
         width: 50vw;
         height: 30em;
     }

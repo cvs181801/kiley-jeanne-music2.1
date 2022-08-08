@@ -146,7 +146,6 @@ body {
     cursor: pointer;
     font-weight: 400;
     letter-spacing: .05rem;
-
 }
 
 .navLiAnchor {
@@ -188,9 +187,9 @@ body {
     }
 
     /* .navContainer {
-        /* width: 600px; 
+        width: 600px;
         border: 2px solid purple;  
-    } */
+    }  */
  
     .navBar, nav, .hideNav {
         /* flex-direction: row; */
@@ -204,14 +203,14 @@ body {
         border: none;
         box-shadow: none;
         background: transparent;
-        /* border: 1px solid lightseagreen;  */
+         
     }
 
     .navUl {
         display: flex;
         /* flex-direction: row; */
         /* left: 20em; */
-        /* border: 1px solid grey; */
+        
         padding: .2em .3em 0 0;
         justify-content: space-around; 
     }
@@ -263,21 +262,30 @@ body {
 @media (min-width: 1025px) {
 
     .navContainerOuter {
-        left: 22em;
-    }
+        /* border: 2px solid red;  */
+        border: 2px solid transparent; 
+    } 
 
+    /* .navContainer {
+        border: 1px solid purple; 
+    } */
 
     .navBar, nav, .hideNav {
-        display: flex;
-        width: 1500px;
+        /* display: flex; */
+        /* width: 1500px; */
         border: none;
+        /* border: 2px solid lightseagreen;  */
     }
 
-    .navLi p:hover,
+    /* .navUl {
+        border: 1px solid grey; 
+    } */
+
+    /* .navLi p:hover,
     .navLi p:focus {
         border: 1px solid #016205;
         border-radius: 7px;
-    }
+    } */
 
     .bookBtn:hover,
     .bookBtn:focus {

@@ -9,7 +9,7 @@ body {
 }
 
 .listenContainer {
-    margin: 0 auto;
+    margin: 0 auto 2em auto;
     width: 100vw;
     margin-top: 2em;
     /* padding: 1em 0 1em 0; */
@@ -30,13 +30,12 @@ body {
 }
 
 .listenInnerContainer {
-    /* border: 1px solid #FFFFFF;
-    border-radius: 7px; */
+    border: 1px solid #FFFFFF;
+    border-radius: 7px; 
     text-align: center;
-    height: auto; 
-    /* width: 20em; */
+    /* height: auto;  */
+    height: 50vw;
     width: 90vw;
-    /* margin: 1em auto 0 5px; */
     margin: 0 auto;
     color: white;
     padding: .7em 1.4em .7em .7em;
@@ -47,7 +46,12 @@ body {
 
     .listenInnerContainer {
         margin: 0 auto;
-        width: 70vw;
+        width: 90vw;
+        height: 30vw;
     }
 }
-@media (min-width: 1025px) {}
+@media (min-width: 1025px) {
+    .listenInnerContainer {
+        height: 25vw;
+    }
+}

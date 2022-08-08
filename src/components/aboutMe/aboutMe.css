@@ -23,6 +23,7 @@
     width: 100vw;
     padding: 1em 0 1em 0;
     background: var(--light-blue);
+    font-size: auto;
     /* background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0) 48.96%, rgba(164, 252, 241, 0.01) 57.29%, #A4FCF1 97.4%); */
 }
 
@@ -55,7 +56,8 @@
 @media (min-width: 600px) {
 
     .containerDivAboutMe {
-        width: 20vw;
+        max-width: 20vw;
+        font-size: auto;
         
     }
 
@@ -65,4 +67,11 @@
         width: auto;
     }
     
+}
+
+@media (min-width: 1025px) {
+    .containerDivAboutMe {
+        max-width: 30vw;
+        font-size: 1.5rem;
+    }
 }
