@@ -3,6 +3,7 @@
 :root {
     --dark-teal: #0097A7;
     --vanilla: #FFFAF3;
+    --feather-grey: #EFEBE9;
     --ff-accent: 'Martel', serif;
     --ff-main1: 'Roboto Flex', sans-serif;
     --ff-main2: 'Roboto', sans-serif;
@@ -18,15 +19,16 @@ body {
 }
 
 .scheduleDiv {
-    margin: 0 auto;
+    margin: 0 auto .5em auto;
     text-align: center;
-    background: var(--vanilla);
+    background-color: var(--vanilla);
+
 }
 
 .containerDivSched {
  
     /* box-shadow: -4px -4px 5px 3px rgba(71, 43, 1, 0.35); */
-    border-radius: 7px;
+    border-radius: 4px; 
     height: auto;
     width: 20em;
     /* margin: 0 auto 1em 5px; */
@@ -36,7 +38,7 @@ body {
     letter-spacing: .1rem;
     /* text-transform: uppercase; */
     text-align: left;
-    background: var(--vanilla);
+    background: var(--feather-grey);
     font-size: auto;
 } 
 /* 
@@ -66,11 +68,16 @@ body {
 }   */
 
 .gigContent {
-    background: var(--vanilla);
+    background: var(--feather-grey);
 }
 
 
 @media (min-width: 600px) {
+
+    .scheduleDiv {
+        margin: 0 auto;
+    }
+
 
     .containerDivSched {
         margin: 0 auto;
@@ -87,6 +94,10 @@ body {
 
 }
 @media (min-width: 1025px) {
+
+    .scheduleDiv {
+        margin: 0 auto;
+    }
 
     .containerDivSched {
         font-size: 1.5rem;

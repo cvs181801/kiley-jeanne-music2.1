@@ -156,27 +156,26 @@ body {
     text-align: right;
 }
 
-.bookBtn {
-    /* color: #472B01; */
+/* .bookBtn {
+    display: none;
+    visibility: hidden;
     letter-spacing: .05rem;
     border-radius: 7px;
-    /* width: 7em; */
     height: 3.7em;
     padding: .5em;
-    /* margin-left: 2em;   */
-    /* background-color: rgba(1, 98, 5, 0.13); */
     cursor: pointer;
     pointer-events: auto;
     z-index: 9;
     transition: all .5s; 
     border: none;
-    /* border: 1px solid #016205;   */
     background-color: transparent;
     text-align: right; 
     font-size: .7rem;
     position: absolute;
     right: 0;
-}
+} */
+
+
 
 @media (min-width: 600px) {
 
@@ -248,15 +247,15 @@ body {
         visibility: hidden;
     } 
 
-    .bookBtn {
+    /* .bookBtn {
         /* margin: 0 auto 0 17em;
         text-align: center;
         background: white;
         /* position: sticky; 
-        top: 0; */
+        top: 0; 
         display: none;
         visibility: hidden;
-    }
+    } */
 
 }
 @media (min-width: 1025px) {
@@ -293,11 +292,13 @@ body {
         cursor: pointer;
     }  
 
-    .bookBtn {
+    /* .bookBtn {
         margin: 1.5em auto 7.5em auto;
         width: 11em;
         height: 3.7em;
         padding: .5em;
         letter-spacing: .06rem;   
-    }
+        display: block;
+        visibility: visible;
+    } */
 }
