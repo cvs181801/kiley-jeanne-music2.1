@@ -9,6 +9,18 @@ body {
     box-sizing: border-box;
 }
 
+
+.contactFormBig {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /*z-index: 4;*/
+    background-color: var(--sheer-green);
+
+}
+
 .contactFormParent {
     position: absolute;
     color: black;

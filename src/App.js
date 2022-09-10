@@ -34,7 +34,5 @@ export default App;
 
 
 //make modal bogger on larger screen sizes?
-//remove the unneeded function and piece of state for designating whether user clicked on contact form from sched vs. from navbar
-//add global variables for all colors and fonts in css. how to do in Sass?
 //why isn't netlify forms emailing her the messages?
 //how to use material ui

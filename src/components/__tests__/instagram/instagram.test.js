@@ -12,4 +12,3 @@ test('should render instagram widget in iframe', ()=> {
     expect(instaIframe).toBeInTheDocument();
 })
 
-//write a test to test the API w snap widget?

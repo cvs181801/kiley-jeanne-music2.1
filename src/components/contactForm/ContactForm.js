@@ -3,51 +3,58 @@ import './contactForm.css'
 
 export default function ContactForm(props) {
 
+  
+
     const handleClick = ()=> {
         const setFormBool = props.formBool;
         setFormBool(false)
     }
 
   return (
-    <div
-        className="contactFormParent"
-        style={{display: `${props.state}`}}
-    >
-        
-        <button
-            onClick={handleClick}
-            className="modalBtnClose"
+    // <div
+    //     className="contactFormBig"
+    //     style={{display: `${props.state}`}}
+    // >
+        <div
+            className="contactFormParent"
+            style={{display: `${props.state}`}}
         >
-            +
-        </button>
-
-        <h2>LET'S CONNECT!</h2>
-        <form
-            className="contact v1"
-            method="POST"
-            onSubmit="submit"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-        >
-
-            <input type="hidden" name="form-name" value="contact v1" />
-           
-                    <input type="text" name="name" data-testid="name" placeholder="Name"/>
-           
-                    <input type="email" name="email" data-testid="email" placeholder="Email"/>
-
-                    <textarea type="text" name="message" placeholder="Your Message"></textarea>
-                <br/>
             
-            <button 
-                type="submit"
-                className="modalBtnSubmit"
+            <button
+                onClick={handleClick}
+                className="modalBtnClose"
             >
-                CONTACT
+                +
             </button>
-        </form>
-        
-    </div>
+
+            <h2>LET'S CONNECT!</h2>
+            <form
+                className="contact v1"
+                method="POST"
+                onSubmit="submit"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+            >
+
+                <input type="hidden" name="form-name" value="contact v1" />
+            
+                        <input type="text" name="name" data-testid="name" placeholder="Name"/>
+            
+                        <input type="email" name="email" data-testid="email" placeholder="Email"/>
+
+                        <textarea type="text" name="message" placeholder="Your Message"></textarea>
+                    <br/>
+                
+                <button 
+                    type="submit"
+                    className="modalBtnSubmit"
+                >
+                    CONTACT
+                </button>
+            </form>
+            
+        </div>
+    // </div>
   )
   
 }

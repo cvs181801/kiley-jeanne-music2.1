@@ -6,11 +6,6 @@ afterEach(()=> {
     cleanup();
 })
 
-test('should render welcome text at top', ()=> {
-    render(<Hero/>)
-    const welcomeTextTop = screen.getByText(/Welcome ♡/i)
-    expect(welcomeTextTop).toBeInTheDocument();
-})
 
 test('should render hero tagline', ()=> {
     render(<Hero/>)
@@ -18,4 +13,3 @@ test('should render hero tagline', ()=> {
     expect(heroTagline).toBeInTheDocument();
 })
 
-//write a test to test the API
