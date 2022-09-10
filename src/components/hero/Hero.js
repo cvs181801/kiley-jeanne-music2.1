@@ -11,7 +11,7 @@ export default function Hero() {
             const response = await client.getEntries({content_type:'hero'})
    
             const title = response.items[0].fields.title;
-            const image = response.items[0].fields.image.fields.file.url;
+            const image = response.items[0].fields.image.fields.file.url;  //  var imageURL = 'https:' + asset.fields.file.url + '?w=200&h=200';
             const alt = response.items[0].fields.image.fields.description;
             const tagline = response.items[0].fields.tagline.content[0].content[0].value;
             setIsHeroLoading(false)
@@ -53,14 +53,14 @@ export default function Hero() {
             <div
                 className="topDiv"
             >
-                <p
+                {/* <p
                     className="welcomeDiv"
                 >Welcome ♡
-                </p>
+                </p> */}
 
                     <h1>{heroContent.title}</h1>
                 
-                </div>
+            </div>
                     <div
                         className="imgDiv"
                             style={{
@@ -80,4 +80,3 @@ export default function Hero() {
     </div>
   )
 }
-

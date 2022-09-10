@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
+
+:root {
+    --light-blue: #B2EBF2;
+    --vanilla: #FFFAF3;
+    --dark-blue: #0097A7;
+    --ff-accent: 'Martel', serif;
+    --ff-main1: 'Roboto Flex', sans-serif;
+    --ff-main2: 'Roboto', sans-serif;
+}
 
 body {
     margin: 0 auto;
@@ -8,47 +18,67 @@ body {
     box-sizing: border-box;
 }
 
+.footerOuterContainer {
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
 .footerContainer {
     width: 100vw;
-    height: 20em;   
-    margin-top: 2em;
+    /* height: 20em;    */
+    /* margin-top: 2em; */
     /*background-color:rgba(212, 253, 212, 0.595);
      background: linear-gradient(180deg, #FFFFFF 40.63%, rgba(1, 98, 5, 0.44) 99.48%);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: screen;
+    font-family: var(--ff-main);
+    /* border: 1px solid red; */
+
 }
 
 .footerContainer p {
-    padding-top: 9.5em;  
+    /* padding-top: 9.5em;   */
     /* position: absolute;
         bottom: 0;
         left: 20em; */
-    color: white;
-    margin-left: 5px;
+    color: black;
+    background: var(--light-blue);
+    text-align: center;
+    padding: 1em;
+    /* margin-left: 5px; */
+    margin: 0 auto;
+    letter-spacing: .07rem;
+    /* border: 1px solid blue; */
 }
 
 .socialMediaContainer {
     display: flex;
     width: 80vw;
-    margin-left: 5px;
-    padding-top: 1em;
+    margin: 0 auto;
+    /* margin-left: 5px; */
+    padding: 1em;
+    justify-content: space-between;
+    /* border: 1px solid purple; */
 }
 
 .socialMediaIcon {
-    height: 4em;
-    width: 4em;
+    /* height: 4em;
+    width: 4em; */
+    height: 1.5em;
+    width: 1.5em;
     background-size: contain;
-    margin: 1em;
+    /* margin: 1em; */
     justify-content: space-between;
     cursor: pointer;
+    /* border: 1px solid grey; */
 }
 
 
 @media (min-width: 600px) {
     .socialMediaContainer {
         margin: 0 auto;
-        width: 40vw;
+        /* width: 40vw; */
     }
 
     .socialMediaIcon {
@@ -56,11 +86,13 @@ body {
 
     }
 
-    .footerContainer p {
+    /* .footerContainer p {
         padding-top: 7.5em; 
-    }
+    } */
 
     .socialMediaIcon {
         z-index: 3;
+        height: 2.5em;
+        width: 2.5em;
     }
 }

@@ -57,30 +57,32 @@ const handleClick = (url)=> {
 }
 
   return (
-    <div>
+    <div
+      className="footerOuterContainer"
+    >
        <section
           id="followSection"
         >
           <div
             className="footerContainer"
-            style={{
-              backgroundImage: `linear-gradient(to bottom, rgba(248, 251, 248, 0.83), rgba(1, 98, 5, 0.83)), url(${footerContent.image})`
-            }}
+            // style={{
+            //   backgroundImage: `linear-gradient(to bottom, rgba(248, 251, 248, 0.83), rgba(1, 98, 5, 0.83)), url(${footerContent.image})`
+            // }}
           >
-            <div
-              className="socialMediaContainer"
-              data-testid="socialMediaContainer"
-            >
-              {isFooterLoading ? 'Loading...' : ''}
-              {footerContent.socialMediaIcons ? footerContent.socialMediaIcons.map((icon)=> {
-                return <div key={icon.title} className="socialMediaIcon" style={{backgroundImage: `url(${icon.iconUrl})`}}  onClick={()=>handleClick(icon.url)}></div>
-              })
-              :
-              ''}  
+              <div
+                className="socialMediaContainer"
+                data-testid="socialMediaContainer"
+              >
+                {isFooterLoading ? 'Loading...' : ''}
+                {footerContent.socialMediaIcons ? footerContent.socialMediaIcons.map((icon)=> {
+                  return <div key={icon.title} className="socialMediaIcon" style={{backgroundImage: `url(${icon.iconUrl})`}}  onClick={()=>handleClick(icon.url)}></div>
+                })
+                :
+                ''}  
 
-            </div>
-              <p>Copyright 2022 All Rights Reserved</p>
-          </div>
+              </div>
+                <p>© 2022 Kiley Jeanne | All Rights Reserved</p>
+              </div>
    
         </section>
       </div>

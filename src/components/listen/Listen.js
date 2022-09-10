@@ -46,7 +46,11 @@ useEffect(()=>{
             <div
               className="listenInnerContainer"
             >
-              <p>Scroll down to listen on You Tube.  Stay tuned for more musical content coming your way soon!
+              <p>
+                <br></br>
+                Scroll down to listen on You Tube.  Stay tuned for more musical content coming your way soon!
+                <br></br>
+                <br></br>
               </p>
             </div>
         </div>

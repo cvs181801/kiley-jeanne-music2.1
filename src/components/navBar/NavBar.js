@@ -7,25 +7,21 @@ export default function NavBar() {
     const [formBool, setFormBool] = useState(false)
     const [formClass, setFormClass] = useState("none")
     const [parentComponent, setParentComponent] = useState("navBar")
-    //const [showNav, setShowNav] = useState(false)
     const [navBool, setNavBool] = useState(false)
-    //const [change, setChange] = useState('')
 
-    const handleClick = (event)=> {
-        event.preventDefault();
-        if (formBool) {
-           
-            setFormBool(false)
-            setFormClass("none")
-            window.scrollTo(0, 0);
-            } else {
-            
-            setFormBool(true)
-            setFormClass("inline-block")
-            setParentComponent("navBar")
-            window.scrollTo(0, 0);
-        }
-    }
+    // const handleClick = (event)=> {
+    //     event.preventDefault();
+    //     if (formBool) {      
+    //         setFormBool(false)
+    //         setFormClass("none")
+    //         window.scrollTo(0, 0);
+    //         } else {  
+    //         setFormBool(true)
+    //         setFormClass("inline-block")
+    //         setParentComponent("navBar")
+    //         window.scrollTo(0, 0);
+    //     }
+    // }
 
     const handleHamburgerClick = (event)=> {
         event.preventDefault();
@@ -80,14 +76,17 @@ export default function NavBar() {
                         <li className="navLi"><p><a className="navLiAnchor" href="#listenSection" >listen</a></p></li>
                         <li className="navLi"><p><a className="navLiAnchor" href="#gallerySection" >gallery</a></p></li>
                         <li className="navLi"><p><a className="navLiAnchor" href="#followSection" >follow</a></p></li>
-                </ul>
-                    <button
+
+                        {/* <button
                         className="bookBtn"
                         onClick={handleClick} 
                     >
                         BOOK / CONTACT
                         
-                    </button>
+                    </button> */}
+
+                </ul>
+                    
                     
             </nav>
             

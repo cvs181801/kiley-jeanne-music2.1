@@ -14,18 +14,19 @@ export default function ContactForm(props) {
 
   return (
     <div
-        className={props.parent === "schedule" ? "contactFormParentSched" : "contactFormParentNav"}
+        // className={props.parent === "schedule" ? "contactFormParentSched" : "contactFormParentNav"}
+        className="contactFormParentSched"
         style={{display: `${props.state}`}}
     >
         
         <button
             onClick={handleClick}
-            className="modalBtn"
+            className="modalBtnClose"
         >
-            X
+            +
         </button>
 
-        <h2>Let's Connect!</h2>
+        <h2>LET'S CONNECT!</h2>
         <form
             className="contact v1"
             method="POST"
@@ -36,24 +37,24 @@ export default function ContactForm(props) {
 
             <input type="hidden" name="form-name" value="contact v1" />
            
-                <label> <br/> Name <br/>
-                    <input type="text" name="name" data-testid="name"/>
-                </label>
+                {/* <label> <br/> Name <br/> */}
+                    <input type="text" name="name" data-testid="name" placeholder="Name"/>
+                {/* </label> */}
            
-                <label> <br/> Email <br/>
-                    <input type="email" name="email" data-testid="email"/>
-                </label>
+                {/* <label> <br/> Email <br/> */}
+                    <input type="email" name="email" data-testid="email" placeholder="Email"/>
+                {/* </label> */}
             
-                <label> <br/> Add Your Message Here: <br/>
-                    <textarea type="text" name="message"></textarea>
-                </label>
+                {/* <label> <br/> Your Message <br/> */}
+                    <textarea type="text" name="message" placeholder="Your Message"></textarea>
+                {/* </label> */}
                 <br/>
             
             <button 
                 type="submit"
-                className="modalBtn"
+                className="modalBtnSubmit"
             >
-                Send it!
+                CONTACT
             </button>
         </form>
         

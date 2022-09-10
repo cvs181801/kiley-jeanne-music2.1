@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
+
+:root {
+    --feather-grey: #EFEBE9;
+    --vanilla: #FFFAF3;
+    --ff-main1: 'Roboto Flex', sans-serif;
+}
 
 body {
     margin: 0 auto;
@@ -10,13 +17,26 @@ body {
 
 .instagramContainerDiv {  
     width: 100vw;
+    font-family: var(--ff-main1);
+    text-align: center;
+    justify-content: center;
+   
 } 
+
+.instagram-div {
+    width: 100vw;
+    /* height: 3em; */
+    /* margin: 0 auto 0 5px; */
+    margin: 0 auto;
+    /* background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%); */
+    background: var(--feather-grey);
+}
 
 .instagram-p {
     width: 100vw;
-    height: 3em;
-    margin: 0 auto 0 5px;
-    background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%);
+    background: var(--feather-grey);
+    padding: 1em;
+    letter-spacing: .05rem;
 }
 
 .instagramInnerContainerDiv {
