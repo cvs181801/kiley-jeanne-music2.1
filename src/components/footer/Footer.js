@@ -65,9 +65,6 @@ const handleClick = (url)=> {
         >
           <div
             className="footerContainer"
-            // style={{
-            //   backgroundImage: `linear-gradient(to bottom, rgba(248, 251, 248, 0.83), rgba(1, 98, 5, 0.83)), url(${footerContent.image})`
-            // }}
           >
               <div
                 className="socialMediaContainer"

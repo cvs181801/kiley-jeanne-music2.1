@@ -6,7 +6,7 @@ export default function ContactButton() {
 
     const [formBool, setFormBool] = useState(false)
     const [formClass, setFormClass] = useState("none")
-    const [parentComponent, setParentComponent] = useState("schedule")
+    //const [parentComponent, setParentComponent] = useState("schedule")
 
     const handleClick = (event)=> {
         event.preventDefault();
@@ -18,7 +18,7 @@ export default function ContactButton() {
             } else {
             setFormBool(true)
             setFormClass("inline-block")
-            setParentComponent("schedule")
+            //setParentComponent("schedule")
             window.scrollTo(0, 0);
         }
     }
@@ -28,14 +28,15 @@ export default function ContactButton() {
         className="bookBtnContainer"
     >
             <button
-                className="bookBtnSched"
+                className="bookBtn"
                 onClick={handleClick}
             >
                 BOOK / CONTACT
                     
             </button>
 
-            {formBool && <ContactForm state={formClass} parent={parentComponent} formBool={setFormBool}/>}
+           {/* {formBool && <ContactForm state={formClass} parent={parentComponent} formBool={setFormBool}/>} */}
+            {formBool && <ContactForm state={formClass} formBool={setFormBool}/>}
 
     </div>
   )

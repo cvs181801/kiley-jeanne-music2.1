@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
 
-:root {
-    --light-blue: #B2EBF2;
-    --dark-blue: #0097A7;
-    --vanilla: #FFFAF3;
-    --ff-accent: 'Martel', serif;
-    --ff-main1: 'Roboto Flex', sans-serif;
-    --ff-main2: 'Roboto', sans-serif;
-}
-
 body {
     margin: 0 auto;
     padding: 0;
@@ -22,10 +13,8 @@ body {
 h1 {
     letter-spacing: 0.3rem;
     text-transform: uppercase;
-    /* padding: 5px; */
     text-align: center;
     color: var(--dark-blue);
-    /* border: 1px solid teal; */
     font-family: var(--ff-accent);
     background: white;
     
@@ -41,22 +30,14 @@ h1 {
 
 .topDiv {
     width: 100vw;
-    /* height: 7em; */
     margin: 0 auto;
     background: white;
-    /* background: linear-gradient(180deg, #A4FCF1 0%, rgba(164, 252, 241, 0) 67.19%);
-    border-top: 1px solid #A4FCF1; */
 }
-
-/* .welcomeDiv {
-    margin-top: 0;
-    padding: 5px;
-} */
 
 .imgDiv {
     width: 100vw;
     height: 17em;
-    background-color: rgba(1, 98, 5, 0.83);
+    background-color: var(--sheer-green);
     background-blend-mode: screen;
     background-size: 300%;
     background-position: 35% 35%;
@@ -73,8 +54,7 @@ h1 {
     font-size: .5rem;
     letter-spacing: .1rem;
     font-weight: 700;
-    text-shadow: 3px 3px 20px #472B01, 3px 3px 20px #472B01, -3px -3px 20px #472B01, -3px -3px 20px #472B01,
-         1px 1px 2px #472B01, 1px 1px 2px #472B01, -1px -1px 2px #472B01, -1px -1px 2px #472B01;
+    text-shadow: var(--brown-shadow);
 }
 
 .bottomDiv {
@@ -82,7 +62,6 @@ h1 {
     height: 3em;
     margin: 0 auto;
     background: var(--vanilla);
-    /* background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0.01) 83.33%); */
 }
 
 @media (min-width: 600px) {

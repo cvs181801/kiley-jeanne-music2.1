@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
 
-:root {
-    --light-blue: #B2EBF2;
-    --vanilla: #FFFAF3;
-    --dark-blue: #0097A7;
-    --ff-accent: 'Martel', serif;
-    --ff-main1: 'Roboto Flex', sans-serif;
-    --ff-main2: 'Roboto', sans-serif;
-}
 body {
     margin: 0 auto;
     padding: 0;
@@ -17,7 +9,7 @@ body {
     box-sizing: border-box;
 }
 
-.contactFormParentSched {
+.contactFormParent {
     position: absolute;
     color: black;
     top: 5em;
@@ -25,7 +17,7 @@ body {
     padding: .3em .3em .3em .9em;
     display: none;
     background: white;
-    border: 1px solid #016205;
+    border: 1px solid var(--forest);
     border-radius: 7px;
     z-index: 3;
     height: auto;
@@ -39,26 +31,7 @@ h2 {
     font-size: 1rem;
 }
 
-/* .contactFormParentNav {
-    position: absolute;
-    color: black;
-    top: 5em;
-    left: 0;
-    padding: .3em .3em .3em .9em;
-    display: none;
-    background: white;
-    border: 1px solid #016205;
-    border-radius: 7px;
-    z-index: 3;
-    height: auto;
-    width: 100%;
-    letter-spacing: .07rem;
-    font-family: var(--ff-main1);
-    text-align: left;
-} */
-
 textarea {
-    /* height: 10em; */
     color: black;
     width: 95%;
     font-family: inherit;
@@ -82,9 +55,6 @@ input {
 .modalBtnClose {
     color: var(--dark-blue);
     float: right;
-    /* background: rgba(1, 98, 5, 0.13); */
-    /* border: 1px solid #016205; */
-    /* border-radius: 7px; */
     letter-spacing: .2rem;
     text-transform: uppercase;
     z-index: 5;
@@ -100,15 +70,10 @@ input {
 .modalBtnSubmit {
     background: var(--dark-blue);
     color: white;
-    /* float: right; */
-    /* background: rgba(1, 98, 5, 0.13); */
-    /* border: 1px solid #016205; */
-    /* border-radius: 7px; */
     letter-spacing: .2rem;
     text-transform: uppercase;
     z-index: 5;
     cursor: pointer;
-    /* border: 1px solid grey; */
     border: none;
     text-align: center;
     padding: .7em;
@@ -118,10 +83,7 @@ input {
 }
 
 @media (min-width: 600px) {
-    /* .contactFormParentSched {
-        text-align: center;
- 
-    }  */
+   
    
 }
 @media (min-width: 1025px) {}

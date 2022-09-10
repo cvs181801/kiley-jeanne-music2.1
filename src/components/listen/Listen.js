@@ -12,7 +12,7 @@ export default function Listen() {
     try{
         const response = await client.getEntries({content_type:'listen'})
         
-        const image = response.items[0].fields.listen.fields.file.url;
+        const image = response.items[0].fields.listen.fields.file.url + '?w=2604&h=2604';
         const alt = response.items[0].fields.listen.fields.title;
         console.log(image, alt)
         setListenContent({

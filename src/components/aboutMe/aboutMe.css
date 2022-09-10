@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
 
-:root {
-    --light-blue: #B2EBF2;
-    --vanilla: #FFFAF3;
-    --dark-blue: #0097A7;
-    --ff-accent: 'Martel', serif;
-    --ff-main1: 'Roboto Flex', sans-serif;
-    --ff-main2: 'Roboto', sans-serif;
-}
 
     body {
     margin: 0 auto;
@@ -25,18 +17,12 @@
     background: var(--light-blue);
     font-size: auto;
     border-radius: 4px; 
-    /* background: linear-gradient(180deg, rgba(164, 252, 241, 0.99) 0%, rgba(164, 252, 241, 0) 48.96%, rgba(164, 252, 241, 0.01) 57.29%, #A4FCF1 97.4%); */
 }
 
 .innerDivAboutMe {
-/* 
-    box-shadow: -4px -4px 5px 3px rgba(71, 43, 1, 0.35);
-    border-radius: 7px; */
     height: auto;
     width: 20em;
-    /* margin: 0 auto 1em 5px; */
     margin: 0 auto;
-    /* padding: .7em 1.4em .7em .7em; */
     padding: .7em;
     letter-spacing: .07rem;
     
@@ -48,8 +34,6 @@
     height: 4em;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-color: rgba(164, 252, 241, 0.99);
-    background-blend-mode: luminosity; */
     margin: .4em;
     border-radius: 50%;
 }
@@ -64,7 +48,6 @@
 
     .innerDivAboutMe {
         margin: 0 auto;
-        /* width: 70vw; */
         width: auto;
     }
     

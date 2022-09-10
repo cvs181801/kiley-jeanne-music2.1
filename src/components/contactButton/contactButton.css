@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
 
-:root {
-    --dark-teal: #0097A7;
-    --deep-teal: #01565f;
-    --light-blue: #B2EBF2;
-    --vanilla: #FFFAF3;
-    --ff-accent: 'Martel', serif;
-    --ff-main1: 'Roboto Flex', sans-serif;
-    --ff-main2: 'Roboto', sans-serif;
-}
 
 body {
     margin: 0 auto;
@@ -24,29 +15,19 @@ body {
     text-align: center;
 }
 
-.bookBtnSched {
-    /* background-image: linear-gradient(
-        -200deg,
-        var(--deep-teal) 0%,
-        var(--dark-teal) 59%,
-        var(--light-blue) 60%,
-        var(--dark-teal) 63%,
-        var(--deep-teal) 66%,
-        var(--deep-teal) 100%
-    ); */
+.bookBtn {
     background-image: radial-gradient(
         circle at 50% 50%, 
         var(--dark-teal), 
-        #008d9c, 
-        #018492, 
-        #017a87, 
-        #01717d, 
-        #016873, 
-        #015f69, 
+        var(--teal1), 
+        var(--teal2),
+        var(--teal3),
+        var(--teal4),
+        var(--teal5),
+        var(--teal6),
         var(--deep-teal)
     );
-    /* background-clip: text;
-    -webkit-background-clip: text; */
+
     background-size: 200% auto; 
     border: 1px solid var(--dark-teal);
     border-radius: 4px; 
@@ -66,40 +47,14 @@ body {
     animation-timing-function: ease-out;
 }
 
-.bookBtnSched:hover,
-.bookBtnSched:focus {
+.bookBtn:hover,
+.bookBtn:focus {
     transform: scale(1.1);
     cursor: pointer;
 }   
 
-/* .animate-charcter
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 190px;
-} */
 
 @keyframes textclip {
-  /* to {
-    background-position: 200% center; 
-    background-position: 200% 100%; 
-  } */
   from {
     background-position: 0 0;
   }

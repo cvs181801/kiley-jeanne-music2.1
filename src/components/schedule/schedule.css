@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
 
-:root {
-    --dark-teal: #0097A7;
-    --vanilla: #FFFAF3;
-    --feather-grey: #EFEBE9;
-    --ff-accent: 'Martel', serif;
-    --ff-main1: 'Roboto Flex', sans-serif;
-    --ff-main2: 'Roboto', sans-serif;
-}
-
 body {
     margin: 0 auto;
     padding: 0;
@@ -26,46 +17,16 @@ body {
 }
 
 .containerDivSched {
- 
-    /* box-shadow: -4px -4px 5px 3px rgba(71, 43, 1, 0.35); */
     border-radius: 4px; 
     height: auto;
     width: 20em;
-    /* margin: 0 auto 1em 5px; */
     margin: 0 auto;
-    /* padding: .7em .7em .7em 1.4em; */
     padding: .7em;
     letter-spacing: .1rem;
-    /* text-transform: uppercase; */
     text-align: left;
     background: var(--feather-grey);
     font-size: auto;
 } 
-/* 
-.bookBtnSched {
-    background: var(--dark-teal);
-    border: 1px solid var(--dark-teal);
-    border-radius: 4px; 
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 900;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    color: white;
-    width: 90vw;
-    height: 4em;
-    margin: 0 auto;
-    cursor: pointer;
-    transition: all .5s; 
-} */
-
-/* .bookBtnSched:hover,
-.bookBtnSched:focus {
-    transform: scale(1.2);
-    cursor: pointer;
-}   */
 
 .gigContent {
     background: var(--feather-grey);
@@ -101,7 +62,6 @@ body {
 
     .containerDivSched {
         font-size: 1.5rem;
-        /* border: 1px solid red; */
     }
 
     .bookBtnSched {
