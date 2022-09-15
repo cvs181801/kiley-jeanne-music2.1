@@ -22,7 +22,7 @@ body {
 }
 
 .footerContainer p {
-    color: black;
+    color: var(--textdetailColor);
     background: var(--light-blue);
     text-align: center;
     padding: 1em;

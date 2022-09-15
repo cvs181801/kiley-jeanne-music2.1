@@ -37,7 +37,7 @@ body {
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.2em;
-    color: white;
+    color: var(--backgroundColor);
     width: 90vw;
     height: 4em;
     margin: 0 auto;

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
 
 :root {
-  --dark: #000000;
+  --textdetailColor: #000000;
+  --backgroundColor: white;
   --feather-grey: #EFEBE9;
   --light-blue: #B2EBF2;
   --dark-blue: #0097A7;

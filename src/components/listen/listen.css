@@ -29,14 +29,14 @@ body {
 }
 
 .listenInnerContainer {
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--backgroundColor);
     border-radius: 7px; 
     text-align: center;
     height: auto;  
     /*height: 50vw;*/
     width: 90vw;
     margin: 0 auto;
-    color: white;
+    color: var(--backgroundColor);
     padding: .7em 1.4em .7em .7em;
     letter-spacing: .07rem;
 }

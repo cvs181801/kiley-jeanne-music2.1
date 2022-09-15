@@ -23,12 +23,12 @@ body {
 
 .contactFormParent {
     position: absolute;
-    color: black;
+    color: var(--textdetailColor);
     top: 5em;
     left: 0;
     padding: .3em .3em .3em .9em;
     display: none;
-    background: white;
+    background: var(--backgroundColor);
     border: 1px solid var(--forest);
     border-radius: 7px;
     z-index: 3;
@@ -44,23 +44,23 @@ h2 {
 }
 
 textarea {
-    color: black;
+    color: var(--textdetailColor);
     width: 95%;
     font-family: inherit;
     padding: .4em;
     margin-bottom: .7em;
     height: 7em;
-    border: 1px solid black;
+    border: 1px solid var(--textdetailColor);
     border-radius: 4px; 
 }
 
 input {
     width: 95%;
-    color: black;
+    color: var(--textdetailColor);
     font-family: inherit;
     padding: .4em;
     margin-bottom: .7em;
-    border: 1px solid black;
+    border: 1px solid var(--textdetailColor);
     border-radius: 4px; 
 }
 
@@ -81,7 +81,7 @@ input {
 
 .modalBtnSubmit {
     background: var(--dark-blue);
-    color: white;
+    color: var(--backgroundColor);
     letter-spacing: .2rem;
     text-transform: uppercase;
     z-index: 5;

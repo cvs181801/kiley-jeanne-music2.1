@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap');
 
-/* :root {
-    --light-blue: #B2EBF2;
-    --dark-blue: #0097A7;
-    --vanilla: #FFFAF3;
-    --grey: rgba(0, 0, 0, 0.709);
-    --dark-teal-drop-1: rgba(4, 96, 97, 0.16);
-    --dark-teal-drop-2: rgba(6, 150, 151, 0.16);
-    --ff-accent: 'Martel', serif;
-    --ff-main1: 'Roboto Flex', sans-serif;
-    --ff-main2: 'Roboto', sans-serif;
-} */
 
 body {
     margin: 0 auto;
@@ -23,44 +12,26 @@ body {
 
 .navContainerOuter {
     position: absolute;
-    /* background-attachment: fixed;  needed for sticky button*/
-    /* top: 1em; */
-    /* left: 14em; */
-    /* left: .2em; */
-    /* height: 3500px;   needed for sticky button*/
-    /* padding-bottom: 4.1em; */
     pointer-events: none;
-    /* border: 2px solid red;   */
     font-family: var(--ff-main1); 
 } 
 
 .navContainer {   
-    /* position: sticky;  */
-    /* height: 80vh; */
-    /* width: 89.594px; needed for sticky button */
-    /* width: 10em;  */
     border-radius: 4px;
-    /* top: 1em;  */
-    /* left: 2em; */
     z-index: 2;
     pointer-events: none;
     border: 2px solid transparent;  
-    /* padding-bottom: 4.1em; */
 }
 
 .hamburger {
     position: absolute; 
-    /* float: left;   */
     height: 2.2em;
     width: 2.2em;
-    /* background: var(--light-blue);  */
     border: none;
-    /* box-shadow: -4px -4px 2px rgba(0, 0, 0, 0.25); */
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    /* justify-content: right; */
     display: block;
     visibility: visible;
     cursor: pointer;
@@ -100,26 +71,18 @@ body {
 }
 
 .navBar, nav {
-    /* color: #472B01; */
     display: block; 
     visibility: visible;
     position: relative;  
-    background: white;
-    /* width: 9em; */
-    /* height: 31em; */
+    background: var(--backgroundColor);
     box-shadow: 0px 4px 8px var(--dark-teal-drop-1), 0px 8px 16px var(--dark-teal-drop-2);
     border-radius: 7px;
     display: flex;
     flex-direction: column;
     margin: 5em auto 0 auto; 
     padding-bottom: 4.1em;
-    /* justify-content: left;
-    align-items: left;  
-    text-align: left; */
     font-size: .8rem; 
-    /*font-weight: 700;*/
     z-index: 2;
-    /* background: lightseagreen; */
 }
 
 .hideNav {
@@ -130,16 +93,12 @@ body {
 .navUl {
     list-style-type: none;
     pointer-events: none; 
-    /* background: hotpink;  */
     text-align: right;
 }
 
 .navLi {
-    /* border: 1px solid #016205;  */
     border-radius: 7px; 
     color: var(--grey);
-    /* width: 8em;
-    height: 3.7em; */
     padding: .5em;
     text-transform: uppercase;
     pointer-events: auto;
@@ -151,52 +110,20 @@ body {
 .navLiAnchor {
     flex-wrap: wrap;
     text-decoration: none;
-    color: #472B01;
-    /* border: 1px solid red; */
+    color: var(--brown);
     text-align: right;
 }
-
-/* .bookBtn {
-    display: none;
-    visibility: hidden;
-    letter-spacing: .05rem;
-    border-radius: 7px;
-    height: 3.7em;
-    padding: .5em;
-    cursor: pointer;
-    pointer-events: auto;
-    z-index: 9;
-    transition: all .5s; 
-    border: none;
-    background-color: transparent;
-    text-align: right; 
-    font-size: .7rem;
-    position: absolute;
-    right: 0;
-} */
 
 
 
 @media (min-width: 600px) {
 
     .navContainerOuter {
-        /* border: 1px solid red;  */
         left: 25%;
         width: 50%;
     }
 
-    /* .navContainer {
-        width: 600px;
-        border: 2px solid purple;  
-    }  */
- 
     .navBar, nav, .hideNav {
-        /* flex-direction: row; */
-        /* width: 40em;
-        height: 2000em; */
-        /* background-attachment: fixed; */
-        /* top: -2em;
-        left: 1em; */
         display: block;
         visibility: visible;
         border: none;
@@ -206,25 +133,16 @@ body {
     }
 
     .navUl {
-        display: flex;
-        /* flex-direction: row; */
-        /* left: 20em; */
-        
+        display: flex;       
         padding: .2em .3em 0 0;
         justify-content: space-around; 
     }
 
     .navLi {
-        /* position: relative; */
-        /* left: -35px;  */
         border: none;
-        /* border: 1px solid red; */
         background: none;
         border-radius: 7px;
-        /* width: 7em;
-        height: 2.7em; */
         padding: 0em;
-        /* margin: 1.5em auto 1.5em auto;   */
         text-align: center;
         letter-spacing: .1rem;
     }
@@ -238,7 +156,6 @@ body {
     .navLiAnchor {
         flex-wrap: nowrap;
         font-size: .9rem;
-        /* margin-bottom: .5em; */
         pointer-events: auto;
     }
 
@@ -247,58 +164,20 @@ body {
         visibility: hidden;
     } 
 
-    /* .bookBtn {
-        /* margin: 0 auto 0 17em;
-        text-align: center;
-        background: white;
-        /* position: sticky; 
-        top: 0; 
-        display: none;
-        visibility: hidden;
-    } */
-
 }
 @media (min-width: 1025px) {
 
     .navContainerOuter {
-        /* border: 2px solid red;  */
         border: 2px solid transparent; 
     } 
 
-    /* .navContainer {
-        border: 1px solid purple; 
-    } */
-
     .navBar, nav, .hideNav {
-        /* display: flex; */
-        /* width: 1500px; */
         border: none;
-        /* border: 2px solid lightseagreen;  */
     }
-
-    /* .navUl {
-        border: 1px solid grey; 
-    } */
-
-    /* .navLi p:hover,
-    .navLi p:focus {
-        border: 1px solid #016205;
-        border-radius: 7px;
-    } */
 
     .bookBtn:hover,
     .bookBtn:focus {
         transform: scale(1.2);
         cursor: pointer;
     }  
-
-    /* .bookBtn {
-        margin: 1.5em auto 7.5em auto;
-        width: 11em;
-        height: 3.7em;
-        padding: .5em;
-        letter-spacing: .06rem;   
-        display: block;
-        visibility: visible;
-    } */
 }

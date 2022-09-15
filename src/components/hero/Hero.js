@@ -15,7 +15,6 @@ export default function Hero() {
             const alt = response.items[0].fields.image.fields.description;
             const tagline = response.items[0].fields.tagline.content[0].content[0].value;
 
-            //console.log(`${image}?w=200&h=200`)
             setIsHeroLoading(false)
             setHeroContent({
                 title: title,

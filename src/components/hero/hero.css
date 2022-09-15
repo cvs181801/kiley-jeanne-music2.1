@@ -16,7 +16,7 @@ h1 {
     text-align: center;
     color: var(--dark-blue);
     font-family: var(--ff-accent);
-    background: white;
+    background: var(--backgroundColor);
     
 }
 
@@ -25,13 +25,13 @@ h1 {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background: white;
+    background: var(--backgroundColor);
 }
 
 .topDiv {
     width: 100vw;
     margin: 0 auto;
-    background: white;
+    background: var(--backgroundColor);
 }
 
 .imgDiv {
@@ -41,7 +41,7 @@ h1 {
     background-blend-mode: screen;
     background-size: 300%;
     background-position: 35% 35%;
-    color: white;
+    color: var(--backgroundColor);
     background-repeat: no-repeat;
     margin: 0 auto;
 }
@@ -55,6 +55,7 @@ h1 {
     letter-spacing: .1rem;
     font-weight: 700;
     text-shadow: var(--brown-shadow);
+    color: var(--backgroundColor);
 }
 
 .bottomDiv {
